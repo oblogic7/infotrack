@@ -1,3 +1,4 @@
 .idea/
 .sass-cache/
 composer.lock
+config.codekit
