@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'League\\Fractal\\Tests\\' => array($vendorDir . '/league/fractal/tests'),
+    'League\\Fractal\\' => array($vendorDir . '/league/fractal/src'),
 );
