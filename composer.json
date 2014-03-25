@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.1.*",
 		"behat/behat": "3.0.x-dev",
-		"league/fractal": "0.7.0"
+		"league/fractal": "0.7.0",
+		"way/generators": "2.6"
 	},
 	"autoload": {
 		"classmap": [
