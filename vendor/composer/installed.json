@@ -996,59 +996,6 @@
         ]
     },
     {
-        "name": "patchwork/utf8",
-        "version": "v1.1.20",
-        "version_normalized": "1.1.20.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/nicolas-grekas/Patchwork-UTF8.git",
-            "reference": "aea0de833cba7cf2c25239be71f2787edaee36d5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/nicolas-grekas/Patchwork-UTF8/zipball/aea0de833cba7cf2c25239be71f2787edaee36d5",
-            "reference": "aea0de833cba7cf2c25239be71f2787edaee36d5",
-            "shasum": ""
-        },
-        "require": {
-            "lib-pcre": ">=7.3",
-            "php": ">=5.3.0"
-        },
-        "suggest": {
-            "ext-iconv": "Use iconv for best performance",
-            "ext-intl": "Use Intl for best performance",
-            "ext-mbstring": "Use Mbstring for best performance"
-        },
-        "time": "2014-03-01 20:01:07",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Patchwork": "class/",
-                "Normalizer": "class/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "(Apache-2.0 or GPL-2.0)"
-        ],
-        "authors": [
-            {
-                "name": "Nicolas Grekas",
-                "email": "p@tchwork.com",
-                "role": "Developer"
-            }
-        ],
-        "description": "Extensive, portable and performant handling of UTF-8 and grapheme clusters for PHP",
-        "homepage": "https://github.com/nicolas-grekas/Patchwork-UTF8",
-        "keywords": [
-            "i18n",
-            "unicode",
-            "utf-8",
-            "utf8"
-        ]
-    },
-    {
         "name": "nesbot/carbon",
         "version": "1.8.0",
         "version_normalized": "1.8.0.0",
@@ -1094,75 +1041,6 @@
             "date",
             "datetime",
             "time"
-        ]
-    },
-    {
-        "name": "monolog/monolog",
-        "version": "1.7.0",
-        "version_normalized": "1.7.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "6225b22de9dcf36546be3a0b2fa8e3d986153f57"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/6225b22de9dcf36546be3a0b2fa8e3d986153f57",
-            "reference": "6225b22de9dcf36546be3a0b2fa8e3d986153f57",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "psr/log": "~1.0"
-        },
-        "require-dev": {
-            "aws/aws-sdk-php": "~2.4.8",
-            "doctrine/couchdb": "dev-master",
-            "mlehner/gelf-php": "1.0.*",
-            "phpunit/phpunit": "~3.7.0",
-            "raven/raven": "0.5.*",
-            "ruflin/elastica": "0.90.*"
-        },
-        "suggest": {
-            "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
-            "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
-            "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-            "ext-mongo": "Allow sending log messages to a MongoDB server",
-            "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
-            "raven/raven": "Allow sending log messages to a Sentry server",
-            "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
-        },
-        "time": "2013-11-14 19:48:31",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.7.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Monolog": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be",
-                "role": "Developer"
-            }
-        ],
-        "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-        "homepage": "http://github.com/Seldaek/monolog",
-        "keywords": [
-            "log",
-            "logging",
-            "psr-3"
         ]
     },
     {
@@ -1441,55 +1319,6 @@
         ],
         "description": "Symfony Filesystem Component",
         "homepage": "http://symfony.com"
-    },
-    {
-        "name": "classpreloader/classpreloader",
-        "version": "1.0.1",
-        "version_normalized": "1.0.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/mtdowling/ClassPreloader.git",
-            "reference": "1a50f7945b725ff2c60f234e51407d1d6e7c77c5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/mtdowling/ClassPreloader/zipball/1a50f7945b725ff2c60f234e51407d1d6e7c77c5",
-            "reference": "1a50f7945b725ff2c60f234e51407d1d6e7c77c5",
-            "shasum": ""
-        },
-        "require": {
-            "nikic/php-parser": "*",
-            "php": ">=5.3.3",
-            "symfony/console": ">2.0",
-            "symfony/filesystem": ">2.0",
-            "symfony/finder": ">2.0"
-        },
-        "time": "2013-06-24 22:58:34",
-        "bin": [
-            "classpreloader.php"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0.0-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "ClassPreloader": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "description": "Helps class loading performance by generating a single PHP file containing all of the autoloaded files for a specific use case",
-        "keywords": [
-            "autoload",
-            "class",
-            "preload"
-        ]
     },
     {
         "name": "laravel/framework",
@@ -1933,83 +1762,6 @@
         "homepage": "http://symfony.com"
     },
     {
-        "name": "behat/behat",
-        "version": "3.0.x-dev",
-        "version_normalized": "3.0.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Behat/Behat.git",
-            "reference": "0a7b7114be505e0aabca2a7ebe3f1cad74e9ad0c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Behat/Behat/zipball/0a7b7114be505e0aabca2a7ebe3f1cad74e9ad0c",
-            "reference": "0a7b7114be505e0aabca2a7ebe3f1cad74e9ad0c",
-            "shasum": ""
-        },
-        "require": {
-            "behat/gherkin": "~4.0",
-            "behat/transliterator": "~1.0",
-            "php": ">=5.3.3",
-            "symfony/class-loader": "~2.1",
-            "symfony/config": "~2.1",
-            "symfony/console": "~2.1",
-            "symfony/dependency-injection": "~2.1",
-            "symfony/event-dispatcher": "~2.1",
-            "symfony/translation": "~2.1",
-            "symfony/yaml": "~2.1"
-        },
-        "require-dev": {
-            "phpspec/prophecy-phpunit": "~1.0",
-            "phpunit/phpunit": "~4.0.7",
-            "symfony/process": "~2.1"
-        },
-        "suggest": {
-            "behat/mink-extension": "for integration with Mink testing framework",
-            "behat/symfony2-extension": "for integration with Symfony2 web framework",
-            "behat/yii-extension": "for integration with Yii web framework"
-        },
-        "time": "2014-03-23 18:01:25",
-        "bin": [
-            "bin/behat"
-        ],
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-0": {
-                "Behat\\Behat": "src/",
-                "Behat\\Testwork": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Konstantin Kudryashov",
-                "email": "ever.zet@gmail.com",
-                "homepage": "http://everzet.com"
-            }
-        ],
-        "description": "Scenario-oriented BDD framework for PHP 5.3",
-        "homepage": "http://behat.org/",
-        "keywords": [
-            "Agile",
-            "BDD",
-            "ScenarioBDD",
-            "Scrum",
-            "StoryBDD",
-            "User story",
-            "business",
-            "development",
-            "documentation",
-            "examples",
-            "symfony",
-            "testing"
-        ]
-    },
-    {
         "name": "league/fractal",
         "version": "0.7.0",
         "version_normalized": "0.7.0.0",
@@ -2106,6 +1858,344 @@
                 "homepage": "http://jeffrye-way.com",
                 "role": "Developer"
             }
+        ]
+    },
+    {
+        "name": "classpreloader/classpreloader",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mtdowling/ClassPreloader.git",
+            "reference": "2c9f3bcbab329570c57339895bd11b5dd3b00877"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mtdowling/ClassPreloader/zipball/2c9f3bcbab329570c57339895bd11b5dd3b00877",
+            "reference": "2c9f3bcbab329570c57339895bd11b5dd3b00877",
+            "shasum": ""
+        },
+        "require": {
+            "nikic/php-parser": "~0.9",
+            "php": ">=5.3.3",
+            "symfony/console": "~2.1",
+            "symfony/filesystem": "~2.1",
+            "symfony/finder": "~2.1"
+        },
+        "time": "2014-03-12 00:05:31",
+        "bin": [
+            "classpreloader.php"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "ClassPreloader": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Helps class loading performance by generating a single PHP file containing all of the autoloaded files for a specific use case",
+        "keywords": [
+            "autoload",
+            "class",
+            "preload"
+        ]
+    },
+    {
+        "name": "monolog/monolog",
+        "version": "1.8.0",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Seldaek/monolog.git",
+            "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/392ef35fd470638e08d0160d6b1cbab63cb23174",
+            "reference": "392ef35fd470638e08d0160d6b1cbab63cb23174",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "psr/log": "~1.0"
+        },
+        "require-dev": {
+            "aws/aws-sdk-php": "~2.4, >2.4.8",
+            "doctrine/couchdb": "~1.0@dev",
+            "graylog2/gelf-php": "~1.0",
+            "phpunit/phpunit": "~3.7.0",
+            "raven/raven": "~0.5",
+            "ruflin/elastica": "0.90.*"
+        },
+        "suggest": {
+            "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+            "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+            "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+            "ext-mongo": "Allow sending log messages to a MongoDB server",
+            "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+            "raven/raven": "Allow sending log messages to a Sentry server",
+            "rollbar/rollbar": "Allow sending log messages to Rollbar",
+            "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+        },
+        "time": "2014-03-23 19:50:26",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.8.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Monolog\\": "src/Monolog"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be",
+                "role": "Developer"
+            }
+        ],
+        "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+        "homepage": "http://github.com/Seldaek/monolog",
+        "keywords": [
+            "log",
+            "logging",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "patchwork/utf8",
+        "version": "v1.1.21",
+        "version_normalized": "1.1.21.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nicolas-grekas/Patchwork-UTF8.git",
+            "reference": "f45ba8bc7962b7356847724989a6949b68d975a2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nicolas-grekas/Patchwork-UTF8/zipball/f45ba8bc7962b7356847724989a6949b68d975a2",
+            "reference": "f45ba8bc7962b7356847724989a6949b68d975a2",
+            "shasum": ""
+        },
+        "require": {
+            "lib-pcre": ">=7.3",
+            "php": ">=5.3.0"
+        },
+        "suggest": {
+            "ext-iconv": "Use iconv for best performance",
+            "ext-intl": "Use Intl for best performance",
+            "ext-mbstring": "Use Mbstring for best performance"
+        },
+        "time": "2014-03-26 10:52:02",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Patchwork": "class/",
+                "Normalizer": "class/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "(Apache-2.0 or GPL-2.0)"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Extensive, portable and performant handling of UTF-8 and grapheme clusters for PHP",
+        "homepage": "https://github.com/nicolas-grekas/Patchwork-UTF8",
+        "keywords": [
+            "i18n",
+            "unicode",
+            "utf-8",
+            "utf8"
+        ]
+    },
+    {
+        "name": "fzaninotto/faker",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fzaninotto/Faker.git",
+            "reference": "991e39d280afc34a91684e5789023f1b276e4618"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/991e39d280afc34a91684e5789023f1b276e4618",
+            "reference": "991e39d280afc34a91684e5789023f1b276e4618",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2014-03-26 17:22:53",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Faker": "src/",
+                "Faker\\PHPUnit": "test/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "François Zaninotto"
+            }
+        ],
+        "description": "Faker is a PHP library that generates fake data for you.",
+        "keywords": [
+            "data",
+            "faker",
+            "fixtures"
+        ]
+    },
+    {
+        "name": "darsain/laravel-console",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/darsain/laravel-console.git",
+            "reference": "c1364da997d5baf5437a8c91cb4d48844e0ba895"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/darsain/laravel-console/zipball/c1364da997d5baf5437a8c91cb4d48844e0ba895",
+            "reference": "c1364da997d5baf5437a8c91cb4d48844e0ba895",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": ">=4.0.0",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-12-23 19:09:48",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "src/controllers"
+            ],
+            "psr-0": {
+                "Darsain\\Console\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Browser console for Laravel Framework.",
+        "keywords": [
+            "browser",
+            "console",
+            "laravel"
+        ]
+    },
+    {
+        "name": "behat/behat",
+        "version": "3.0.x-dev",
+        "version_normalized": "3.0.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Behat/Behat.git",
+            "reference": "7af63542db1939ad95f820810ea67dc2d7174e26"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Behat/Behat/zipball/7af63542db1939ad95f820810ea67dc2d7174e26",
+            "reference": "7af63542db1939ad95f820810ea67dc2d7174e26",
+            "shasum": ""
+        },
+        "require": {
+            "behat/gherkin": "~4.0",
+            "behat/transliterator": "~1.0",
+            "php": ">=5.3.3",
+            "symfony/class-loader": "~2.1",
+            "symfony/config": "~2.1",
+            "symfony/console": "~2.1",
+            "symfony/dependency-injection": "~2.1",
+            "symfony/event-dispatcher": "~2.1",
+            "symfony/translation": "~2.1",
+            "symfony/yaml": "~2.1"
+        },
+        "require-dev": {
+            "phpspec/prophecy-phpunit": "~1.0",
+            "phpunit/phpunit": "~4.0.7",
+            "symfony/process": "~2.1"
+        },
+        "suggest": {
+            "behat/mink-extension": "for integration with Mink testing framework",
+            "behat/symfony2-extension": "for integration with Symfony2 web framework",
+            "behat/yii-extension": "for integration with Yii web framework"
+        },
+        "time": "2014-03-30 15:52:18",
+        "bin": [
+            "bin/behat"
+        ],
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Behat\\Behat": "src/",
+                "Behat\\Testwork": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Konstantin Kudryashov",
+                "email": "ever.zet@gmail.com",
+                "homepage": "http://everzet.com"
+            }
+        ],
+        "description": "Scenario-oriented BDD framework for PHP 5.3",
+        "homepage": "http://behat.org/",
+        "keywords": [
+            "Agile",
+            "BDD",
+            "ScenarioBDD",
+            "Scrum",
+            "StoryBDD",
+            "User story",
+            "business",
+            "development",
+            "documentation",
+            "examples",
+            "symfony",
+            "testing"
         ]
     }
 ]

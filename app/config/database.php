@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'database',
+			'database'  => 'yaportal',
 			'username'  => 'root',
-			'password'  => '',
+			'password'  => 'laravel',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -120,5 +120,17 @@ return array(
 		),
 
 	),
+
+	/*
+	|--------------------------------------------------------------------------
+	| Seeding Counts
+	|--------------------------------------------------------------------------
+	*/
+
+	'seed' => array(
+		'clients'    => 120,
+		'softwarelicenses' => 8,
+		'softwaretitles' => 5,
+	)
 
 );

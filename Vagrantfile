@@ -119,7 +119,7 @@ Vagrant.configure("2") do |config|
                 :server_root_password    => database_password,
                 :server_repl_password    => database_password,
                 :server_debian_password  => database_password,
-                :bind_address            => ip_address,
+                :bind_address            => '0.0.0.0',
                 :allow_remote_root       => true
             },
             :postgresql => {
