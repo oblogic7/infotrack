@@ -9,7 +9,7 @@ class ClientsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return \YA\Client::all();
+		return \YA\Client::orderBy('name', 'asc')->get();
 	}
 
 	/**

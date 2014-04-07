@@ -1,4 +1,4 @@
-site :opscode
+    site :opscode
 
 cookbook 'php'
 cookbook 'apt'

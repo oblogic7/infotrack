@@ -1,1 +1,1 @@
-// @codekit-prepend "libs/search/app.js"
+// @codekit-prepend "lib/bootstrap.js"
