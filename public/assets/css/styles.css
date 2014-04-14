@@ -11076,15 +11076,15 @@ body > .header .logo .icon {
 /* line 411, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .right-side > .content-header {
   position: relative;
-  padding: 15px 15px 10px 20px; }
+  padding: 0px 0 0; }
 
 /* line 415, ../sass/vendors/AdminLTE/_AdminLTE.scss */
-.right-side > .content-header > h1 {
-  margin: 0;
+.right-side > .content-header h1 {
+  margin: 7px 0;
   font-size: 24px; }
 
 /* line 419, ../sass/vendors/AdminLTE/_AdminLTE.scss */
-.right-side > .content-header > h1 > small {
+.right-side > .content-header h1 > small {
   font-size: 15px;
   display: inline-block;
   padding-left: 4px;
@@ -13859,10 +13859,14 @@ Component: timeline
 .pace-inactive {
   display: none; }
 
-/* line 6, ../sass/styles.scss */
+/* line 2, ../sass/_nav.scss */
+.nav-actions li {
+  display: inline-block; }
+
+/* line 7, ../sass/styles.scss */
 #search-controls div img {
   margin: 15px auto; }
 
-/* line 11, ../sass/styles.scss */
+/* line 12, ../sass/styles.scss */
 .logo img {
   max-height: 30px; }

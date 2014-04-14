@@ -410,13 +410,13 @@ body > .header .logo .icon {
 }
 .right-side > .content-header {
   position: relative;
-  padding: 15px 15px 10px 20px;
+  padding: 0px 0 0;
 }
-.right-side > .content-header > h1 {
-  margin: 0;
+.right-side > .content-header h1 {
+  margin: 7px 0;
   font-size: 24px;
 }
-.right-side > .content-header > h1 > small {
+.right-side > .content-header h1 > small {
   font-size: 15px;
   display: inline-block;
   padding-left: 4px;
