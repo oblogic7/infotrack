@@ -44397,6 +44397,7 @@ angular.module('ngResource', ['ng']).
 
 // @codekit-append "modules/common/utils/utils.js"
 // @codekit-append "modules/clients/clients.js"
+// @codekit-append "modules/assets/assets.js"
 
 /* END MODULES */
 
@@ -44435,7 +44436,7 @@ angular.module('app', ['ui.router', 'modules.clients'])
  |  DIRECTIVES
  *************************/
 
-// @codekit-append "modules/directives/Treeview.js"
+// @codekit-append "modules/common/directives/Treeview.js"
 
 /* END DIRECTIVES */
 
@@ -44466,10 +44467,10 @@ angular.module('modules.common.utils', [])
  */
 
 // @codekit-append "controllers/clients-controller.js"
-// @codekit-append "services/clients-service.js"
+// @codekit-append "models/client.js"
 
 angular.module('modules.clients.services', [])
-angular.module('modules.clients.controllers', ['modules.clients.services'])
+angular.module('modules.clients.controllers', ['modules.clients.models'])
 
 angular.module('modules.clients', ['ui.router', 'modules.clients.controllers', 'modules.common.utils', 'ngResource', 'modules.clients.services'])
 
@@ -44481,9 +44482,8 @@ angular.module('modules.clients', ['ui.router', 'modules.clients.controllers', '
                 url: '/clients',
                 abstract: true,
                 templateUrl: '/assets/js/modules/clients/templates/clients.html',
-                controller: ['$scope', 'ClientService', function($scope, ClientService) {
-                    $scope.clients = ClientService.query();
-                    console.table($scope.clients)
+                controller: ['$scope', 'ClientModel', function($scope, ClientModel) {
+                    $scope.clients = ClientModel.query();
                 }]
             })
             .state('clients.index', {
@@ -44491,16 +44491,17 @@ angular.module('modules.clients', ['ui.router', 'modules.clients.controllers', '
                 templateUrl: '/assets/js/modules/clients/templates/clients.index.html'
 
             })
+            .state('clients.create', {
+                url: '/create',
+                templateUrl: '/assets/js/modules/clients/templates/clients.create.html',
+                controller: 'ClientController'
+            })
             .state('clients.detail', {
                 url: '/:id',
                 templateUrl: '/assets/js/modules/clients/templates/clients.detail.html',
                 controller: ['$scope', '$stateParams', 'Utils', function($scope, $stateParams, Utils) {
                     $scope.client = Utils.findById($scope.clients, $stateParams.id);
                 }]
-            })
-            .state('clients.create', {
-                url: '/create',
-                templateUrl: '/assets/js/modules/clients/templates/clients.create.html'
             })
             .state('clients.edit', {
                 url: '/:id/edit',
@@ -44519,22 +44520,30 @@ angular.module('modules.clients', ['ui.router', 'modules.clients.controllers', '
 
 angular.module('modules.clients.controllers')
 
-    .controller('ClientController', ['$scope', function ($scope) {
+    .controller('ClientController', ['$scope', 'ClientService', function ($scope, ClientService) {
 
+        $scope.client = new ClientService();
+
+        $scope.save = function (client) {
+            $scope.client.$save();
+           $scope.clients.push($scope.client);
+            $scope.client = new ClientService();
+            $state.go('clients.list');
+        }
 
     }]);
 
 
 /* **********************************************
-     Begin clients-service.js
+     Begin client.js
 ********************************************** */
 
 /**
  * Created by matt on 4/10/14.
  */
 
-angular.module('modules.clients.services', ['ngResource'])
-    .factory('ClientService', function ($resource) {
+angular.module('modules.clients.models', ['ngResource'])
+    .factory('ClientModel', function ($resource) {
         return $resource(
             '/api/v1/clients/:id',
             {id: '@id'},
@@ -44542,3 +44551,92 @@ angular.module('modules.clients.services', ['ngResource'])
                 method: 'PUT'}
             });
     });
+
+/* **********************************************
+     Begin Treeview.js
+********************************************** */
+
+var App = angular.module('app');
+
+/*
+ * SIDEBAR MENU
+ * ------------
+ * This is a custom plugin for the sidebar menu. It provides a tree view.
+ *
+ * Usage:
+ * $(".sidebar).tree();
+ *
+ * Note: This plugin does not accept any options. Instead, it only requires a class
+ *       added to the element that contains a sub-menu.
+ *
+ * When used with the sidebar, for example, it would look something like this:
+ * <ul class='sidebar-menu'>
+ *      <li class="treeview active">
+ *          <a href="#>Menu</a>
+ *          <ul class='treeview-menu'>
+ *              <li class='active'><a href=#>Level 1</a></li>
+ *          </ul>
+ *      </li>
+ * </ul>
+ *
+ * Add .active class to <li> elements if you want the menu to be open automatically
+ * on page load. See above for an example.
+ */
+(function($) {
+    "use strict";
+
+    $.fn.tree = function() {
+
+        return this.each(function() {
+            var btn = $(this).children("a").first();
+            var menu = $(this).children(".treeview-menu").first();
+            var isActive = $(this).hasClass('active');
+
+            //initialize already active menus
+            if (isActive) {
+                menu.show();
+                btn.children(".fa-angle-left").first().removeClass("fa-angle-left").addClass("fa-angle-down");
+            }
+            //Slide open or close the menu on link click
+            btn.click(function(e) {
+                e.preventDefault();
+                if (isActive) {
+                    //Slide up to close menu
+                    menu.slideUp(400);
+                    isActive = false;
+                    btn.children(".fa-angle-down").first().removeClass("fa-angle-down").addClass("fa-angle-left");
+                    btn.parent("li").removeClass("active");
+                } else {
+                    //Slide down to open menu
+                    menu.slideDown(400);
+                    isActive = true;
+                    btn.children(".fa-angle-left").first().removeClass("fa-angle-left").addClass("fa-angle-down");
+                    btn.parent("li").addClass("active");
+                }
+            });
+
+            /* Add margins to submenu elements to give it a tree look */
+            menu.find("li > a").each(function() {
+                var pad = parseInt($(this).css("margin-left")) + 10;
+
+                $(this).css({"margin-left": pad + "px"});
+            });
+
+        });
+
+    };
+
+
+}(jQuery));
+
+App.directive('treeview', function () {
+    return {
+
+        restrict: 'A',
+
+        link: function (scope, element, attrs) {
+            element.tree();
+        }
+    };
+});
+

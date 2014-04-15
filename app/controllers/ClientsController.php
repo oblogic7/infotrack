@@ -1,5 +1,7 @@
 <?php
 
+use YA\Client;
+
 class ClientsController extends \BaseController {
 
 	/**
@@ -9,7 +11,7 @@ class ClientsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return \YA\Client::orderBy('name', 'asc')->get();
+		return Client::orderBy('name', 'asc')->get();
 	}
 
 	/**
@@ -33,12 +35,12 @@ class ClientsController extends \BaseController {
 
 		if ($validator->fails())
 		{
-			return Redirect::back()->withErrors($validator)->withInput();
+			return Response::json(['message' => 'Validation Failed.']);
 		}
 
 		Client::create($data);
 
-		return Redirect::route('clients.index');
+		return Response::json(['message' => 'Saved.']);
 	}
 
 	/**

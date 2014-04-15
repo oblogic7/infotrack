@@ -26,6 +26,7 @@
 
 // @codekit-append "modules/common/utils/utils.js"
 // @codekit-append "modules/clients/clients.js"
+// @codekit-append "modules/assets/assets.js"
 
 /* END MODULES */
 
@@ -64,6 +65,6 @@ angular.module('app', ['ui.router', 'modules.clients'])
  |  DIRECTIVES
  *************************/
 
-// @codekit-append "modules/directives/Treeview.js"
+// @codekit-append "modules/common/directives/Treeview.js"
 
 /* END DIRECTIVES */
