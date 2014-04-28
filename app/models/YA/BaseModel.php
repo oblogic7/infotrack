@@ -44,4 +44,5 @@ class BaseModel extends \Eloquent
 			return parent::newFromBuilder($attributes);
 		}
 	}
+
 }

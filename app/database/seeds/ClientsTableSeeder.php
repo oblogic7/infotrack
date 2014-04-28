@@ -32,6 +32,18 @@ class ClientsTableSeeder extends Seeder
 
 			}
 
+			foreach(range(0, rand(0, 3)) as $i) {
+				$domain = $faker->domainName;
+
+				$service = \YA\Services\Hosting\DomainService::create([
+					'name' => $domain,
+					'url' => $domain,
+				]);
+
+				$client->services()->save($service);
+
+			}
+
 		}
 	}
 

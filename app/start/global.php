@@ -79,3 +79,6 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+
+App::bind('YA\Contracts\ClientRepositoryInterface', 'YA\Repositories\ClientRepository');

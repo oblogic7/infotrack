@@ -13,8 +13,8 @@ class BaseService extends BaseModel {
 	public $rules = array();
 	public $fillable = array();
 
-	public function credentials() {
-		return $this->hasOne('YA\Authentication\AuthDetails');
+	public function client() {
+		return $this->hasOne('YA\Client');
 	}
 
 }

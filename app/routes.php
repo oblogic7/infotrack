@@ -21,24 +21,19 @@ Route::get('test', function () {
 
 });
 
-
-/*
-|-----------------------------------
-| API Routes
-|-----------------------------------
-*/
-
-Route::group(array('prefix' => 'v1'), function () {
-
-	Route::resource('clients', 'ClientsController');
-	Route::resource('clients.services', 'ClientServicesController');
-
-	Route::resource('software', 'SoftwareTitlesController');
-	Route::resource('software.licenses', 'SoftwareLicensesController');
-
-	Route::resource('credentials', 'AuthDetailsController');
-	Route::resource('credentials.type', 'AuthDetailTypesController', array('only' => array('show')));
-
-	Route::resource('credentials/type', 'AuthDetailTypesController', array('except' => array('show')));
-
+Route::get('/', function() {
+	return View::make('layouts.master');
 });
+
+Route::resource('clients', 'ClientsController');
+Route::resource('clients.services', 'ClientServicesController');
+Route::resource('clients.contacts', 'ClientContactsController');
+
+Route::resource('software', 'SoftwareTitlesController');
+Route::resource('software.licenses', 'SoftwareLicensesController');
+
+Route::resource('credentials', 'AuthDetailsController');
+Route::resource('credentials.type', 'AuthDetailTypesController', array('only' => array('show')));
+
+Route::resource('credentials/type', 'AuthDetailTypesController', array('except' => array('show')));
+

@@ -20,4 +20,8 @@ class Client extends BaseModel {
 		return $this->hasMany('YA\ClientContact');
 	}
 
+	public function services() {
+		return $this->hasMany('YA\Services\BaseService');
+	}
+
 }

@@ -16,8 +16,8 @@ class CreateServicesTable extends Migration {
 			$table->increments('id');
 			$table->string('service_class')->index();
 			$table->string('name');
-			$table->boolean('billable');
-			$table->integer('credentials');
+			$table->boolean('billable')->default(false);
+			$table->integer('client_id')->nullable();
 			$table->timestamps();
 		});
 	}

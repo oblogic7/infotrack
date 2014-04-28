@@ -11,7 +11,7 @@ class ClientContactsController extends \BaseController {
 	{
 		$clientcontacts = Clientcontact::all();
 
-		return View::make('clientcontacts.index', compact('clientcontacts'));
+		return View::make('client.contacts.index', compact('clientcontacts'));
 	}
 
 	/**
@@ -21,7 +21,7 @@ class ClientContactsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('clientcontacts.create');
+		return View::make('client.contacts.create');
 	}
 
 	/**
@@ -53,7 +53,7 @@ class ClientContactsController extends \BaseController {
 	{
 		$clientcontact = Clientcontact::findOrFail($id);
 
-		return View::make('clientcontacts.show', compact('clientcontact'));
+		return View::make('client.contacts.show', compact('clientcontact'));
 	}
 
 	/**
@@ -66,7 +66,7 @@ class ClientContactsController extends \BaseController {
 	{
 		$clientcontact = Clientcontact::find($id);
 
-		return View::make('clientcontacts.edit', compact('clientcontact'));
+		return View::make('client.contacts.edit', compact('clientcontact'));
 	}
 
 	/**
@@ -88,7 +88,7 @@ class ClientContactsController extends \BaseController {
 
 		$clientcontact->update($data);
 
-		return Redirect::route('clientcontacts.index');
+		return Redirect::route('client.contacts.index');
 	}
 
 	/**
@@ -101,7 +101,7 @@ class ClientContactsController extends \BaseController {
 	{
 		Clientcontact::destroy($id);
 
-		return Redirect::route('clientcontacts.index');
+		return Redirect::route('client.contacts.index');
 	}
 
 }

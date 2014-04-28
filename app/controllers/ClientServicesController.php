@@ -3,18 +3,6 @@
 class ClientServicesController extends \BaseController {
 
 	/**
-	 * Display a listing of services
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		$services = Service::all();
-
-		return View::make('services.index', compact('services'));
-	}
-
-	/**
 	 * Show the form for creating a new service
 	 *
 	 * @return Response
@@ -51,7 +39,7 @@ class ClientServicesController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$service = Service::findOrFail($id);
+		$service = YA\Services\BaseService::findOrFail($id);
 
 		return View::make('services.show', compact('service'));
 	}
@@ -64,7 +52,7 @@ class ClientServicesController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		$service = Service::find($id);
+		$service = YA\Services\BaseService::find($id);
 
 		return View::make('services.edit', compact('service'));
 	}
@@ -77,7 +65,7 @@ class ClientServicesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$service = Service::findOrFail($id);
+		$service = YA\Services\BaseService::findOrFail($id);
 
 		$validator = Validator::make($data = Input::all(), Service::$rules);
 
@@ -99,7 +87,7 @@ class ClientServicesController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		Service::destroy($id);
+		YA\Services\BaseService::destroy($id);
 
 		return Redirect::route('services.index');
 	}

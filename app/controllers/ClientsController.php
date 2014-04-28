@@ -4,103 +4,104 @@ use YA\Client;
 
 class ClientsController extends \BaseController {
 
-	/**
-	 * Display a listing of clients
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		return Client::orderBy('name', 'asc')->get();
-	}
+    public function __construct(\YA\Contracts\ClientRepositoryInterface $clients) {
+        $this->clients = $clients;
+    }
 
-	/**
-	 * Show the form for creating a new client
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		return View::make('clients.create');
-	}
+    /**
+     * Display a listing of clients
+     *
+     * @return Response
+     */
+    public function index() {
+        return View::make('clients.index')
+            ->with(['clients' => $this->clients->all(['credentials', 'contacts', 'services'])]);
+    }
 
-	/**
-	 * Store a newly created client in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{
-		$validator = Validator::make($data = Input::all(), Client::$rules);
+    /**
+     * Show the form for creating a new client
+     *
+     * @return Response
+     */
+    public function create() {
+        return View::make('clients.create');
+    }
 
-		if ($validator->fails())
-		{
-			return Response::json(['message' => 'Validation Failed.']);
-		}
+    /**
+     * Store a newly created client in storage.
+     *
+     * @return Response
+     */
+    public function store() {
+        $validator = Validator::make($data = Input::all(), Client::$rules);
 
-		Client::create($data);
+        if ($validator->fails()) {
+            return Response::json(['message' => 'Validation Failed.']);
+        }
 
-		return Response::json(['message' => 'Saved.']);
-	}
+        $client = Client::create($data);
 
-	/**
-	 * Display the specified client.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		return \YA\Client::findOrFail($id);
+        return Response::json($client);
+    }
 
-	}
+    /**
+     * Display the specified client.
+     *
+     * @param  int $id
+     *
+     * @return Response
+     */
+    public function show($id) {
 
-	/**
-	 * Show the form for editing the specified client.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		$client = Client::find($id);
+        return View::make('clients.show')->with(['client' => $this->clients->findById($id)]);
 
-		return View::make('clients.edit', compact('client'));
-	}
+    }
 
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		$client = Client::findOrFail($id);
+    /**
+     * Show the form for editing the specified client.
+     *
+     * @param  int $id
+     *
+     * @return Response
+     */
+    public function edit($id) {
+        $client = Client::find($id);
 
-		$validator = Validator::make($data = Input::all(), Client::$rules);
+        return View::make('clients.edit', compact('client'));
+    }
 
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  int $id
+     *
+     * @return Response
+     */
+    public function update($id) {
+        $client = Client::findOrFail($id);
 
-		$client->update($data);
+        $validator = Validator::make($data = Input::all(), Client::$rules);
 
-		return Redirect::route('clients.index');
-	}
+        if ($validator->fails()) {
+            return Redirect::back()->withErrors($validator)->withInput();
+        }
 
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		Client::destroy($id);
+        $client->update($data);
 
-		return Redirect::route('clients.index');
-	}
+        return Redirect::route('clients.index');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int $id
+     *
+     * @return Response
+     */
+    public function destroy($id) {
+        Client::destroy($id);
+
+        return Redirect::route('clients.index');
+    }
 
 }
