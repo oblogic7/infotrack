@@ -11,20 +11,40 @@ namespace YA\Repositories;
 use YA\Client;
 use YA\Contracts\ClientRepositoryInterface;
 
-class ClientRepository implements ClientRepositoryInterface {
+class ClientRepository extends AbstractRepository implements ClientRepositoryInterface {
 
-    public function all(array $includes) {
-        $query = Client::orderBy('name', 'asc');
+    protected $modelClassName = '\YA\Client';
 
-        if ($includes) {
-            $query->with($includes);
-        }
+    public function withAllData() {
 
-        return $query->get();
+        return Client::orderBy('name', 'asc')
+            ->with(array('contacts', 'credentials', 'services', 'activity'))
+            ->get();
+
     }
 
-    public function findById($id) {
-        return Client::findOrFail($id);
+    public function attachService($client_id, $service) {
+
+        $client = Client::findOrFail($client_id);
+
+        $client->services()->save($service);
+
+    }
+
+    public function attachContact($client_id, $contact) {
+
+        $client = Client::findOrFail($client_id);
+
+        $client->contacts()->save($contact);
+
+    }
+
+    public function attachCredentials($client_id, $auth) {
+
+        $client = Client::findOrFail($client_id);
+
+        $client->credentials()->save($auth);
+
     }
 
 } 

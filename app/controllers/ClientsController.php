@@ -15,7 +15,7 @@ class ClientsController extends \BaseController {
      */
     public function index() {
         return View::make('clients.index')
-            ->with(['clients' => $this->clients->all(['credentials', 'contacts', 'services'])]);
+            ->with(['clients' => $this->clients->withAllData()]);
     }
 
     /**
@@ -33,15 +33,13 @@ class ClientsController extends \BaseController {
      * @return Response
      */
     public function store() {
-        $validator = Validator::make($data = Input::all(), Client::$rules);
 
-        if ($validator->fails()) {
-            return Response::json(['message' => 'Validation Failed.']);
-        }
+            $input = Input::all();
 
-        $client = Client::create($data);
+            $client = $this->clients->create($input);
 
-        return Response::json($client);
+            return Redirect::route('clients.show', array($client->id));
+
     }
 
     /**
@@ -53,7 +51,7 @@ class ClientsController extends \BaseController {
      */
     public function show($id) {
 
-        return View::make('clients.show')->with(['client' => $this->clients->findById($id)]);
+        return View::make('clients.show')->with(['client' => $this->clients->find($id)]);
 
     }
 
@@ -75,16 +73,13 @@ class ClientsController extends \BaseController {
      *
      * @param  int $id
      *
-     * @return Response
+     * @return Redirect
      */
     public function update($id) {
+
         $client = Client::findOrFail($id);
 
-        $validator = Validator::make($data = Input::all(), Client::$rules);
-
-        if ($validator->fails()) {
-            return Redirect::back()->withErrors($validator)->withInput();
-        }
+        $data = Input::all();
 
         $client->update($data);
 

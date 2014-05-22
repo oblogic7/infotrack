@@ -9,10 +9,11 @@
 namespace YA\Contracts;
 
 
-interface ClientRepositoryInterface {
+interface ClientRepositoryInterface extends BaseRepositoryInterface {
 
-	public function all(array $includes);
+    public function withAllData();
 
-	public function findById($id);
+    public function attachService($client_id, $service);
+    public function attachContact($client_id, $contact);
 
-} 
+}
