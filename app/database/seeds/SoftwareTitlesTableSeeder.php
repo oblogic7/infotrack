@@ -57,7 +57,7 @@ class SoftwareTitlesTableSeeder extends Seeder
 					$software->downloads()->save($download);
 
 					$credentials = \YA\Authentication\AuthDetail::create([
-						'description' => $faker->serviceDescription(rand(1,4)),
+						'name' => $faker->serviceDescription(rand(1,4)),
 						'username' => 'poo',
 						'password' => $faker->bothify('??????????##'),
 						'url' => $faker->url(),

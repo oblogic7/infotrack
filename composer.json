@@ -8,7 +8,10 @@
 		"behat/behat": "3.0.x-dev",
 		"league/fractal": "0.7.0",
 		"way/generators": "2.6",
-		"fzaninotto/faker": "1.4.x-dev"
+		"fzaninotto/faker": "1.4.x-dev",
+		"usmanhalalit/dryval": "1.x-dev",
+		"prologue/alerts": "dev-master",
+		"themonkeys/laravel-google-auth": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
@@ -20,6 +23,22 @@
 			"app/tests/TestCase.php"
 		]
 	},
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "google/google-api-php-client",
+                "version": "0.6.7",
+                "dist": {
+                    "url": "http://google-api-php-client.googlecode.com/files/google-api-php-client-0.6.7.tar.gz",
+                    "type": "tar"
+                },
+                "autoload": {
+                    "include-path": ["src/"]
+                }
+            }
+        }
+    ],
 	"scripts": {
 		"post-install-cmd": [
 			"php artisan clear-compiled",

@@ -2,8 +2,12 @@
 
 namespace YA;
 
+use Dryval\ValidationTrait;
+
 class BaseModel extends \Eloquent
 {
+
+    use ValidationTrait;
 
 	public function __construct($attributes = array())
 	{
@@ -14,12 +18,19 @@ class BaseModel extends \Eloquent
 		}
 	}
 
-	private function useSti()
+    /**
+     * @return bool
+     */
+    private function useSti()
 	{
 		return ($this->stiClassField && $this->stiBaseClass);
 	}
 
-	public function newQuery($excludeDeleted = TRUE)
+    /**
+     * @param bool $excludeDeleted
+     * @return mixed
+     */
+    public function newQuery($excludeDeleted = TRUE)
 	{
 		$builder = parent::newQuery($excludeDeleted);
 		// If I am using STI, and I am not the base class,
@@ -31,7 +42,11 @@ class BaseModel extends \Eloquent
 		return $builder;
 	}
 
-	public function newFromBuilder($attributes = array())
+    /**
+     * @param array $attributes
+     * @return mixed
+     */
+    public function newFromBuilder($attributes = array())
 	{
 		if ($this->useSti() && $attributes->{$this->stiClassField}) {
 			$class            = $attributes->{$this->stiClassField};
@@ -44,5 +59,4 @@ class BaseModel extends \Eloquent
 			return parent::newFromBuilder($attributes);
 		}
 	}
-
 }

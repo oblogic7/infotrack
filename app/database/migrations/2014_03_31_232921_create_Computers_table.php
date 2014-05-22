@@ -12,7 +12,7 @@ class CreateComputersTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('Computers', function(Blueprint $table) {
+		Schema::create('computers', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('name');
 			$table->string('cpu');
@@ -33,7 +33,7 @@ class CreateComputersTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('Computers');
+		Schema::drop('computers');
 	}
 
 }
