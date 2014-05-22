@@ -40,6 +40,7 @@
 <!-- ./wrapper -->
 
 <script src="/assets/js/min/app-ck.js" type="text/javascript"></script>
+@yield('scripts')
 
 </body>
 </html>

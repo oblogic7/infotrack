@@ -35,7 +35,7 @@
                     <i class="fa fa-users"></i> <span>Clients</span>
                 </a>
             </li>
-            <li treeview>
+            <li class="treeview">
                 <a href="#">
                     <i class="fa fa-desktop"></i>
                     <span>Assets</span>
@@ -46,7 +46,7 @@
                     <li><a href="#"><i class="fa fa-angle-double-right"></i> Software Licenses</a></li>
                 </ul>
             </li>
-            <li treeview>
+            <li class="treeview">
                 <a href="#">
                     <i class="fa fa-lock"></i>
                     <span>Authentication</span>
@@ -57,7 +57,7 @@
                     <li><a href="#"><i class="fa fa-angle-double-right"></i> YA Accounts</a></li>
                 </ul>
             </li>
-            <li treeview>
+            <li class="treeview">
                 <a href="#">
                     <i class="fa fa-cloud"></i>
                     <span>Hosting</span>
