@@ -69,7 +69,9 @@ class Parser
             $this->lexer->analyse($this->input, 'en');
         } catch (LexerException $e) {
             throw new ParserException(
-                sprintf('Lexer exception "%s" thrown for file %s', $e->getMessage(), $file), $e
+                sprintf('Lexer exception "%s" thrown for file %s', $e->getMessage(), $file),
+                0,
+                $e
             );
         }
 
@@ -77,7 +79,7 @@ class Parser
         while ('EOS' !== ($predicted = $this->predictTokenType())) {
             $node = $this->parseExpression();
 
-            if (null === $node || (is_string($node) && "\n" === $node)) {
+            if (null === $node || "\n" === $node) {
                 continue;
             }
 
@@ -125,15 +127,18 @@ class Parser
      */
     protected function expectTokenType($type)
     {
-        $types = (array)$type;
+        $types = (array) $type;
         if (in_array($this->predictTokenType(), $types)) {
             return $this->lexer->getAdvancedToken();
         }
 
         $token = $this->lexer->predictToken();
 
-        throw new ParserException(sprintf('Expected %s token, but got %s on line: %d%s',
-            implode(' or ', $types), $this->predictTokenType(), $token['line'],
+        throw new ParserException(sprintf(
+            'Expected %s token, but got %s on line: %d%s',
+            implode(' or ', $types),
+            $this->predictTokenType(),
+            $token['line'],
             $this->file ? ' in file: ' . $this->file : ''
         ));
     }
@@ -157,13 +162,11 @@ class Parser
     /**
      * Returns next token type without real input reading (prediction).
      *
-     * @param integer $number Number of tokens to predict
-     *
      * @return string
      */
-    protected function predictTokenType($number = 1)
+    protected function predictTokenType()
     {
-        $token = $this->lexer->predictToken($number);
+        $token = $this->lexer->predictToken();
 
         return $token['type'];
     }
@@ -220,7 +223,7 @@ class Parser
     {
         $token = $this->expectTokenType('Feature');
 
-        $title = trim($token['value']) ? : null;
+        $title = trim($token['value']) ?: null;
         $description = null;
         $tags = $this->popTags();
         $background = null;
@@ -307,7 +310,8 @@ class Parser
 
         // Parse description and steps
         $steps = array();
-        while (in_array($this->predictTokenType(), array('Step', 'Newline', 'Text', 'Comment'))) {
+        $allowedTokenTypes = array('Step', 'Newline', 'Text', 'Comment');
+        while (in_array($this->predictTokenType(), $allowedTokenTypes)) {
             $node = $this->parseExpression();
 
             if ($node instanceof StepNode) {
@@ -321,7 +325,7 @@ class Parser
                 continue;
             }
 
-            if (is_string($node) && "\n" === $node) {
+            if ("\n" === $node) {
                 continue;
             }
 
@@ -378,7 +382,7 @@ class Parser
                 continue;
             }
 
-            if (is_string($node) && "\n" === $node) {
+            if ("\n" === $node) {
                 continue;
             }
 
@@ -441,7 +445,7 @@ class Parser
                 continue;
             }
 
-            if (is_string($node) && "\n" === $node) {
+            if ("\n" === $node) {
                 continue;
             }
 
@@ -516,19 +520,7 @@ class Parser
 
         $keyword = $token['keyword'];
 
-        $table = array();
-        while (in_array($tokenType = $this->predictTokenType(), array('TableRow', 'Newline', 'Comment'))) {
-            if ('Comment' === $tokenType || 'Newline' === $tokenType) {
-                $this->acceptTokenType($tokenType);
-                continue;
-            }
-
-            $token = $this->expectTokenType('TableRow');
-
-            $table[$token['line']] = $token['columns'];
-        }
-
-        return new ExampleTableNode($table, $keyword);
+        return new ExampleTableNode($this->parseTableRows(), $keyword);
     }
 
     /**
@@ -538,19 +530,7 @@ class Parser
      */
     protected function parseTable()
     {
-        $table = array();
-        while (in_array($predicted = $this->predictTokenType(), array('TableRow', 'Newline', 'Comment'))) {
-            if ('Comment' === $predicted || 'Newline' === $predicted) {
-                $this->acceptTokenType($predicted);
-                continue;
-            }
-
-            $token = $this->expectTokenType('TableRow');
-
-            $table[$token['line']] = $token['columns'];
-        }
-
-        return new TableNode($table);
+        return new TableNode($this->parseTableRows());
     }
 
     /**
@@ -662,5 +642,27 @@ class Parser
         }
 
         return $this->parseExpression();
+    }
+
+    /**
+     * Parses the rows of a table
+     *
+     * @return string[][]
+     */
+    private function parseTableRows()
+    {
+        $table = array();
+        while (in_array($predicted = $this->predictTokenType(), array('TableRow', 'Newline', 'Comment'))) {
+            if ('Comment' === $predicted || 'Newline' === $predicted) {
+                $this->acceptTokenType($predicted);
+                continue;
+            }
+
+            $token = $this->expectTokenType('TableRow');
+
+            $table[$token['line']] = $token['columns'];
+        }
+
+        return $table;
     }
 }

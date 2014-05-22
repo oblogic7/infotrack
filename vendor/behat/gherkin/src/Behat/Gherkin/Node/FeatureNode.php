@@ -26,7 +26,7 @@ class FeatureNode implements KeywordNodeInterface, TaggedNodeInterface
      */
     private $description;
     /**
-     * @var array
+     * @var string[]
      */
     private $tags = array();
     /**
@@ -59,7 +59,7 @@ class FeatureNode implements KeywordNodeInterface, TaggedNodeInterface
      *
      * @param null|string         $title
      * @param null|string         $description
-     * @param array               $tags
+     * @param string[]            $tags
      * @param null|BackgroundNode $background
      * @param ScenarioInterface[] $scenarios
      * @param string              $keyword
@@ -77,8 +77,7 @@ class FeatureNode implements KeywordNodeInterface, TaggedNodeInterface
         $language,
         $file,
         $line
-    )
-    {
+    ) {
         $this->title = $title;
         $this->description = $description;
         $this->tags = $tags;
@@ -117,7 +116,7 @@ class FeatureNode implements KeywordNodeInterface, TaggedNodeInterface
      */
     public function hasDescription()
     {
-        return $this->description;
+        return !empty($this->description);
     }
 
     /**
@@ -155,7 +154,7 @@ class FeatureNode implements KeywordNodeInterface, TaggedNodeInterface
     /**
      * Returns feature tags.
      *
-     * @return array
+     * @return string[]
      */
     public function getTags()
     {

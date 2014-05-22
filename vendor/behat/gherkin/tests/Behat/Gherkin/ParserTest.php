@@ -3,11 +3,10 @@
 namespace Tests\Behat\Gherkin;
 
 use Behat\Gherkin\Node\FeatureNode;
-
-use Behat\Gherkin\Lexer,
-    Behat\Gherkin\Parser,
-    Behat\Gherkin\Keywords\ArrayKeywords,
-    Behat\Gherkin\Loader\YamlFileLoader;
+use Behat\Gherkin\Lexer;
+use Behat\Gherkin\Parser;
+use Behat\Gherkin\Keywords\ArrayKeywords;
+use Behat\Gherkin\Loader\YamlFileLoader;
 
 class ParserTest extends \PHPUnit_Framework_TestCase
 {
@@ -103,6 +102,7 @@ class ParserTest extends \PHPUnit_Framework_TestCase
     protected function parseFixture($fixture)
     {
         $file = __DIR__ . '/Fixtures/features/' . $fixture;
+
         return array($this->getGherkinParser()->parse(file_get_contents($file), $file));
     }
 

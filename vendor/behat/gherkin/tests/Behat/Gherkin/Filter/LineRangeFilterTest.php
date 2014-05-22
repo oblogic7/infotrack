@@ -3,13 +3,10 @@
 namespace Tests\Behat\Gherkin\Filter;
 
 use Behat\Gherkin\Filter\LineRangeFilter;
-use Behat\Gherkin\Node;
 use Behat\Gherkin\Node\ExampleTableNode;
 use Behat\Gherkin\Node\FeatureNode;
 use Behat\Gherkin\Node\OutlineNode;
 use Behat\Gherkin\Node\ScenarioNode;
-
-require_once 'FilterTest.php';
 
 class LineRangeFilterTest extends FilterTest
 {
@@ -59,8 +56,10 @@ class LineRangeFilterTest extends FilterTest
         $outline = new OutlineNode(null, array(), array(), new ExampleTableNode(array(), null), null, 3);
 
         $filter = new LineRangeFilter($filterMinLine, $filterMaxLine);
-        $this->assertEquals($expectedNumberOfMatches, intval($filter->isScenarioMatch($scenario))
-            + intval($filter->isScenarioMatch($outline)));
+        $this->assertEquals(
+            $expectedNumberOfMatches,
+            intval($filter->isScenarioMatch($scenario)) + intval($filter->isScenarioMatch($outline))
+        );
     }
 
     public function testFilterFeatureScenario()

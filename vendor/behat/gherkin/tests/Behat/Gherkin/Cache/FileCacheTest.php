@@ -45,6 +45,14 @@ class FileCacheTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($feature, $featureRead);
     }
 
+    public function testBrokenCacheRead()
+    {
+        $this->setExpectedException('Behat\Gherkin\Exception\CacheException');
+
+        touch($this->path . '/412/' . md5('broken_feature') . '.feature.cache');
+        $this->cache->read('broken_feature');
+    }
+
     protected function setUp()
     {
         $this->cache = new FileCache($this->path = sys_get_temp_dir() . '/gherkin-test');
@@ -53,7 +61,7 @@ class FileCacheTest extends \PHPUnit_Framework_TestCase
     protected function tearDown()
     {
         foreach (glob($this->path . '/*.feature.cache') as $file) {
-            unlink((string)$file);
+            unlink((string) $file);
         }
     }
 }

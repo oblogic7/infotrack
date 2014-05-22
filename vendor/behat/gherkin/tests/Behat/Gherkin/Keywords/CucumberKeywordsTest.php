@@ -3,11 +3,8 @@
 namespace Tests\Behat\Gherkin\Keywords;
 
 use Behat\Gherkin\Keywords\CucumberKeywords;
-use Behat\Gherkin\Node;
 use Behat\Gherkin\Node\StepNode;
 use Symfony\Component\Yaml\Yaml;
-
-require_once 'KeywordsTest.php';
 
 class CucumberKeywordsTest extends KeywordsTest
 {
@@ -18,7 +15,7 @@ class CucumberKeywordsTest extends KeywordsTest
 
     protected function getKeywordsArray()
     {
-        return Yaml::parse(__DIR__ . '/../Fixtures/i18n.yml');
+        return Yaml::parse(file_get_contents(__DIR__ . '/../Fixtures/i18n.yml'));
     }
 
     protected function getSteps($keywords, $text, &$line)
