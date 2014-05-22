@@ -17,17 +17,41 @@
 |-----------------------------------
 */
 
-Route::get('test', function () {
+Route::get(
+    'test',
+    function () {
 
-});
+    }
+);
 
-Route::get('/', function() {
-	return View::make('layouts.master');
-});
+Route::get(
+    '/login',
+    function () {
+        return View::make(
+            'pages.login',
+            array(
+                'authUrl' => Auth::getAuthUrl()
+            )
+        );
+    }
+);
+
+Route::group(
+    array('before' => array('google-finish-authentication', 'auth')),
+    function () {
+        Route::get(
+            '/',
+            function () {
+                return View::make('pages.home');
+            }
+        );
+    }
+);
 
 Route::resource('clients', 'ClientsController');
 Route::resource('clients.services', 'ClientServicesController');
 Route::resource('clients.contacts', 'ClientContactsController');
+Route::resource('clients.auth', 'ClientAuthDetailsController');
 
 Route::resource('software', 'SoftwareTitlesController');
 Route::resource('software.licenses', 'SoftwareLicensesController');
