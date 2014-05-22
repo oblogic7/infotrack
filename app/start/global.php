@@ -51,6 +51,16 @@ App::error(function(Exception $exception, $code)
 	Log::error($exception);
 });
 
+App::error(function(\Dryval\ValidationException $e)
+    {
+        try {
+            $message = new \Illuminate\Support\MessageBag(['message' => $e->getMessages()->first()]);
+            return \Redirect::back()->withErrors($message)->withInput(\Input::except('password'));
+        } catch (Exception $exception) {
+            return \Redirect::to('/')->withErrors(['message' => $e->getMessages()->first()])->withInput(\Input::except('password'));
+        }
+    });
+
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler
@@ -82,3 +92,8 @@ require app_path().'/filters.php';
 
 
 App::bind('YA\Contracts\ClientRepositoryInterface', 'YA\Repositories\ClientRepository');
+App::bind('YA\Contracts\ActivityLogRepositoryInterface', 'YA\Repositories\ActivityLogRepository');
+App::bind('YA\Contracts\ServiceRepositoryInterface', 'YA\Repositories\ServiceRepository');
+App::bind('YA\Contracts\YAServiceFactoryInterface', 'YA\Factories\YAServiceFactory');
+App::bind('YA\Contracts\ClientContactRepositoryInterface', 'YA\Repositories\ClientContactRepository');
+App::bind('YA\Contracts\ClientAuthRepositoryInterface', 'YA\Repositories\ClientAuthRepository');
