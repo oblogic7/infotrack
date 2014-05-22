@@ -2,6 +2,13 @@
 
 class ClientContactsController extends \BaseController {
 
+    public function __construct(
+        \YA\Contracts\ClientContactRepositoryInterface $contacts,
+        \YA\Contracts\ClientRepositoryInterface $clients) {
+        $this->contacts = $contacts;
+        $this->clients = $clients;
+    }
+
 	/**
 	 * Display a listing of clientcontacts
 	 *
@@ -9,38 +16,26 @@ class ClientContactsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$clientcontacts = Clientcontact::all();
-
-		return View::make('client.contacts.index', compact('clientcontacts'));
+		return View::make('clients.contacts.index')->with(array('contacts' => $this->contacts->all()));
 	}
 
-	/**
-	 * Show the form for creating a new clientcontact
-	 *
-	 * @return Response
-	 */
-	public function create()
+
+	public function create($client_id)
 	{
-		return View::make('client.contacts.create');
+        $client = $this->clients->find($client_id);
+
+		return View::make('clients.contacts.create')->with(['client' => $client]);
 	}
 
-	/**
-	 * Store a newly created clientcontact in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
+	public function store($client_id)
 	{
-		$validator = Validator::make($data = Input::all(), Clientcontact::$rules);
+        $input = Input::all();
 
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
+		$contact = $this->contacts->create($input);
 
-		Clientcontact::create($data);
+        $this->clients->attachContact($client_id, $contact);
 
-		return Redirect::route('clientcontacts.index');
+		return Redirect::route('clients.show', $client_id);
 	}
 
 	/**
@@ -53,7 +48,7 @@ class ClientContactsController extends \BaseController {
 	{
 		$clientcontact = Clientcontact::findOrFail($id);
 
-		return View::make('client.contacts.show', compact('clientcontact'));
+		return View::make('clients.contacts.show', compact('clientcontact'));
 	}
 
 	/**
@@ -66,7 +61,7 @@ class ClientContactsController extends \BaseController {
 	{
 		$clientcontact = Clientcontact::find($id);
 
-		return View::make('client.contacts.edit', compact('clientcontact'));
+		return View::make('clients.contacts.edit', compact('clientcontact'));
 	}
 
 	/**
@@ -88,7 +83,7 @@ class ClientContactsController extends \BaseController {
 
 		$clientcontact->update($data);
 
-		return Redirect::route('client.contacts.index');
+		return Redirect::route('clients.contacts.index');
 	}
 
 	/**
@@ -101,7 +96,7 @@ class ClientContactsController extends \BaseController {
 	{
 		Clientcontact::destroy($id);
 
-		return Redirect::route('client.contacts.index');
+		return Redirect::route('clients.contacts.index');
 	}
 
 }
