@@ -12,4 +12,7 @@ class AuthDetailType extends \Eloquent {
 	// Don't forget to fill this array
 	protected $fillable = [];
 
+    public function activity() {
+        return $this->hasMany('YA\ActivityLog');
+    }
 }

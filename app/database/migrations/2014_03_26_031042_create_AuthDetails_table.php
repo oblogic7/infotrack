@@ -14,7 +14,7 @@ class CreateAuthDetailsTable extends Migration {
 	{
 		Schema::create('auth_details', function(Blueprint $table) {
 			$table->increments('id');
-			$table->string('description');
+			$table->string('name');
 			$table->string('username');
 			$table->string('password');
 			$table->string('url');
