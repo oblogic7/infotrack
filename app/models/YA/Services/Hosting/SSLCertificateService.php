@@ -5,31 +5,30 @@ namespace YA\Services\Hosting;
 use Dryval\ValidationTrait;
 use YA\Services\BaseService;
 
-class DomainService extends BaseService {
+class SSLCertificateService extends BaseService {
+
+    use ValidationTrait;
 
     protected $table = 'services';
     protected $stiBaseClass = 'YA\Services\BaseService';
 
     protected static $rules = [
         'label' => 'required',
-        'provider' => 'required'
+        'expires' => 'required|date'
     ];
 
     protected static $messages = [
         'label.required' => 'Domain name is required.',
-        'provider.required' => 'Please enter a provider.'
+        'expires.required' => 'Expiration date is required.'
     ];
 
-    protected $fillable = [
-        'label',
-        'provider'
-    ];
+    protected $fillable = ['label', 'expires'];
 
     public function __construct($attributes = array()) {
 
         parent::__construct($attributes);
 
-        $this->type = 'Domain Registration';
+        $this->type = 'SSL Certificate';
     }
 
 }

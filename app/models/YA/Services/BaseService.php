@@ -3,18 +3,23 @@
 namespace YA\Services;
 
 use YA\BaseModel;
+use YA\Observers\YAServiceObserver;
 
 class BaseService extends BaseModel {
 
-	protected $table = 'services';
-	protected $stiClassField = 'service_class';
-	protected $stiBaseClass = 'YA\Services\BaseService';
+    protected $table = 'services';
+    protected $stiClassField = 'service_class';
+    protected $stiBaseClass = 'YA\Services\BaseService';
 
-	public $rules = array();
-	public $fillable = array();
+    public static function boot() {
 
-	public function client() {
-		return $this->hasOne('YA\Client');
-	}
+        parent::boot();
+        static::observe(new YAServiceObserver());
+
+    }
+
+    public function client() {
+        return $this->hasOne('YA\Client');
+    }
 
 }
