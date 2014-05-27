@@ -2,6 +2,7 @@
 <aside class="left-side sidebar-offcanvas">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
+        @if(Auth::check())
         <!-- Sidebar user panel -->
         <!--		<div class="user-panel">-->
         <!--			<div class="pull-left image">-->
@@ -12,7 +13,6 @@
         <!--				<a href="#"><i class="fa fa-circle text-success"></i> Online</a>-->
         <!--			</div>-->
         <!--		</div>-->
-
         <!-- search form -->
         <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
@@ -161,6 +161,7 @@
                 </ul>
             </li>-->
         </ul>
+        @endif
     </section>
     <!-- /.sidebar -->
 </aside>

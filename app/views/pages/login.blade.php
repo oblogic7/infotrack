@@ -1,7 +1,9 @@
-@extends('layouts.master')
+@extends('layouts.bare')
 
 @section('content')
 
-<a class='login' href='{{ $authUrl }}'>Connect Me!</a>
+<div class="col-sm-4 col-sm-offset-4 text-center">
+    <a class="google-btn" href='{{ $authUrl }}'></a>
+</div>
 
 @stop

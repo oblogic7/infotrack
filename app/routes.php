@@ -17,47 +17,113 @@
 |-----------------------------------
 */
 
-Route::get(
-    'test',
-    function () {
-
-    }
-);
 
 Route::get(
     '/login',
-    function () {
-        return View::make(
-            'pages.login',
-            array(
-                'authUrl' => Auth::getAuthUrl()
-            )
-        );
-    }
+    [
+        'as' => 'login',
+        function () {
+            return View::make(
+                'pages.login',
+                array(
+                    'authUrl' => '/google/authorize'
+                )
+            );
+        }
+    ]
 );
 
+
+
+/**
+ * Secure Routes
+ */
+
 Route::group(
-    array('before' => array('google-finish-authentication', 'auth')),
+
+    array('before' => array('auth')),
     function () {
+        Route::get(
+            'test',
+            function () {
+
+            }
+        );
         Route::get(
             '/',
             function () {
                 return View::make('pages.home');
             }
         );
+
+        Route::get(
+            '/logout',
+            [
+                'as' => 'logout',
+                function () {
+                    Auth::logout();
+
+                    return Redirect::to('/');
+                }
+            ]
+        );
+
+        Route::resource('clients', 'ClientsController');
+        Route::resource('clients.services', 'ClientServicesController');
+        Route::resource('clients.contacts', 'ClientContactsController');
+        Route::resource('clients.auth', 'ClientAuthDetailsController');
+
+        Route::resource('software', 'SoftwareTitlesController');
+        Route::resource('software.licenses', 'SoftwareLicensesController');
+
+        Route::resource('credentials', 'AuthDetailsController');
+        Route::resource('credentials.type', 'AuthDetailTypesController', array('only' => array('show')));
+
+        Route::resource('credentials/type', 'AuthDetailTypesController', array('except' => array('show')));
+
     }
 );
 
-Route::resource('clients', 'ClientsController');
-Route::resource('clients.services', 'ClientServicesController');
-Route::resource('clients.contacts', 'ClientContactsController');
-Route::resource('clients.auth', 'ClientAuthDetailsController');
+Route::group(
+    ['prefix' => 'google'],
+    function () {
 
-Route::resource('software', 'SoftwareTitlesController');
-Route::resource('software.licenses', 'SoftwareLicensesController');
+        Route::get(
+            'authorize',
+            function () {
+                return OAuth::authorize('google');
+            }
+        );
 
-Route::resource('credentials', 'AuthDetailsController');
-Route::resource('credentials.type', 'AuthDetailTypesController', array('only' => array('show')));
+        Route::get(
+            'login',
+            function () {
+                try {
+                    OAuth::login(
+                        'google',
+                        function ($user, $details) {
+                            $user->nickname = $details->nickname;
+                            $user->name = $details->firstName . ' ' . $details->lastName;
+                            $user->given_name = $details->firstName;
+                            $user->family_name = $details->lastName;
+                            $user->profile_image = $details->imageUrl;
+                            $user->save();
+                        }
+                    );
+                } catch (ApplicationRejectedException $e) {
+                    // User rejected application
+                } catch (InvalidAuthorizationCodeException $e) {
+                    // Authorization was attempted with invalid
+                    // code,likely forgery attempt
+                }
 
-Route::resource('credentials/type', 'AuthDetailTypesController', array('except' => array('show')));
+                // Current user is now available via Auth facade
+                $user = Auth::user();
+
+                return Redirect::intended();
+            }
+        );
+    }
+);
+
 

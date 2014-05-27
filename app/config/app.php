@@ -81,7 +81,7 @@ return array(
 	'providers' => array(
 
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
-        'Themonkeys\LaravelGoogleAuth\LaravelGoogleAuthServiceProvider',
+		'Illuminate\Auth\AuthServiceProvider',
 		'Illuminate\Cache\CacheServiceProvider',
 		'Illuminate\Session\CommandsServiceProvider',
 		'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
@@ -108,8 +108,9 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
         'Prologue\Alerts\AlertsServiceProvider',
+        'AdamWathan\EloquentOAuth\EloquentOAuthServiceProvider'
 
-	),
+    ),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -175,6 +176,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
         'Alert'           => 'Prologue\Alerts\Facades\Alert',
+        'OAuth'           => 'AdamWathan\EloquentOAuth\Facades\OAuth',
 
 	),
 
