@@ -1,4 +1,4 @@
-@extends('layouts.bare')
+@extends('layouts.master')
 
 @section('content')
 
@@ -30,11 +30,6 @@
                 </div>
             </div>
         </form>
-    </div>
-    <div class="row">
-        <pre>
-            {{var_dump(Auth::user()) }}
-        </pre>
     </div>
 </section>
 
