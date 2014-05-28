@@ -15,7 +15,7 @@ class ClientsController extends \BaseController {
      */
     public function index() {
         return View::make('clients.index')
-            ->with(['clients' => $this->clients->withAllData()]);
+            ->with(['clients' => $this->clients->all()]);
     }
 
     /**
@@ -51,7 +51,7 @@ class ClientsController extends \BaseController {
      */
     public function show($id) {
 
-        return View::make('clients.show')->with(['client' => $this->clients->find($id)]);
+        return View::make('clients.show')->with(['client' => $this->clients->withAllData($id)]);
 
     }
 

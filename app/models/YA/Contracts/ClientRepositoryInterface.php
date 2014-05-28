@@ -11,7 +11,7 @@ namespace YA\Contracts;
 
 interface ClientRepositoryInterface extends BaseRepositoryInterface {
 
-    public function withAllData();
+    public function withAllData($client_id);
 
     public function attachService($client_id, $service);
     public function attachContact($client_id, $contact);

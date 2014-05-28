@@ -15,11 +15,10 @@ class ClientRepository extends AbstractRepository implements ClientRepositoryInt
 
     protected $modelClassName = '\YA\Client';
 
-    public function withAllData() {
+    public function withAllData($client_id) {
 
-        return Client::orderBy('name', 'asc')
-            ->with(array('contacts', 'credentials', 'services', 'activity'))
-            ->get();
+        return Client::with(['contacts', 'credentials', 'services', 'activity', 'contactActivity', 'serviceActivity', 'authActivity'])
+            ->where('id', $client_id)->firstOrFail();
 
     }
 
