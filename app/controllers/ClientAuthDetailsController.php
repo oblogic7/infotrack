@@ -29,6 +29,11 @@ class ClientAuthDetailsController extends \BaseController {
 
         $client = $this->clients->find($client_id);
 
+        // Validate that password fields match before creating entity.
+        if (Input::get('password') != Input::get('password_confirm')) {
+            throw new \Dryval\ValidationException('Password fields must match.');
+        }
+
 		$auth = $this->auth->create($input);
 
         $this->clients->attachCredentials($client_id, $auth);
