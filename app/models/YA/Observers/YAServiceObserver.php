@@ -14,6 +14,8 @@ class YAServiceObserver {
 
     public function __construct() {
         $this->activityLog = new ActivityLogRepository();
+        $this->user = \Auth::user();
+
     }
 
     public function created($service) {
@@ -22,7 +24,9 @@ class YAServiceObserver {
             [
                 'message' => 'Created ' . $service->type . ' (' . $service->label . ')',
                 'message_type' => 'system',
-                'service_id' => $service->id
+                'service_id' => $service->id,
+                'user_id' => $this->user->id
+
             ]
         );
     }

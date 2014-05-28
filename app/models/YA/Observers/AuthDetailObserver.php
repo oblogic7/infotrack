@@ -18,12 +18,14 @@ class AuthDetailObserver {
     }
 
     public function created($auth) {
-        $this->activityLog->create([
+        $this->activityLog->create(
+            [
                 'message' => 'Credentials added for ' . $auth->name . '.',
                 'message_type' => 'system',
                 'auth_detail_id' => $auth->id,
                 'user_id' => $this->user->id
-            ]);
+            ]
+        );
 
     }
 } 

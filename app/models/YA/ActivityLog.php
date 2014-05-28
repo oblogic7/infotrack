@@ -18,8 +18,8 @@ class ActivityLog extends \Eloquent {
 
     public $table = "activity_log";
 
-    public function user() {
-        return $this->belongsTo('YA\User');
+    public function created_by() {
+        return $this->belongsTo('\User', 'user_id', 'id');
     }
 
 }

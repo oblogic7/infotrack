@@ -15,17 +15,19 @@ class ClientObserver {
 
     public function __construct() {
         $this->activityLog = new ActivityLogRepository();
+        $this->user = \Auth::user();
+
     }
 
     public function created($client) {
 
-        $this->activityLog->create(
+       $activityLog = $this->activityLog->create(
             [
                 'message' => $client->name . ' created.',
                 'message_type' => 'system',
-                'client_id' => $client->id
-            ]
-        );
-
+                'client_id' => $client->id,
+                'user_id' => $this->user->id
+            ]);
+        $this->user->activity->save($activityLog);
     }
 } 
