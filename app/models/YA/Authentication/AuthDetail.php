@@ -12,13 +12,10 @@ class AuthDetail extends BaseModel {
         'name' => 'required',
         'username' => 'required',
         'password' => 'required',
-        'password_confirm' => 'required|same:password',
         'url' => 'required|url'
     ];
 
-    protected static $messages = [
-        'password_confirm.same' => "Passwords must match."
-    ];
+    protected static $messages = [];
 
     // Don't forget to fill this array
     protected $fillable = ['name', 'username', 'password', 'url', 'notes'];
