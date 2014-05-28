@@ -20,7 +20,7 @@
     <div class="row">
 
         <form role="form" class="form-horizontal" action="{{ URL::route('clients.contacts.store', $client->id) }}" method="POST">
-            <div class="col-xs-6">
+            <div class="col-xs-12">
                 <div class="box box-primary">
                     <!-- form start -->
                     <div class="box-body">
@@ -50,7 +50,7 @@
                                 <label class="col-md-4 control-label" for="phone">Phone</label>
 
                                 <div class="col-md-5">
-                                    <input id="phone" name="phone" type="phone" placeholder="" class="form-control input-md" value="{{ Input::old('type') }}">
+                                    <input id="phone" name="phone" type="phone" placeholder="" class="form-control input-md" value="{{ Input::old('phone') }}">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -60,9 +60,9 @@
                                 <label class="col-md-4 control-label" for="type">Type</label>
                                 <div class="col-md-4">
                                     <select id="type" name="type" class="form-control">
-                                        <option value="General Contact">General Contact</option>
-                                        <option value="Technical Contact">Technical Contact</option>
-                                        <option value="Billing Contact">Billing Contact</option>
+                                        <option value="General Contact" @if(Input::old('type') == 'General Contact')selected@endif>General Contact</option>
+                                        <option value="Technical Contact" @if(Input::old('type') == 'Technical Contact')selected@endif>Technical Contact</option>
+                                        <option value="Billing Contact" @if(Input::old('type') == 'Billing Contact')selected@endif>Billing Contact</option>
                                     </select>
                                 </div>
                             </div>

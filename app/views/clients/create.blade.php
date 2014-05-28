@@ -36,7 +36,7 @@
                                 <label class="col-md-4 control-label" for="name">Client Name</label>
 
                                 <div class="col-md-5">
-                                    <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('name') }}">
+                                    <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('name') }}" autofocus>
 
                                 </div>
                             </div>

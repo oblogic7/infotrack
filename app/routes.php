@@ -102,7 +102,7 @@ Route::group(
                     OAuth::login(
                         'google',
                         function ($user, $details) {
-                            $user->nickname = $details->nickname;
+                            $user->email = $details->nickname;
                             $user->name = $details->firstName . ' ' . $details->lastName;
                             $user->given_name = $details->firstName;
                             $user->family_name = $details->lastName;

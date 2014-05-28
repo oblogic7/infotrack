@@ -20,7 +20,7 @@
     <div class="row">
 
         <form role="form" class="form-horizontal" action="{{ URL::route('clients.services.store', [$client->id, 'type' => 'domain']) }}" method="POST">
-            <div class="col-xs-12 col-sm-8 col-lg-6">
+            <div class="col-xs-12">
                 <div class="box box-primary">
                     <!-- form start -->
                     <div class="box-body">

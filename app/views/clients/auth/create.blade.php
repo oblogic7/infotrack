@@ -20,17 +20,17 @@
     <div class="row">
 
         <form role="form" class="form-horizontal" action="{{ URL::route('clients.auth.store', [$client->id]) }}" method="POST">
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12">
                 <div class="box box-primary">
                     <!-- form start -->
                     <div class="box-body">
                         <fieldset>
                             <!-- Text input-->
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="label">Website Name</label>
+                                <label class="col-md-4 control-label" for="name">Website Name</label>
 
                                 <div class="col-md-5">
-                                    <input id="label" name="label" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('label') }}">
+                                    <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('name') }}">
                                     <span class="help-block">Enter the name of the website or service for which this login is used.</span>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                                 <label class="col-md-4 control-label" for="password_confirm">Confirm Password</label>
 
                                 <div class="col-md-5">
-                                    <input id="password_confirm" name="password" type="password" placeholder="" class="form-control input-md">
+                                    <input id="password_confirm" name="password_confirm" type="password" placeholder="" class="form-control input-md">
                                 </div>
                             </div>
 

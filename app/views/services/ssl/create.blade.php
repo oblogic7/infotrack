@@ -22,7 +22,7 @@
 
         <form role="form" class="form-horizontal"
               action="{{ URL::route('clients.services.store', [$client->id, 'type' => 'ssl']) }}" method="POST">
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12">
                 <div class="box box-primary">
                     <!-- form start -->
                     <div class="box-body">
