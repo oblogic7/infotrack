@@ -2,11 +2,7 @@
 
 namespace YA;
 
-use Dryval\ValidationTrait;
-
-class ClientContact extends \Eloquent {
-
-    use ValidationTrait;
+class ClientContact extends BaseModel {
 
 	// Add your validation rules here
 	public static $rules = [
@@ -18,7 +14,7 @@ class ClientContact extends \Eloquent {
 	protected $fillable = ['name', 'email', 'phone', 'type', 'primary'];
 
     public static function boot() {
-
+        parent::boot();
     }
 
     public function activity() {

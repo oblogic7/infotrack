@@ -2,7 +2,6 @@
 
 namespace YA\Services\Hosting;
 
-use Dryval\ValidationTrait;
 use YA\Services\BaseService;
 
 class DomainService extends BaseService {

@@ -15,6 +15,8 @@ class Client extends BaseModel {
     ];
 
     public static function boot() {
+        parent::boot();
+
         static::observe(new ClientObserver());
     }
 

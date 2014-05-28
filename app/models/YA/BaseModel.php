@@ -2,6 +2,7 @@
 
 namespace YA;
 
+
 use Dryval\ValidationTrait;
 
 class BaseModel extends \Eloquent

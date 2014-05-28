@@ -2,26 +2,29 @@
 
 namespace YA\Authentication;
 
+use YA\BaseModel;
 use YA\Observers\AuthDetailObserver;
 
-class AuthDetail extends \Eloquent {
+class AuthDetail extends BaseModel {
 
     // Add your validation rules here
-    public static $rules = [
+    protected static $rules = [
+        'name' => 'required',
         'username' => 'required',
         'password' => 'required',
         'password_confirm' => 'required|same:password',
         'url' => 'required|url'
     ];
 
-    public static $messages = [
+    protected static $messages = [
         'password_confirm.same' => "Passwords must match."
     ];
 
     // Don't forget to fill this array
-    protected $fillable = ['label', 'username', 'password', 'url', 'notes'];
+    protected $fillable = ['name', 'username', 'password', 'url', 'notes'];
 
     public static function boot() {
+        parent::boot();
         static::observe(new AuthDetailObserver());
     }
 
