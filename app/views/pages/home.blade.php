@@ -18,7 +18,7 @@
                             <!-- Text input-->
                             <div class="form-group">
                                 <div class="col-md-12">
-                                    <input id="name" name="name" type="text" placeholder="Start here..." class="form-control input-md" value="{{ Input::old('name') }}" required="">
+                                    <input id="name" class="typeahead" data-typeahead-source="clients" name="name" type="text" placeholder="Type to search..." class="form-control input-md" value="{{ Input::old('name') }}" required="">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -36,9 +36,5 @@
 @stop
 
 @section('scripts')
-    <script>
-        $('document').ready(function() {
-            $("[data-toggle='offcanvas']").trigger('click');
-        });
-    </script>
+
 @stop
