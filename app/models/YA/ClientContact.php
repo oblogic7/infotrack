@@ -2,6 +2,8 @@
 
 namespace YA;
 
+use YA\Observers\ClientContactObserver;
+
 class ClientContact extends BaseModel {
 
 	// Add your validation rules here
@@ -15,6 +17,8 @@ class ClientContact extends BaseModel {
 
     public static function boot() {
         parent::boot();
+
+        static::observe(new ClientContactObserver());
     }
 
     public function activity() {

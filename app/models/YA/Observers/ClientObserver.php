@@ -8,7 +8,6 @@
 
 namespace YA\Observers;
 
-
 use YA\Repositories\ActivityLogRepository;
 
 class ClientObserver {
