@@ -9,10 +9,14 @@
 namespace YA\Repositories;
 
 
+use YA\Authentication\AuthDetail;
 use YA\Contracts\ClientAuthRepositoryInterface;
 
 class ClientAuthRepository extends AbstractRepository implements ClientAuthRepositoryInterface {
 
     protected $modelClassName = '\YA\Authentication\AuthDetail';
 
-} 
+    public function typeahead() {
+        return AuthDetail::with('client')->get();
+    }
+}

@@ -82,6 +82,7 @@ Route::group(
         Route::resource('credentials/type', 'AuthDetailTypesController', array('except' => array('show')));
 
         Route::get('typeahead/clients', 'TypeAheadController@clients');
+        Route::get('typeahead/auth', 'TypeAheadController@auth');
     }
 );
 
