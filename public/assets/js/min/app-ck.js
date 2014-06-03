@@ -36335,10 +36335,11 @@ $(window).load(function(){
     var clients = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
+        // `states` is an array of state names defined in "The Basics"
         prefetch: '/typeahead/clients'
     });
 
-    // kicks off the loading/processing of `local` and `prefetch`
+// kicks off the loading/processing of `local` and `prefetch`
     clients.initialize();
 
     $('.typeahead').typeahead({
@@ -36349,11 +36350,16 @@ $(window).load(function(){
         {
             name: 'clients',
             displayKey: 'name',
+            // `ttAdapter` wraps the suggestion engine in an adapter that
+            // is compatible with the typeahead jQuery plugin
             source: clients.ttAdapter(),
             templates: {
                 header: '<h3>Clients</h3>',
 //                suggestion: Handlebars.compile('<p><strong>{{name}}</strong></p>')
             }
+
+        }).bind('typeahead:selected', function(obj, datum, name) {
+           window.location = datum.url;
 
         });
 

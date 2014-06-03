@@ -14,6 +14,12 @@ class TypeAheadController extends BaseController {
 
     public function clients() {
 
-        return $this->clients->all(['name']);
+        $clients = $this->clients->all(['name', 'id']);
+
+        foreach($clients as &$client) {
+            $client->url = \URL::route('clients.show', $client->id);
+        }
+
+        return $clients;
     }
 } 
