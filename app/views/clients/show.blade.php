@@ -222,9 +222,9 @@
                     <h3 class="box-title"><i class="fa fa-pencil-square-o"></i> Log</h3>
                     <div class="box-tools pull-right">
                         <div class="btn-group" data-toggle="btn-toggle" >
-                            <button type="button" class="btn btn-default btn-sm active" data-toggle="tooltip" title="All Messages">All</button>
-                            <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="System Messages"><i class="fa fa-gear"></i></button>
-                            <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="User Messages"><i class="fa fa-user"></i></button>
+                            <button type="button" class="filter btn btn-default btn-sm active" data-toggle="tooltip" title="All Messages" data-filter="">All</button>
+                            <button type="button" class="filter btn btn-default btn-sm" data-toggle="tooltip" title="System Messages" data-filter="system"><i class="fa fa-gear"></i></button>
+                            <button type="button" class="filter btn btn-default btn-sm" data-toggle="tooltip" title="User Messages" data-filter="user"><i class="fa fa-user"></i></button>
                         </div>
                     </div>
                 </div>
