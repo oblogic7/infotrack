@@ -9,32 +9,21 @@
 namespace YA\Repositories;
 
 use YA\ActivityLog;
+use YA\Contracts\ActivityLogRepositoryInterface;
 
 class ActivityLogRepository extends AbstractRepository implements ActivityLogRepositoryInterface {
 
-    public function all($columns = ['*']) {
-        // TODO: Implement all() method.
-    }
+    protected $modelClassName = '\YA\ActivityLog';
 
-    public function paginate($perPage = 15, $columns = array('*')) {
-        // TODO: Implement paginate() method.
-    }
+    public function createUserActivity($input) {
 
-    public function create(array $attributes) {
-        return ActivityLog::create($attributes);
-    }
+        $activity = new ActivityLog();
 
-    public function find($id, $columns = array('*')) {
-        // TODO: Implement find() method.
-    }
+        $activity->fill($input);
+        $activity->message_type = 'User';
+        $activity->save();
 
-    public function update($id, array $input) {
-        // TODO: Implement update() method.
+        return $activity;
     }
-
-    public function destroy($id) {
-        // TODO: Implement destroy() method.
-    }
-
 
 } 

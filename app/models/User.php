@@ -5,6 +5,7 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
 
+    public $test = 'hello';
 	/**
 	 * The database table used by the model.
 	 *
@@ -65,7 +66,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     }
 
     public function activity() {
-        return $this->hasMany('YA\ActivityLog');
+        return $this->hasMany('YA\ActivityLog', 'user_id');
     }
 
 }

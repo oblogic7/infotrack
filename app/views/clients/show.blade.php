@@ -247,12 +247,10 @@
                                 <i class="fa fa-2x fa-pencil-square text-green"></i>
                                 <p class="message">
                                     <a href="#" class="name">
-                                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
-                                        Susan Doe
+                                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}</small>
+                                        {{ $item->user->name }}
                                     </a>
-                                    I would like to meet you to discuss the latest news about
-                                    the arrival of the new theme. They say it is going to be one the
-                                    best themes on the market
+                                    {{ $item->message }}
                                 </p>
                             </div><!-- /.item -->
                         @endif
@@ -260,12 +258,14 @@
 
                 </div><!-- /.chat -->
                 <div class="box-footer">
-                    <div class="input-group">
-                        <input class="form-control" placeholder="Type message..."/>
-                        <div class="input-group-btn">
-                            <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+                    <form action="{{ URL::route('clients.activity.store', [$client->id]) }}" method="POST">
+                        <div class="input-group">
+                            <input class="form-control" name="message" placeholder="Type message..."/>
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i></button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div><!-- /.box (chat box) -->
 

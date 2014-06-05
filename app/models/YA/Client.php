@@ -32,6 +32,10 @@ class Client extends BaseModel {
         return $this->hasMany('YA\Services\BaseService');
     }
 
+    public function activity() {
+        return $this->hasMany('YA\ActivityLog');
+    }
+
     public function serviceActivity() {
         return $this->hasManyThrough('YA\ActivityLog', 'YA\Services\BaseService', 'client_id', 'service_id');
     }
@@ -63,10 +67,6 @@ class Client extends BaseModel {
 
 
         return $activity;
-    }
-
-    public function activity() {
-        return $this->hasMany('YA\ActivityLog');
     }
 
     private function sortCollectionByDate($collection) {

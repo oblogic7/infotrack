@@ -46,4 +46,12 @@ class ClientRepository extends AbstractRepository implements ClientRepositoryInt
 
     }
 
+    public function attachActivity($client_id, $activity) {
+
+        $client = Client::findOrFail($client_id);
+
+        $client->activity()->save($activity);
+
+    }
+
 } 

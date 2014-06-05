@@ -6,8 +6,7 @@
  * Time: 5:39 PM
  */
 
-namespace YA\Repositories;
-
+namespace YA\Contracts;
 
 use YA\Contracts\BaseRepositoryInterface;
 

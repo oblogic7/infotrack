@@ -79,6 +79,7 @@
     });
 
 
+    // Client activity log filter buttons
     $('button.filter').on('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
