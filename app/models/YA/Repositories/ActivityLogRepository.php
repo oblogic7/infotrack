@@ -20,7 +20,7 @@ class ActivityLogRepository extends AbstractRepository implements ActivityLogRep
         $activity = new ActivityLog();
 
         $activity->fill($input);
-        $activity->message_type = 'User';
+        $activity->message_type = 'user';
         $activity->save();
 
         return $activity;

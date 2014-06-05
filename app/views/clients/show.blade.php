@@ -236,7 +236,8 @@
                                 <i class="fa fa-2x fa-gears text-muted"></i>
                                 <p class="message text-muted">
                                     <span class="name">
-                                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}</small>
+                                        <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}</small>
+
                                     </span>
                                     {{ $item->message }}
                                 </p>
@@ -247,8 +248,7 @@
                                 <i class="fa fa-2x fa-pencil-square text-green"></i>
                                 <p class="message">
                                     <a href="#" class="name">
-                                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}</small>
-                                        {{ $item->user->name }}
+                                        <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}</small>
                                     </a>
                                     {{ $item->message }}
                                 </p>
