@@ -171,7 +171,8 @@
                         <tr>
                             <th></th>
                             <th>Name</th>
-                            <th class="text-right">Type</th>
+                            <th>Type</th>
+                            <th>Phone</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -184,18 +185,17 @@
                                 @endif
                             </td>
                             <td><a href="{{ URL::route('clients.contacts.show', [$contact->id]) }}">{{ $contact->name }}</a></td>
-                            <td class="text-right">{{ $contact->type }}</td>
-                            <td class="text-right">
+                            <td>{{ $contact->type }}</td>
+                            <td>
+                                @if ($contact->phone)
+                                <i class="fa fa-phone"> </i> {{ $contact->phone }}
+                                @endif
+                            </td>
+                            <td>
 
                                 @if ($contact->email)
-                                <a href="mailto:{{ $contact->email }}" data-toggle="tooltip"
-                                   data-original-title="{{ $contact->email }}"><i class="fa fa-envelope"> </i></a>
+                                <a href="mailto:{{ $contact->email }}"><i class="fa fa-envelope"> </i></a>
                                 @endif
-
-                                @if ($contact->phone)
-                                <i class="fa fa-phone" data-toggle="tooltip" data-original-title="{{ $contact->phone }}"> </i>
-                                @endif
-
 
                             </td>
 
