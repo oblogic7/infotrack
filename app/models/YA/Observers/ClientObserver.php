@@ -27,6 +27,7 @@ class ClientObserver {
                 'client_id' => $client->id,
                 'user_id' => $this->user->id
             ]);
-        $this->user->activity->save($activityLog);
+
+        $this->user->activity()->save($activityLog);
     }
 } 

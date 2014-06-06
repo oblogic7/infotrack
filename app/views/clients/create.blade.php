@@ -46,9 +46,10 @@
                     <!-- /.box-body -->
 
                     <div class="box-footer clearfix">
-                        <!-- Button -->
-                        <input type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary pull-right"
-                               value="Add Client">
+                        <div class="pull-right">
+                            <a class="btn btn-default" href="{{ URL::route('clients.index') }}">Cancel</a>
+                            <input type="submit" id="singlebutton" name="singlebutton" class="btn btn-success" value="Save">
+                        </div>
                     </div>
 
                 </div>

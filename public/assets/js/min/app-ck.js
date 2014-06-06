@@ -39111,7 +39111,7 @@ $(window).load(function(){
             source: clients.ttAdapter(),
             templates: {
                 header: '<h3>Clients</h3>',
-                suggestion: Handlebars.compile('<p><strong>{{name}}</strong></p>')
+                suggestion: Handlebars.compile('<strong>{{name}}</strong>')
             }
         },
         {
@@ -39119,8 +39119,9 @@ $(window).load(function(){
             displayKey: 'name',
             source: auth.ttAdapter(),
             templates: {
-                header: '<h3>Authentication Details</h3>'
-//                suggestion: Handlebars.compile('<p><strong>{{name}}</strong></p>')
+
+                header: '<h3>Client Login Credentials</h3>',
+                suggestion: Handlebars.compile('<strong>{{name}}</strong><span class="pull-right text-muted"><strong>{{client.name}}</strong></span>')
             }
 
         }).bind('typeahead:selected', function (obj, datum, name) {

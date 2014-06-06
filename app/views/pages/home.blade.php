@@ -8,7 +8,7 @@
     <div class="row">
 
         <form role="form" class="form-horizontal"  method="POST">
-            <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <div class="box box-success">
                     <!-- form start -->
                     <div class="box-body text-center">
@@ -17,9 +17,9 @@
                         <fieldset>
                             <!-- Text input-->
                             <div class="form-group">
-                                <div class="col-md-12">
-                                    <input id="name" class="typeahead" data-typeahead-source="clients" name="name" type="text" placeholder="Type to search..." class="form-control input-md" value="{{ Input::old('name') }}" required="">
-                                    <span class="help-block"></span>
+                                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                    <input id="name" class="typeahead" data-typeahead-source="clients" type="text" placeholder="Type to search..." class="form-control input-lg" value="{{ Input::old('name') }}" required="">
+                                    <input type="submit" style="display: none;"/>
                                 </div>
                             </div>
 
