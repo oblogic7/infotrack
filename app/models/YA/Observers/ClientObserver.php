@@ -10,7 +10,7 @@ namespace YA\Observers;
 
 use YA\Repositories\ActivityLogRepository;
 
-class ClientObserver {
+class ClientObserver extends BaseObserver {
 
     public function __construct() {
         $this->activityLog = new ActivityLogRepository();
@@ -29,5 +29,23 @@ class ClientObserver {
             ]);
 
         $this->user->activity()->save($activityLog);
+    }
+
+    public function deleting($client) {
+
+        parent::deleting($client);
+
+        foreach ($client->credentials as $credential) {
+            $credential->delete();
+        }
+
+        foreach ($client->services as $service) {
+            $service->delete();
+        }
+
+        foreach ($client->contacts as $contact) {
+            $contact->delete();
+        }
+
     }
 } 

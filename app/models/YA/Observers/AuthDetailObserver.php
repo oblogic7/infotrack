@@ -10,7 +10,7 @@ namespace YA\Observers;
 
 use YA\Repositories\ActivityLogRepository;
 
-class AuthDetailObserver {
+class AuthDetailObserver extends BaseObserver {
 
     public function __construct() {
         $this->activityLog = new ActivityLogRepository();
@@ -26,6 +26,5 @@ class AuthDetailObserver {
                 'user_id' => $this->user->id
             ]
         );
-
     }
 } 

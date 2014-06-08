@@ -13,16 +13,16 @@ class HostingService extends BaseService {
     protected $stiBaseClass = 'YA\Services\BaseService';
 
     protected static $rules = [
-        'label' => 'required',
+        'domain' => 'required',
         'cms' => 'required',
         'launch_date' => 'date'
     ];
 
     protected static $messages = [
-        'label.required' => 'Domain name is required.'
+        'domain.required' => 'Domain name is required.'
     ];
 
-    protected $fillable = ['label', 'provider', 'cms', 'database', 'launch_date'];
+    protected $fillable = ['domain', 'provider', 'cms', 'database', 'launch_date'];
 
     public function __construct($attributes = array()) {
 

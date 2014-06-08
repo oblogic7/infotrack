@@ -46,7 +46,9 @@ Route::group(
         Route::get(
             'test',
             function () {
+                \YA\Client::destroy(1);
 
+                return Redirect::to('/');
             }
         );
         Route::get(

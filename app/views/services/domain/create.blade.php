@@ -27,10 +27,10 @@
                         <fieldset>
                             <!-- Text input-->
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="label">Domain Name</label>
+                                <label class="col-md-4 control-label" for="domain">Domain Name</label>
 
                                 <div class="col-md-5">
-                                    <input id="label" name="label" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('label') }}" required="">
+                                    <input id="domain" name="domain" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('domain') }}" required="">
                                     <span class="help-block">Enter the domain name to which this service applies. <br/>Do not enter www or http://.</span>
                                 </div>
                             </div>

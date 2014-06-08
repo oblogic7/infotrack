@@ -13,14 +13,14 @@ class SEOService extends BaseService {
     protected $stiBaseClass = 'YA\Services\BaseService';
 
     protected static $rules = [
-        'label' => 'required'
+        'domain' => 'required'
     ];
 
     protected static $messages = [
-        'label.required' => 'Domain name is required.'
+        'domain.required' => 'Domain name is required.'
     ];
 
-    protected $fillable = ['label'];
+    protected $fillable = ['domain'];
 
 
     public function __construct($attributes = array()) {

@@ -10,17 +10,17 @@ class DomainService extends BaseService {
     protected $stiBaseClass = 'YA\Services\BaseService';
 
     protected static $rules = [
-        'label' => 'required',
+        'domain' => 'required',
         'provider' => 'required'
     ];
 
     protected static $messages = [
-        'label.required' => 'Domain name is required.',
+        'domain.required' => 'Domain name is required.',
         'provider.required' => 'Please enter a provider.'
     ];
 
     protected $fillable = [
-        'label',
+        'domain',
         'provider'
     ];
 

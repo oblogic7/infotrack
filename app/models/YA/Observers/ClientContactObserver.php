@@ -10,7 +10,7 @@ namespace YA\Observers;
 
 use YA\Repositories\ActivityLogRepository;
 
-class ClientContactObserver {
+class ClientContactObserver extends BaseObserver {
 
     public function __construct() {
         $this->activityLog = new ActivityLogRepository();
@@ -28,4 +28,5 @@ class ClientContactObserver {
             ]);
 
     }
+
 } 

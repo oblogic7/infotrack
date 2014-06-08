@@ -22,12 +22,19 @@ class YAServiceObserver {
 
         $activity = $this->activityLog->create(
             [
-                'message' => 'Created ' . $service->type . ' (' . $service->label . ')',
+                'message' => 'Created ' . $service->type . ' (' . $service->domain . ')',
                 'message_type' => 'system',
                 'service_id' => $service->id,
                 'user_id' => $this->user->id
 
             ]
         );
+    }
+
+    public function deleting($service) {
+        foreach ($service->activity as $activity) {
+
+            $activity->delete();
+        }
     }
 } 

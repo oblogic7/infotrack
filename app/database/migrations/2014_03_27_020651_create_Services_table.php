@@ -20,6 +20,7 @@ class CreateServicesTable extends Migration {
                 $table->boolean('billable')->default(false);
                 $table->integer('client_id')->nullable();
                 $table->string('type');
+                $table->string('domain');
                 $table->timestamps();
             }
         );

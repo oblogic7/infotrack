@@ -2,33 +2,34 @@
 
 namespace YA\Services\Hosting;
 
-use Dryval\ValidationTrait;
+use YA\Observers\SSLCertificateServiceObserver;
 use YA\Services\BaseService;
 
 class SSLCertificateService extends BaseService {
-
-    use ValidationTrait;
 
     protected $table = 'services';
     protected $stiBaseClass = 'YA\Services\BaseService';
 
     protected static $rules = [
-        'label' => 'required',
-        'expires' => 'required|date'
+        'domain' => 'required'
     ];
 
     protected static $messages = [
-        'label.required' => 'Domain name is required.',
-        'expires.required' => 'Expiration date is required.'
+        'domain.required' => 'Domain name is required.',
     ];
 
-    protected $fillable = ['label', 'expires'];
+    protected $fillable = ['domain', 'expires', 'label', 'launch_date', 'expires'];
 
     public function __construct($attributes = array()) {
 
         parent::__construct($attributes);
 
         $this->type = 'SSL Certificate';
+    }
+
+    public static function boot() {
+        parent::boot();
+        static::observe(new SSLCertificateServiceObserver());
     }
 
 }

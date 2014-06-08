@@ -2,10 +2,13 @@
 
 @section('content')
 
-<section class="content-header">
-    <h1>
+<section class="content-header clearfix">
+
+    <h1 class="col-sm-8">
         {{ $client->name }}
     </h1>
+
+    <span class="pull-right text-muted">{{ $client->updated_at }}</span>
     <!--		<ol class="breadcrumb">-->
     <!--			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>-->
     <!--			<li><a href="#">Tables</a></li>-->
@@ -15,6 +18,12 @@
 
 <!-- Main content -->
 <section class="content">
+
+    <div class="row">
+        <div class="col-xs-12">
+            @include('_partials.messages')
+        </div>
+    </div>
 
     <!-- /.row -->
     <div class="row">
@@ -56,7 +65,7 @@
                         @foreach($client->services as $service)
                         <tr>
                             <td><a href="{{ URL::route('clients.services.show', [$client->id, $service->id]) }}">{{
-                                    $service->label }}</a></td>
+                                    $service->domain }}</a></td>
                             <td class="text-right">{{ $service->type }}</td>
                         </tr>
                         @endforeach

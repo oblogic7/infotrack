@@ -32,7 +32,7 @@ class ClientServicesController extends \BaseController {
 
         $input = Input::all();
 
-        $service = $this->services->create($input);
+        $service = $this->services->createClientService($input);
 
         $this->clients->attachService($client_id, $service);
 
