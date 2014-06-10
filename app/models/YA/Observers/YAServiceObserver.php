@@ -22,7 +22,7 @@ class YAServiceObserver {
 
         $activity = $this->activityLog->create(
             [
-                'message' => 'Created ' . $service->type . ' (' . $service->domain . ')',
+                'message' => $service->type . ' service created.',
                 'message_type' => 'system',
                 'service_id' => $service->id,
                 'user_id' => $this->user->id

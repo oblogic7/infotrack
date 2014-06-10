@@ -4,7 +4,7 @@
 
 <section class="content-header">
     <h1>
-        {{ $auth->client->name }}
+        <a href="{{ URL::route('clients.show', [$auth->client->id]) }}">{{ $auth->client->name }}</a>
         <small>Authentication Details for {{ $auth->name }}</small>
     </h1>
 </section>
