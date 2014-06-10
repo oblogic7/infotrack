@@ -125,12 +125,12 @@
                         @foreach($client->credentials as $login)
                         <tr>
                             <td class="col-xs-12 col-sm-6">
-                                <a href="{{ URL::route('clients.auth.show', [$login->id]) }}">{{ $login->name }}</a>
+                                <a href="{{ URL::route('clients.auth.show', [$client->id, $login->id]) }}">{{ $login->name }}</a>
                             </td>
                             <td class="hidden-xs">
                                 {{ $login->username }}
                             </td>
-                            <td><input class="password" type="password" value="{{ $login->password }}" readonly /></td>
+                            <td><input class="password unmask-pass" type="password" value="{{ $login->password }}" readonly /></td>
                             <td>
                                 <a class="btn btn-default btn-flat btn-sm" href="{{ $login->url }}"
                                    data-toggle="tooltip" data-original-title="Open login page" target="_blank"><i

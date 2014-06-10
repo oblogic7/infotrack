@@ -58,7 +58,7 @@
         });
 
     // Uncloak password on hover.
-    $('.credentials-table tr input').on('focus blur', function (e) {
+    $('.unmask-pass').on('focus blur', function (e) {
 
         if (e.type == 'focus') {
             $(this).attr('type', 'text');

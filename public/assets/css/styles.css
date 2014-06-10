@@ -14260,3 +14260,8 @@ input.typeahead, .tt-input, .tt-hint {
   /* line 28, ../sass/styles.scss */
   .google-btn:hover, .google-btn.hover {
     background: url(/assets/img/google-signin-hover.png); }
+
+/* line 33, ../sass/styles.scss */
+.unmask-pass {
+  border: none;
+  margin-bottom: 20px; }

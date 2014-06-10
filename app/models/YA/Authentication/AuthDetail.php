@@ -10,12 +10,14 @@ class AuthDetail extends BaseModel {
     // Add your validation rules here
     protected static $rules = [
         'name' => 'required',
+        'url' => 'required|url',
         'username' => 'required',
         'password' => 'required',
-        'url' => 'required|url'
     ];
 
-    protected static $messages = [];
+    protected static $messages = [
+        'url.required' => 'You must enter a URL where this login can be used.'
+    ];
 
     // Don't forget to fill this array
     protected $fillable = ['name', 'username', 'password', 'url', 'notes'];

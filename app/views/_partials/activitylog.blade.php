@@ -25,9 +25,9 @@
                     <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}</small>
                 </span>
                 @if($item->isChild)
-                    <i data-toggle="tooltip" data-title="Message is from a child entity." class="fa fa-cubes text-muted"></i>
+                    <i data-toggle="tooltip" data-title="Message for a child entity." class="fa fa-cubes text-muted"></i>
                 @else
-                    <i data-toggle="tooltip" data-title="Message belongs to this entity." class="fa fa-cube text-muted"></i>
+                    <i data-toggle="tooltip" data-title="Message for this entity." class="fa fa-cube text-muted"></i>
                 @endif
                 {{ $item->message }}
             </p>
@@ -41,9 +41,9 @@
                     <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}</small>
                 </a>
                 @if($item->isChild)
-                    <i data-toggle="tooltip" data-title="Message is from child entity." class="fa fa-cubes text-muted"></i>
+                    <i data-toggle="tooltip" data-title="Message for child entity." class="fa fa-cubes text-muted"></i>
                 @else
-                    <i data-toggle="tooltip" data-title="Message belongs to this entity." class="fa fa-cube text-muted"></i>
+                    <i data-toggle="tooltip" data-title="Message for this entity." class="fa fa-cube text-muted"></i>
                 @endif
 
                 {{ $item->message }}

@@ -47,11 +47,18 @@ class ClientAuthDetailsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($client_id, $auth_id)
 	{
-		$auth = YA\Services\BaseService::findOrFail($id);
+		$auth = $this->auth->find($auth_id);
 
-		return View::make('auth.show', compact('service'));
+        $activity_data = [
+            'activity' => $auth->activity,
+            'formRoute' => URL::route('auth.activity.store', [$auth->id])
+        ];
+
+		return View::make('auth.show')
+            ->with(['auth' => $auth])
+            ->nest('activityLogView', '_partials.activitylog', $activity_data);
 	}
 
 	/**
