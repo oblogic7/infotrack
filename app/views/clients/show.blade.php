@@ -225,58 +225,7 @@
             </div>
             <!-- /.box -->
 
-            <!-- Chat box -->
-            <div class="box box-success">
-                <div class="box-header">
-                    <h3 class="box-title"><i class="fa fa-pencil-square-o"></i> Log</h3>
-                    <div class="box-tools pull-right">
-                        <div class="btn-group" data-toggle="btn-toggle" >
-                            <button type="button" class="filter btn btn-default btn-sm active" data-toggle="tooltip" title="All Messages" data-filter="">All</button>
-                            <button type="button" class="filter btn btn-default btn-sm" data-toggle="tooltip" title="System Messages" data-filter="system"><i class="fa fa-gear"></i></button>
-                            <button type="button" class="filter btn btn-default btn-sm" data-toggle="tooltip" title="User Messages" data-filter="user"><i class="fa fa-user"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="box-body chat" id="chat-box">
-                    @foreach ($client->allActivity as $item)
-                        @if($item->message_type == 'system')
-                            <!-- log item -->
-                            <div class="item" data-message-type="{{ $item->message_type }}">
-                                <i class="fa fa-2x fa-gears text-muted"></i>
-                                <p class="message text-muted">
-                                    <span class="name">
-                                        <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}</small>
-
-                                    </span>
-                                    {{ $item->message }}
-                                </p>
-                            </div><!-- /.log -->
-                        @else
-                            <!-- chat item -->
-                            <div class="item" data-message-type="{{ $item->message_type }}">
-                                <i class="fa fa-2x fa-pencil-square text-green"></i>
-                                <p class="message">
-                                    <a href="#" class="name">
-                                        <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}</small>
-                                    </a>
-                                    {{ $item->message }}
-                                </p>
-                            </div><!-- /.item -->
-                        @endif
-                    @endforeach
-
-                </div><!-- /.chat -->
-                <div class="box-footer">
-                    <form action="{{ URL::route('clients.activity.store', [$client->id]) }}" method="POST">
-                        <div class="input-group">
-                            <input class="form-control" name="message" placeholder="Type message..."/>
-                            <div class="input-group-btn">
-                                <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div><!-- /.box (chat box) -->
+            {{ $activityLogView }}
 
 
         </div>

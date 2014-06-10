@@ -30,7 +30,7 @@
                                 <label class="col-md-4 control-label" for="name">Contact Name</label>
 
                                 <div class="col-md-5">
-                                    <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('name') }}" required="">
+                                    <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('name') }}" required="" autofocus="">
                                     <span class="help-block"></span>
                                 </div>
                             </div>

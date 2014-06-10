@@ -11,19 +11,27 @@ namespace YA\Repositories;
 use YA\ActivityLog;
 use YA\Contracts\ActivityLogRepositoryInterface;
 
-class ActivityLogRepository extends AbstractRepository implements ActivityLogRepositoryInterface {
+class ActivityLogRepository implements ActivityLogRepositoryInterface {
 
     protected $modelClassName = '\YA\ActivityLog';
 
-    public function createUserActivity($input) {
+    public function create($input, $type = 'system', $relations = []) {
 
         $activity = new ActivityLog();
 
         $activity->fill($input);
-        $activity->message_type = 'user';
+        $activity->message_type = $type;
         $activity->save();
 
-        return $activity;
+        /**
+         * Create relations that were passed in.
+         */
+        if ($relations) {
+            foreach ($relations as $relative) {
+                $relative->activity()->save($activity);
+            }
+        }
+
     }
 
 } 

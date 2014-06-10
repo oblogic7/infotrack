@@ -55,6 +55,10 @@ class Client extends BaseModel {
 
         $activity = $this->sortCollectionByDate($activity);
 
+        foreach($activity as &$item) {
+            $item->isChild = true;
+        }
+
         return $activity;
     }
 
@@ -64,7 +68,6 @@ class Client extends BaseModel {
         $activity = $activity->merge($this->activity);
 
         $activity = $this->sortCollectionByDate($activity);
-
 
         return $activity;
     }

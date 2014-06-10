@@ -74,7 +74,9 @@ Route::group(
         Route::resource('clients.services', 'ClientServicesController');
         Route::resource('clients.contacts', 'ClientContactsController');
         Route::resource('clients.auth', 'ClientAuthDetailsController');
-        Route::resource('clients.activity', 'ClientActivityLogController');
+
+        Route::resource('clients.activity', 'ClientActivityLogController', array('only' => array('store')));
+        Route::resource('services.activity', 'ServiceActivityLogController', array('only' => array('store')));
 
         Route::resource('software', 'SoftwareTitlesController');
         Route::resource('software.licenses', 'SoftwareLicensesController');

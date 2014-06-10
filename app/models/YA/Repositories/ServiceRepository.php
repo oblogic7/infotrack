@@ -11,6 +11,7 @@ namespace YA\Repositories;
 use Dryval\ValidationException;
 use YA\Contracts\ServiceRepositoryInterface;
 use YA\Contracts\YAServiceFactoryInterface;
+use YA\Services\BaseService;
 
 class ServiceRepository implements ServiceRepositoryInterface {
 
@@ -21,7 +22,7 @@ class ServiceRepository implements ServiceRepositoryInterface {
         'domain' => 'YA\Services\Hosting\DomainService',
         'hosting' => 'YA\Services\Hosting\HostingService',
         'seo' => 'YA\Services\Hosting\SEOService',
-        'ssl' => 'YA\Services\Hosting\SSLService'
+        'ssl' => 'YA\Services\Hosting\SSLCertificateService'
     ];
 
     public function __construct(YAServiceFactoryInterface $serviceFactory) {
@@ -55,6 +56,11 @@ class ServiceRepository implements ServiceRepositoryInterface {
         }
 
         return $this->serviceFactory->create($attributes);
+
+    }
+
+    public function find($id) {
+        return BaseService::findOrFail($id);
     }
 
 } 

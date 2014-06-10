@@ -21,8 +21,13 @@ class BaseService extends BaseModel {
 
     }
 
+    public function getDates()
+    {
+        return array('created_at', 'updated_at', 'expires', 'launch_date');
+    }
+
     public function client() {
-        return $this->hasOne('YA\Client');
+        return $this->hasOne('YA\Client', 'id', 'client_id');
     }
 
     public function activity() {

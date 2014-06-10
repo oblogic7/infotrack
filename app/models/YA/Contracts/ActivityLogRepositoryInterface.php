@@ -10,8 +10,9 @@ namespace YA\Contracts;
 
 use YA\Contracts\BaseRepositoryInterface;
 
-interface ActivityLogRepositoryInterface extends BaseRepositoryInterface {
+interface ActivityLogRepositoryInterface {
 
 
+    public function create($input, $type = 'system', $relations = []);
 
 } 

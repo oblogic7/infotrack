@@ -30,7 +30,7 @@
                                 <label class="col-md-4 control-label" for="domain">Domain Name</label>
 
                                 <div class="col-md-5">
-                                    <input id="domain" name="domain" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('domain') }}" required="">
+                                    <input id="domain" name="domain" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('domain') }}" required="" autofocus="">
                                     <span class="help-block">Enter the domain name to which this service applies. <br/>Do not enter www or http://.</span>
                                 </div>
                             </div>

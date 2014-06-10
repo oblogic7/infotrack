@@ -30,7 +30,7 @@
                                 <label class="col-md-4 control-label" for="name">Website Name</label>
 
                                 <div class="col-md-5">
-                                    <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('name') }}">
+                                    <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('name') }}" autofocus>
                                     <span class="help-block">Enter the name of the website or service for which this login is used.  Do not enter the client name as it will be automatically appended when necessary.</span>
                                 </div>
                             </div>

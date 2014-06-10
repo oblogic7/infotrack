@@ -45,10 +45,22 @@ class ClientServicesController extends \BaseController {
      * @param  int $id
      * @return Response
      */
-    public function show($id) {
-        $service = YA\Services\BaseService::findOrFail($id);
+    public function show($client_id, $service_id) {
 
-        return View::make('services.show', compact('service'));
+        $client = $this->clients->find($client_id);
+        $service = $this->services->find($service_id);
+
+        $type = array_search($service->service_class, $this->services->getServiceTypes());
+
+        $activity_data = [
+            'activity' => $service->activity,
+            'formRoute' => URL::route('services.activity.store', [$service->id])
+        ];
+
+        return View::make(
+            'services.' . $type . '.show',
+            ['client' => $client, 'service' => $service])
+            ->nest('activityLogView', '_partials.activitylog', $activity_data);;
     }
 
     /**

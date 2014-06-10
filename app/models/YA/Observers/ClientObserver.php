@@ -8,12 +8,13 @@
 
 namespace YA\Observers;
 
+use YA\Contracts\ActivityLogRepositoryInterface;
 use YA\Repositories\ActivityLogRepository;
 
 class ClientObserver extends BaseObserver {
 
-    public function __construct() {
-        $this->activityLog = new ActivityLogRepository();
+    public function __construct(ActivityLogRepositoryInterface $activity) {
+        $this->activityLog = $activity;
         $this->user = \Auth::user();
 
     }

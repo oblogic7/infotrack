@@ -33,7 +33,7 @@
 
                                 <div class="col-md-5">
                                     <input id="domain" name="domain" type="text" placeholder=""
-                                           class="form-control input-md" value="{{ Input::old('domain') }}">
+                                           class="form-control input-md" value="{{ Input::old('domain') }}" autofocus="">
                                     <span class="help-block">Enter the domain name to which this service applies.ee</span>
                                 </div>
                             </div>

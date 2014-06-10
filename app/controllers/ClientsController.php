@@ -51,7 +51,16 @@ class ClientsController extends \BaseController {
      */
     public function show($id) {
 
-        return View::make('clients.show')->with(['client' => $this->clients->withAllData($id)]);
+        $client = $this->clients->withAllData($id);
+
+        $activity_data = [
+            'activity' => $client->allActivity,
+            'formRoute' => URL::route('clients.activity.store', [$client->id])
+        ];
+
+        return View::make('clients.show')
+            ->with(['client' => $client])
+            ->nest('activityLogView', '_partials.activitylog', $activity_data);
 
     }
 

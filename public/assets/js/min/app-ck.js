@@ -39158,8 +39158,20 @@ $(window).load(function(){
 
         var messageType = $(this).data('filter');
 
-        $('div[data-message-type]').hide();
+        var allMessages = $('div[data-message-type]');
 
+        // hide all messages
+        allMessages.hide();
+
+        //show messages of selected type only.
+        allMessages.each(function(i, m) {
+
+            var isType = $(m).data('message-type').indexOf(messageType) > -1 ? 1 : 0;
+            if(isType) {
+                $(m).show();
+            }
+
+        })
         $('div[data-message-type="' + messageType + '"').show();
 
         if (!messageType) {
