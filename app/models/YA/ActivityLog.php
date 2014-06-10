@@ -22,4 +22,8 @@ class ActivityLog extends \Eloquent {
         return $this->belongsTo('User', 'user_id', 'id');
     }
 
+    public function service() {
+        return $this->belongsTo('YA\Services\BaseService', 'service_id', 'id');
+    }
+
 }

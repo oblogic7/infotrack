@@ -29,6 +29,8 @@
                 @else
                     <i data-toggle="tooltip" data-title="Message for this entity." class="fa fa-cube text-muted"></i>
                 @endif
+
+                @if($item->service) (<b>{{$item->service->domain}}</b>) @endif
                 {{ $item->message }}
             </p>
         </div><!-- /.log -->
@@ -46,6 +48,7 @@
                     <i data-toggle="tooltip" data-title="Message for this entity." class="fa fa-cube text-muted"></i>
                 @endif
 
+                @if($item->service) (<b>{{$item->service->domain}}</b>) @endif
                 {{ $item->message }}
             </p>
         </div><!-- /.item -->
