@@ -34,7 +34,6 @@ Route::get(
 );
 
 
-
 /**
  * Secure Routes
  */
@@ -46,7 +45,6 @@ Route::group(
         Route::get(
             'test',
             function () {
-                \YA\Client::destroy(1);
 
                 return Redirect::to('/');
             }
@@ -128,7 +126,22 @@ Route::group(
                 // Current user is now available via Auth facade
                 $user = Auth::user();
 
-                return Redirect::intended();
+                if (strrpos($user->email, 'younger-associates.com')) {
+
+                    // user signed in with a valid younger-associates account.
+                    return Redirect::to('/');
+
+                } else {
+                    // user account is not a valid younger-associates account.
+
+                    // remove user from db, logout and redirect.
+                    $user->delete();
+                    Auth::logout();
+
+                    $message = new \Illuminate\Support\MessageBag(['message' => 'You must use an @younger-associates.com account to login to this application.']);
+                    return \Redirect::to('/login')->withErrors($message);
+                }
+
             }
         );
     }
