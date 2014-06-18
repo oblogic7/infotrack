@@ -98,3 +98,4 @@ App::bind('YA\Contracts\YAServiceFactoryInterface', 'YA\Factories\YAServiceFacto
 App::bind('YA\Contracts\ClientContactRepositoryInterface', 'YA\Repositories\ClientContactRepository');
 App::bind('YA\Contracts\ClientAuthRepositoryInterface', 'YA\Repositories\ClientAuthRepository');
 App::bind('YA\Contracts\ActivityLogRepositoryInterface', 'YA\Repositories\ActivityLogRepository');
+App::bind('YA\Contracts\RoleRepositoryInterface', 'YA\Repositories\RoleRepository');

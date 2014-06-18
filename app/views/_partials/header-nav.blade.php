@@ -52,7 +52,9 @@
 			<p>
 				{{ $user->name }}
 			</p>
-            <small>{{ $user->role->name }}</small>
+            @if($user->role)
+            <small> {{ $user->role->name }}</small>
+            @endif
 		</li>
 		<!-- Menu Body -->
 		<li class="user-body">

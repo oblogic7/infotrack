@@ -4,7 +4,8 @@
 
 <section class="content-header">
     <h1>
-        {{ $client->name }} <small>New Credentials</small>
+        {{ $client->name }}
+        <small>New Credentials</small>
     </h1>
 </section>
 
@@ -16,6 +17,16 @@
             @include('_partials.messages')
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="alert alert-info">
+                <i class="fa fa-2x fa-exclamation"> </i>
+                This form is used to create login credentials that are specific to <strong>{{ $client->name }}</strong>. If these credentials are also used to access or manage data or services for any another client, it should be entered as a Younger Associates account and <strong>{{ $client->name }}</strong> should be specified as a client on that entry.
+            </div>
+        </div>
+    </div>
+
 
     <div class="row">
 
@@ -44,7 +55,7 @@
                                     <span class="help-block">Enter the url of the login page where these credentials can be used.</span>
                                 </div>
                             </div>
-
+                            <hr/>
                             <!-- Text input-->
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="label">Username</label>
@@ -71,8 +82,20 @@
                                     <input id="password_confirm" name="password_confirm" type="password" placeholder="" class="form-control input-md">
                                 </div>
                             </div>
+                            <hr/>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="roles">Permissions</label>
 
+                                <div class="col-md-5">
 
+                                    <select multiple="" name="roles[]" class="form-control">
+                                        @foreach($roles as $role)
+                                            <option value="{{ $role->id }}">{{ $role->name }}</option>
+                                        @endforeach
+                                    </select>
+                                    <span class="help-block">Select the groups that should have access to this login information.  Leave blank for no restriction.</span>
+                                </div>
+                            </div>
 
 
                         </fieldset>

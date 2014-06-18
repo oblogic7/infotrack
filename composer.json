@@ -5,10 +5,8 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-		"behat/behat": "3.0.x-dev",
-		"league/fractal": "0.7.0",
 		"way/generators": "2.6",
-		"fzaninotto/faker": "1.4.x-dev",
+		"fzaninotto/faker": "1.4.0",
 		"usmanhalalit/dryval": "1.x-dev",
 		"prologue/alerts": "dev-master",
 		"adamwathan/eloquent-oauth": "v0.2"

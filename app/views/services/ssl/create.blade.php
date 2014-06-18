@@ -19,6 +19,15 @@
     </div>
 
     <div class="row">
+        <div class="col-xs-12">
+            <div class="alert alert-info">
+            <i class="fa fa-exclamation"></i>
+            The information entered below will be validated for accuracy and the entry will only be saved if a valid certificate is found.
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
 
         <form role="form" class="form-horizontal"
               action="{{ URL::route('clients.services.store', [$client->id, 'type' => 'ssl']) }}" method="POST">
@@ -34,7 +43,7 @@
                                 <div class="col-md-5">
                                     <input id="domain" name="domain" type="text" placeholder=""
                                            class="form-control input-md" value="{{ Input::old('domain') }}" autofocus="">
-                                    <span class="help-block">Enter the domain name to which this service applies.ee</span>
+                                    <span class="help-block">Enter the domain name to which this certificate applies.</span>
                                 </div>
                             </div>
 

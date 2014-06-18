@@ -8,7 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     $vendorDir . '/ircmaxell/password-compat/lib/password.php',
     $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
-    $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
     $vendorDir . '/prologue/support/src/Prologue/Support/helpers.php',
+    $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
     $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
 );

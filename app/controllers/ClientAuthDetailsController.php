@@ -4,18 +4,21 @@ class ClientAuthDetailsController extends \BaseController {
 
     public function __construct(
         \YA\Contracts\ClientRepositoryInterface $clients,
-        \YA\Contracts\ClientAuthRepositoryInterface $auth
+        \YA\Contracts\ClientAuthRepositoryInterface $auth,
+        \YA\Contracts\RoleRepositoryInterface $roles
     ) {
         $this->clients = $clients;
         $this->auth = $auth;
+        $this->roles = $roles;
     }
 
 
 	public function create($client_id)
 	{
         $client = $this->clients->find($client_id);
+        $roles = $this->roles->all();
 
-		return View::make('clients.auth.create')->with(['client' => $client]);
+		return View::make('clients.auth.create')->with(['client' => $client, 'roles' => $roles]);
 	}
 
 	/**
@@ -35,6 +38,15 @@ class ClientAuthDetailsController extends \BaseController {
         }
 
 		$auth = $this->auth->create($input);
+
+        // if roles are specified, set them here.
+        if ($input['roles']) {
+
+            foreach($input['roles'] as $role) {
+                $auth->roles()->attach($role);
+            }
+        }
+
 
         $this->clients->attachCredentials($client_id, $auth);
 

@@ -32,7 +32,13 @@
                         </li>-->
             <li>
                 <a href="{{ URL::route('clients.index') }}">
-                    <i class="fa fa-users"></i> <span>Clients</span>
+                    <i class="fa fa-users"></i> Clients
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-lock"></i> YA Accounts
                 </a>
             </li>
 <!--            <li class="treeview">-->

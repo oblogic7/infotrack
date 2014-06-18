@@ -43,4 +43,8 @@ class AuthDetail extends BaseModel {
         return $this->hasMany('YA\ActivityLog');
     }
 
+    public function roles() {
+        return $this->belongsToMany('Role');
+    }
+
 }
