@@ -18,6 +18,15 @@
     </div>
 
     <div class="row">
+        <div class="col-xs-12">
+            <div class="alert alert-info">
+                <i class="fa fa-exclamation"></i>
+                Adding this SEO service will indicate that this domain has been cleared for additional SEO work by the client (billable).
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
 
         <form role="form" class="form-horizontal" action="{{ URL::route('clients.services.store', [$client->id, 'type' => 'seo']) }}" method="POST">
             <div class="col-xs-12">
