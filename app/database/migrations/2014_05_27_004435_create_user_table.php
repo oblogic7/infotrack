@@ -22,6 +22,7 @@ class CreateUserTable extends Migration {
                 $table->string('email')->unique();
                 $table->string('profile_image');
                 $table->string('remember_token');
+                $table->unsignedInteger('role_id');
                 $table->timestamps();
             }
         );

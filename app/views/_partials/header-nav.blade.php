@@ -42,29 +42,32 @@
 <li class="dropdown user user-menu">
 	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 		<i class="glyphicon glyphicon-user"></i>
-		<span>{{ Auth::user()->name }}  <i class="caret"></i></span>
+		<span>{{ $user->name }}  <i class="caret"></i></span>
 	</a>
 	<ul class="dropdown-menu">
 		<!-- User image -->
 		<li class="user-header bg-light-blue">
-			<img src="{{ Auth::user()->profile_image }}" class="img-circle" alt="User Image"/>
+			<img src="{{ $user->profile_image }}" class="img-circle" alt="User Image"/>
 
 			<p>
-				{{ Auth::user()->name }}
+				{{ $user->name }}
 			</p>
+            <small>{{ $user->role->name }}</small>
 		</li>
 		<!-- Menu Body -->
-<!--		<li class="user-body">
+		<li class="user-body">
+            @if( $user->role && $user->role->name == 'Super Admin')
 			<div class="col-xs-4 text-center">
-				<a href="#">Followers</a>
+				<a href="{{ URL::route('users.index') }}">Manage Users</a>
 			</div>
-			<div class="col-xs-4 text-center">
-				<a href="#">Sales</a>
-			</div>
-			<div class="col-xs-4 text-center">
-				<a href="#">Friends</a>
-			</div>
-		</li>-->
+            @endif
+           <!-- <div class="col-xs-4 text-center">
+                <a href="#">Sales</a>
+            </div>
+            <div class="col-xs-4 text-center">
+                <a href="#">Friends</a>
+            </div>-->
+		</li>
 		<!-- Menu Footer-->
 		<li class="user-footer">
 			<!--<div class="pull-left">

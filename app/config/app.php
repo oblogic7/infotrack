@@ -108,7 +108,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
         'Prologue\Alerts\AlertsServiceProvider',
-        'AdamWathan\EloquentOAuth\EloquentOAuthServiceProvider'
+        'AdamWathan\EloquentOAuth\EloquentOAuthServiceProvider',
+        'YA\ServiceProviders\ComposerServiceProvider'
 
     ),
 

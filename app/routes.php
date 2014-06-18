@@ -18,8 +18,7 @@
 */
 
 
-Route::get(
-    '/login',
+Route::get('/login',
     [
         'as' => 'login',
         function () {
@@ -42,22 +41,21 @@ Route::group(
 
     array('before' => array('auth')),
     function () {
-        Route::get(
-            'test',
+        Route::get('test',
             function () {
 
-                return Redirect::to('/');
+                $user = User::find(1);
+
+                dd($user->role);
             }
         );
-        Route::get(
-            '/',
+        Route::get('/',
             function () {
                 return View::make('pages.home');
             }
         );
 
-        Route::get(
-            '/logout',
+        Route::get('/logout',
             [
                 'as' => 'logout',
                 function () {
@@ -87,6 +85,10 @@ Route::group(
 
         Route::get('typeahead/clients', 'TypeAheadController@clients');
         Route::get('typeahead/auth', 'TypeAheadController@auth');
+        Route::get('users', [
+                'as' => 'users.index',
+                'uses' => 'UsersController@index'
+        ]);
     }
 );
 
