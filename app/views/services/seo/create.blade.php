@@ -21,7 +21,7 @@
         <div class="col-xs-12">
             <div class="alert alert-info">
                 <i class="fa fa-exclamation"></i>
-                Adding this SEO service will indicate that this domain has been cleared for additional SEO work by the client (billable).
+                Creating this SEO service indicates that {{ $client->name }} has cleared this domain for billable SEO work.
             </div>
         </div>
     </div>
