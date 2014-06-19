@@ -20,12 +20,16 @@ class RoleRepository extends AbstractRepository implements RoleRepositoryInterfa
      * Exclude these ids from results
      * 1 = Super Admin
      */
-    protected $excludedRoles = [1];
+    protected $excludedRoles = [0];
 
     public function all($columns = array('*')) {
 
         // return all roles except super admin.
         return Role::whereNotIn('id', $this->excludedRoles)->get();
+    }
+
+    public function findByName($roleName) {
+        return Role::where('name', '=', $roleName)->firstorFail();
     }
 
 } 

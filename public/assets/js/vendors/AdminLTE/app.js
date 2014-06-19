@@ -33,7 +33,7 @@ $(function() {
     });
 
     //Activate tooltips
-    $("[data-toggle='tooltip']").tooltip();
+    $("[data-toggle='tooltip']").tooltip({html: true});
 
     /*     
      * Add collapse and remove events to boxes

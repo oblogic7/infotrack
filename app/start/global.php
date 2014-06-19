@@ -99,3 +99,5 @@ App::bind('YA\Contracts\ClientContactRepositoryInterface', 'YA\Repositories\Clie
 App::bind('YA\Contracts\ClientAuthRepositoryInterface', 'YA\Repositories\ClientAuthRepository');
 App::bind('YA\Contracts\ActivityLogRepositoryInterface', 'YA\Repositories\ActivityLogRepository');
 App::bind('YA\Contracts\RoleRepositoryInterface', 'YA\Repositories\RoleRepository');
+
+App::bind('access', function() {return new \YA\Access();});

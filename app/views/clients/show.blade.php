@@ -124,19 +124,32 @@
                         <tbody>
                         @foreach($client->credentials as $login)
                         <tr>
-                            <td class="col-xs-12 col-sm-6">
-                                <a href="{{ URL::route('clients.auth.show', [$client->id, $login->id]) }}">{{ $login->name }}</a>
-                            </td>
-                            <td class="hidden-xs">
-                                {{ $login->username }}
-                            </td>
-                            <td><input class="password unmask-pass" type="password" value="{{ $login->password }}" readonly /></td>
-                            <td>
-                                <a class="btn btn-default btn-flat btn-sm" href="{{ $login->url }}"
-                                   data-toggle="tooltip" data-original-title="Open login page" target="_blank"><i
-                                        class="fa fa-link"></i></a>
 
-                            </td>
+                            @if( Access::hasRole($login->roles->lists('name')) )
+
+                                <td>
+                                    <a href="{{ URL::route('clients.auth.show', [$client->id, $login->id]) }}">{{ $login->name }}</a>
+                                </td>
+                                <td class="hidden-xs">
+                                    {{ $login->username }}
+                                </td>
+                                <td><input class="password unmask-pass" type="password" value="{{ $login->password }}" readonly /></td>
+                                <td>
+                                    <a class="btn btn-default btn-flat btn-sm" href="{{ $login->url }}"
+                                       data-toggle="tooltip" data-original-title="Open login page" target="_blank"><i
+                                            class="fa fa-link"></i></a>
+
+                                </td>
+
+                            @else
+
+                                <td colspan="4">
+                                    {{ $login->name }}
+                                    <i class="fa fa-2x fa-lock pull-right" data-toggle="tooltip" data-title="Access to this item is restricted to the following roles: @foreach($login->roles->lists('name') as $name) <br/>{{$name}} @endforeach."> </i>
+                                </td>
+
+
+                            @endif
 
                         </tr>
                         @endforeach

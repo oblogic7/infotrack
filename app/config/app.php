@@ -178,6 +178,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
         'Alert'           => 'Prologue\Alerts\Facades\Alert',
         'OAuth'           => 'AdamWathan\EloquentOAuth\Facades\OAuth',
+        'Access'          => 'YA\Facades\Access'
 
 	),
 
