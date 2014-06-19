@@ -145,9 +145,8 @@
 
                                 <td colspan="4">
                                     {{ $login->name }}
-                                    <i class="fa fa-2x fa-lock pull-right" data-toggle="tooltip" data-title="Access to this item is restricted to the following roles: @foreach($login->roles->lists('name') as $name) <br/>{{$name}} @endforeach."> </i>
+                                    <i class="fa fa-2x fa-lock pull-right" data-toggle="tooltip" data-title="Access to this item is restricted to the following roles: @foreach($login->roles->lists('name') as $name) <br/>{{ strtoupper($name)}} @endforeach"> </i>
                                 </td>
-
 
                             @endif
 
