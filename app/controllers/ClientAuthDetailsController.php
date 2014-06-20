@@ -63,11 +63,6 @@ class ClientAuthDetailsController extends \BaseController {
 	{
 		$auth = $this->auth->find($auth_id);
 
-        // if not authorized, return 403
-        if ( ! Access::userAuthorized($auth->roles->lists('name'))) {
-            return \App::abort(403, 'Unauthorized action.');
-        }
-
         $activity_data = [
             'activity' => $auth->activity,
             'formRoute' => URL::route('auth.activity.store', [$auth->id])

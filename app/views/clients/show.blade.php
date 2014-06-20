@@ -126,7 +126,7 @@
                         @foreach($client->credentials as $login)
                         <tr>
 
-                            @if( Access::hasRole($login->roles->lists('name')) )
+                            @if( Access::userAuthorized($login->roles->lists('name')) )
 
                                 <td>
                                     <a href="{{ URL::route('clients.auth.show', [$client->id, $login->id]) }}">{{ $login->name }}</a>
@@ -145,12 +145,12 @@
                             @else
 
                                 <td colspan="4">
-                                    {{ $login->name }}
+                                    <a href="{{ URL::route('clients.auth.show', [$client->id, $login->id]) }}">{{ $login->name }}</a>
 
                                     <span class="fa-stack fa-lg pull-right">
 
                                         <i class="fa fa-stack-1x fa-lock"> </i>
-                                        <i class="fa fa-stack-2x fa-ban text-danger text-info" data-toggle="tooltip" data-title="Access to this item is restricted to the following roles: @foreach($login->roles->lists('name') as $name) <br/>{{ strtoupper($name)}} @endforeach"></i>
+                                        <i class="fa fa-stack-2x fa-ban text-danger text-info" data-toggle="tooltip" data-title="Restricted access."></i>
                                     </span>
                                 </td>
 

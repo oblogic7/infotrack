@@ -24,17 +24,25 @@
                 <!-- /.box-header -->
 
                 <div class="box-body">
+                    @if( Access::userAuthorized($auth->roles->lists('name')) )
+                        <dl class="dl-horizontal">
+                            <dt>User</dt>
+                            <dd>{{ $auth->username }}</dd>
+                            <dt>Password</dt>
+                            <dd><input class="password unmask-pass" type="password" value="{{ $auth->password }}" readonly/></dd>
+                            <dd>
+                                <a class="btn btn-default btn-flat btn-sm" href="{{ $auth->url }}" target="_blank">Open Login Page</a>
 
-                    <dl class="dl-horizontal">
-                        <dt>User</dt>
-                        <dd>{{ $auth->username }}</dd>
-                        <dt>Password</dt>
-                        <dd><input class="password unmask-pass" type="password" value="{{ $auth->password }}" readonly/></dd>
-                        <dd>
-                            <a class="btn btn-default btn-flat btn-sm" href="{{ $auth->url }}" target="_blank">Open Login Page</a>
+                            </dd>
+                        </dl>
 
-                        </dd>
-                    </dl>
+                    @else
+
+                        <div class="alert alert-danger">
+                            You do not have permission to view this login information.
+                        </div>
+
+                    @endif
                 </div>
 
             </div>
