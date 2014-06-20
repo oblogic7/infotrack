@@ -15,28 +15,33 @@ class Access {
 
     public function __construct() {
         $this->currentUser = \User::find(\Auth::user()->id);
+        $this->currentUserRoles = [$this->currentUser->role->name];
     }
 
     public function hasRole(array $roles) {
 
-
-        // not an array?  that's an error!
-        if(! is_array($roles)) {
-            throw new \Exception();
-        }
-
-        // return true for empty array
-        if(empty($roles)) {
-            return true;
-        }
-
         // Return true if user is superadmin.
-        if($this->currentUser->role->name == 'Super Admin') {
+        if ($this->currentUser->role->name == 'Super Admin') {
             return true;
         }
 
-        foreach ($roles as $role) {
-            return $this->currentUser->role->name == $role ? true : false;
+        $common = array_intersect($roles, $this->currentUserRoles);
+
+        // if user does not have any authorized roles, return 403 unauthorized.
+        if (count($common) === 0 && !empty($roles)) {
+            return false;
         }
+
+        return true;
+    }
+
+    public function userAuthorized(array $roles) {
+
+        return $this->hasRole($roles);
+
+    }
+
+    private function isAdmin() {
+        return in_array('Super Admin', $this->currentUserRoles);
     }
 }

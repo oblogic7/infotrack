@@ -4,7 +4,7 @@ class ClientContactsController extends \BaseController {
 
     public function __construct(
         \YA\Contracts\ClientContactRepositoryInterface $contacts,
-        \YA\Contracts\ClientRepositoryInterface $clients) {
+        \YA\Contracts\ClientRepositoryInterface $clientsfd) {
         $this->contacts = $contacts;
         $this->clients = $clients;
     }
