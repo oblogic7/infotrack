@@ -12719,19 +12719,20 @@ body > .header .logo .icon {
 
 /* line 1570, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item {
+  padding-right: 5px;
   margin-bottom: 10px; }
 
-/* line 1573, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1574, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item:before,
 .box .chat .item:after {
   display: table;
   content: " "; }
 
-/* line 1578, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1579, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item:after {
   clear: both; }
 
-/* line 1581, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1582, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > img {
   width: 40px;
   height: 40px;
@@ -12740,31 +12741,39 @@ body > .header .logo .icon {
   -moz-border-radius: 50% !important;
   border-radius: 50% !important; }
 
-/* line 1589, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1590, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > img.online {
   border: 2px solid #00a65a; }
 
-/* line 1592, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1593, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > img.offline {
   border: 2px solid #f56954; }
 
-/* line 1595, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1596, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+.box .chat .item:hover {
+  background: #F4F4F4; }
+
+/* line 1599, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+.box .chat .item:hover .fa-offset.fa-inverse {
+  color: #F4F4F4; }
+
+/* line 1602, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > i {
   position: relative;
   top: 5px;
   margin-left: 8px; }
 
-/* line 1600, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1607, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .message {
   margin-left: 55px;
   margin-top: -25px; }
 
-/* line 1604, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1611, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .message > .name {
   display: block;
   font-weight: 600; }
 
-/* line 1608, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1615, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -12774,13 +12783,13 @@ body > .header .logo .icon {
   margin-right: 15px;
   padding: 10px; }
 
-/* line 1617, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1624, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment > h4 {
   margin: 0 0 5px 0;
   font-weight: 600;
   font-size: 14px; }
 
-/* line 1622, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1629, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment > p,
 .box .chat .item > .attachment > .filename {
   font-weight: 600;
@@ -12788,17 +12797,17 @@ body > .header .logo .icon {
   font-style: italic;
   margin: 0; }
 
-/* line 1629, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1636, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment:before,
 .box .chat .item > .attachment:after {
   display: table;
   content: " "; }
 
-/* line 1634, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1641, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment:after {
   clear: both; }
 
-/* line 1637, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1644, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box > .overlay,
 .box > .loading-img {
   position: absolute;
@@ -12807,16 +12816,16 @@ body > .header .logo .icon {
   width: 100%;
   height: 100%; }
 
-/* line 1645, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1652, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box > .overlay {
   z-index: 1010;
   background: rgba(255, 255, 255, 0.7); }
 
-/* line 1649, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1656, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box > .overlay.dark {
   background: rgba(0, 0, 0, 0.5); }
 
-/* line 1652, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1659, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box > .loading-img {
   z-index: 1020;
   background: transparent url("../img/ajax-loader1.gif") 50% 50% no-repeat; }
@@ -12825,13 +12834,13 @@ body > .header .logo .icon {
 Component: timeline
 --------------------
 */
-/* line 1660, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1667, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline {
   margin: 0 0 30px 0;
   padding: 0;
   list-style: none; }
 
-/* line 1665, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1672, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline:before {
   content: '';
   position: absolute;
@@ -12846,23 +12855,23 @@ Component: timeline
   -moz-border-radius: 2px;
   border-radius: 2px; }
 
-/* line 1679, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1686, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li {
   position: relative;
   margin-right: 10px;
   margin-bottom: 15px; }
 
-/* line 1684, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1691, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li:before,
 .timeline > li:after {
   display: table;
   content: " "; }
 
-/* line 1689, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1696, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li:after {
   clear: both; }
 
-/* line 1692, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1699, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item {
   margin-top: 10px;
   border: 0px solid #dfdfdf;
@@ -12874,13 +12883,13 @@ Component: timeline
   position: relative;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
 
-/* line 1703, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1710, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item > .time {
   color: #999;
   float: right;
   margin: 2px 0 0 0; }
 
-/* line 1708, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1715, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item > .timeline-header {
   margin: 0;
   color: #555;
@@ -12889,16 +12898,16 @@ Component: timeline
   font-size: 16px;
   line-height: 1.1; }
 
-/* line 1716, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1723, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item > .timeline-header > a {
   font-weight: 600; }
 
-/* line 1719, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1726, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item > .timeline-body,
 .timeline > li > .timeline-item > .timeline-footer {
   padding: 10px; }
 
-/* line 1723, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1730, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li.time-label > span {
   font-weight: 600;
   padding: 5px;
@@ -12909,7 +12918,7 @@ Component: timeline
   -moz-border-radius: 4px;
   border-radius: 4px; }
 
-/* line 1733, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1740, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .fa,
 .timeline > li > .glyphicon,
 .timeline > li > .ion {
@@ -12930,7 +12939,7 @@ Component: timeline
     Component: Buttons
 -------------------------
 */
-/* line 1753, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1760, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn {
   font-weight: 500;
   -webkit-border-radius: 3px;
@@ -12941,97 +12950,97 @@ Component: timeline
   -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.09);
   box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.09); }
 
-/* line 1763, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1770, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-default {
   background-color: #fafafa;
   color: #666;
   border-color: #ddd;
   border-bottom-color: #ddd; }
 
-/* line 1769, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1776, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-default:hover,
 .btn.btn-default:active,
 .btn.btn-default.hover {
   background-color: #f4f4f4 !important; }
 
-/* line 1774, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1781, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-default.btn-flat {
   border-bottom-color: #d9dadc; }
 
-/* line 1777, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1784, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-primary {
   background-color: #3c8dbc;
   border-color: #367fa9; }
 
-/* line 1781, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1788, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary.hover {
   background-color: #367fa9; }
 
-/* line 1786, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1793, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-success {
   background-color: #00a65a;
   border-color: #008d4c; }
 
-/* line 1790, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1797, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-success:hover,
 .btn.btn-success:active,
 .btn.btn-success.hover {
   background-color: #008d4c; }
 
-/* line 1795, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1802, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-info {
   background-color: #00c0ef;
   border-color: #00acd6; }
 
-/* line 1799, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1806, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-info:hover,
 .btn.btn-info:active,
 .btn.btn-info.hover {
   background-color: #00acd6; }
 
-/* line 1804, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1811, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-danger {
   background-color: #f56954;
   border-color: #f4543c; }
 
-/* line 1808, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1815, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-danger:hover,
 .btn.btn-danger:active,
 .btn.btn-danger.hover {
   background-color: #f4543c; }
 
-/* line 1813, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1820, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-warning {
   background-color: #f39c12;
   border-color: #e08e0b; }
 
-/* line 1817, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1824, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-warning:hover,
 .btn.btn-warning:active,
 .btn.btn-warning.hover {
   background-color: #e08e0b; }
 
-/* line 1822, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1829, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-sm {
   font-size: 12px; }
 
-/* line 1825, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1832, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-lg {
   padding: 10px 16px; }
 
-/* line 1828, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1835, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-block {
   font-size: 15px;
   padding: 10px; }
 
-/* line 1832, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1839, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-block.btn-sm {
   font-size: 13px;
   padding: 7px; }
 
-/* line 1836, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1843, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-flat {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -13041,24 +13050,24 @@ Component: timeline
   box-shadow: none;
   border-width: 1px; }
 
-/* line 1845, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1852, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn:active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
-/* line 1850, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1857, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn:focus {
   outline: none; }
 
-/* line 1853, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1860, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-file {
   position: relative;
   width: 120px;
   height: 35px;
   overflow: hidden; }
 
-/* line 1859, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1866, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-file > input[type='file'] {
   display: block !important;
   width: 100% !important;
@@ -13068,7 +13077,7 @@ Component: timeline
   top: -10px;
   cursor: pointer; }
 
-/* line 1868, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1875, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app {
   position: relative;
   padding: 15px 5px;
@@ -13087,27 +13096,27 @@ Component: timeline
   background-color: #fafafa;
   font-size: 12px; }
 
-/* line 1886, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1893, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app > .fa,
 .btn.btn-app > .glyphicon,
 .btn.btn-app > .ion {
   font-size: 20px;
   display: block; }
 
-/* line 1892, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1899, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app:hover {
   background: #f4f4f4;
   color: #444;
   border-color: #aaa; }
 
-/* line 1897, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1904, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app:active,
 .btn.btn-app:focus {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
-/* line 1903, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1910, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app > .badge {
   position: absolute;
   top: -3px;
@@ -13115,7 +13124,7 @@ Component: timeline
   font-size: 10px;
   font-weight: 400; }
 
-/* line 1910, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1917, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -13123,24 +13132,24 @@ Component: timeline
   opacity: 0.9;
   padding: 0; }
 
-/* line 1917, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1924, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social > .fa {
   padding: 10px 0;
   width: 40px; }
 
-/* line 1921, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1928, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social > .fa + span {
   border-left: 1px solid rgba(255, 255, 255, 0.3); }
 
-/* line 1924, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1931, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social span {
   padding: 10px; }
 
-/* line 1927, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1934, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social:hover {
   opacity: 1; }
 
-/* line 1930, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1937, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-circle {
   width: 30px;
   height: 30px;
@@ -13154,49 +13163,49 @@ Component: timeline
     Component: callout
 ------------------------
 */
-/* line 1943, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1950, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout {
   margin: 0 0 20px 0;
   padding: 15px 30px 15px 15px;
   border-left: 5px solid #eee; }
 
-/* line 1948, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1955, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout h4 {
   margin-top: 0; }
 
-/* line 1951, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1958, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout p:last-child {
   margin-bottom: 0; }
 
-/* line 1954, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1961, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout code,
 .callout .highlight {
   background-color: #fff; }
 
-/* line 1958, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1965, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-danger {
   background-color: #fcf2f2;
   border-color: #dFb5b4; }
 
-/* line 1962, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1969, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-warning {
   background-color: #fefbed;
   border-color: #f1e7bc; }
 
-/* line 1966, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1973, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-info {
   background-color: #f0f7fd;
   border-color: #d0e3f0; }
 
-/* line 1970, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1977, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-danger h4 {
   color: #B94A48; }
 
-/* line 1973, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1980, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-warning h4 {
   color: #C09853; }
 
-/* line 1976, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1983, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-info h4 {
   color: #3A87AD; }
 
@@ -13204,12 +13213,12 @@ Component: timeline
     Component: alert
 ------------------------
 */
-/* line 1983, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1990, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .alert {
   padding-left: 30px;
   position: relative; }
 
-/* line 1987, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1994, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .alert > .fa,
 .alert > .glyphicon {
   position: absolute;
@@ -13229,7 +13238,7 @@ Component: timeline
     Component: Navs
 */
 /* NAV PILLS */
-/* line 2006, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2013, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li > a {
   border-top: 3px solid transparent;
   -webkit-border-radius: 0;
@@ -13237,28 +13246,28 @@ Component: timeline
   border-radius: 0;
   color: #444; }
 
-/* line 2013, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2020, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li > a > .fa,
 .nav.nav-pills > li > a > .glyphicon,
 .nav.nav-pills > li > a > .ion {
   margin-right: 5px; }
 
-/* line 2018, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2025, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li.active > a,
 .nav.nav-pills > li.active > a:hover {
   background-color: #f6f6f6;
   border-top-color: #3c8dbc;
   color: #444; }
 
-/* line 2024, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2031, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li.active > a {
   font-weight: 600; }
 
-/* line 2027, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2034, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li > a:hover {
   background-color: #f6f6f6; }
 
-/* line 2030, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2037, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills.nav-stacked > li > a {
   border-top: 0;
   border-left: 3px solid transparent;
@@ -13267,14 +13276,14 @@ Component: timeline
   border-radius: 0;
   color: #444; }
 
-/* line 2038, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2045, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills.nav-stacked > li.active > a,
 .nav.nav-pills.nav-stacked > li.active > a:hover {
   background-color: #f6f6f6;
   border-left-color: #3c8dbc;
   color: #444; }
 
-/* line 2044, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2051, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills.nav-stacked > li.header {
   border-bottom: 1px solid #ddd;
   color: #777;
@@ -13283,82 +13292,82 @@ Component: timeline
   text-transform: uppercase; }
 
 /* NAV TABS */
-/* line 2052, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2059, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom {
   margin-bottom: 20px;
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
 
-/* line 2057, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2064, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs {
   margin: 0;
   border-bottom-color: #f4f4f4; }
 
-/* line 2061, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2068, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li {
   border-top: 3px solid transparent;
   margin-bottom: -2px;
   margin-right: 5px; }
 
-/* line 2066, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2073, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li > a {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important; }
 
-/* line 2071, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2078, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li > a,
 .nav-tabs-custom > .nav-tabs > li > a:hover {
   background: transparent;
   margin: 0; }
 
-/* line 2076, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2083, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li:not(.active) > a:hover,
 .nav-tabs-custom > .nav-tabs > li:not(.active) > a:focus,
 .nav-tabs-custom > .nav-tabs > li:not(.active) > a:active {
   border-color: transparent; }
 
-/* line 2081, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2088, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.active {
   border-top-color: #3c8dbc; }
 
-/* line 2084, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2091, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.active > a,
 .nav-tabs-custom > .nav-tabs > li.active:hover > a {
   background-color: #fff; }
 
-/* line 2088, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2095, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.active > a {
   border-top: 0;
   border-left-color: #f4f4f4;
   border-right-color: #f4f4f4; }
 
-/* line 2093, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2100, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li:first-of-type {
   margin-left: 0px; }
 
-/* line 2096, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2103, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li:first-of-type.active > a {
   border-left-width: 0; }
 
-/* line 2099, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2106, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs.pull-right {
   float: none !important; }
 
-/* line 2102, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2109, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs.pull-right > li {
   float: right; }
 
-/* line 2105, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2112, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type {
   margin-right: 0px; }
 
-/* line 2108, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2115, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type.active > a {
   border-left-width: 1px;
   border-right-width: 0px; }
 
-/* line 2112, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2119, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.header {
   font-weight: 400;
   line-height: 35px;
@@ -13367,19 +13376,19 @@ Component: timeline
   color: #444;
   cursor: default; }
 
-/* line 2120, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2127, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.header > .fa,
 .nav-tabs-custom > .nav-tabs > li.header > .glyphicon,
 .nav-tabs-custom > .nav-tabs > li.header > .ion {
   margin-right: 10px; }
 
-/* line 2125, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2132, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .tab-content {
   background: #fff;
   padding: 10px; }
 
 /* PAGINATION */
-/* line 2130, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2137, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .pagination > li > a {
   background: #fafafa;
   color: #666;
@@ -13387,7 +13396,7 @@ Component: timeline
   -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.09);
   box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.09); }
 
-/* line 2137, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2144, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .pagination > li:first-of-type a,
 .pagination > li:last-of-type a {
   -webkit-border-radius: 0;
@@ -13397,19 +13406,19 @@ Component: timeline
 /*
     Component: Mailbox
 */
-/* line 2146, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2153, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd; }
 
-/* line 2151, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2158, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr.unread > td {
   background-color: rgba(0, 0, 0, 0.05);
   color: #000;
   font-weight: 600; }
 
-/* line 2156, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2163, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td > .fa.fa-star,
 .mailbox .table-mailbox tr > td > .fa.fa-star-o,
 .mailbox .table-mailbox tr > td > .glyphicon.glyphicon-star,
@@ -13417,46 +13426,46 @@ Component: timeline
   color: #f39c12;
   cursor: pointer; }
 
-/* line 2163, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2170, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td.small-col {
   width: 30px; }
 
-/* line 2166, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2173, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td.name {
   width: 150px;
   font-weight: 600; }
 
-/* line 2170, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2177, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td.time {
   text-align: right;
   width: 100px; }
 
-/* line 2174, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2181, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td {
   white-space: nowrap; }
 
-/* line 2177, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2184, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td > a {
   color: #444; }
 
 @media screen and (max-width: 767px) {
-  /* line 2181, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2188, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .mailbox .nav-stacked > li:not(.header) {
     float: left;
     width: 50%; }
 
-  /* line 2185, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2192, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .mailbox .nav-stacked > li:not(.header).header {
     border: 0 !important; }
 
-  /* line 2188, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2195, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .mailbox .search-form {
     margin-top: 10px; } }
 /*
     Page: locked screen
 */
 /* ADD THIS CLASS TO THE <HTML> TAG */
-/* line 2196, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2203, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen {
   background: url(../img/blur-background09.jpg) repeat center center fixed;
   -webkit-background-size: cover;
@@ -13465,12 +13474,12 @@ Component: timeline
   background-size: cover; }
 
 /* Remove the background from the body element */
-/* line 2204, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2211, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen > body {
   background: transparent; }
 
 /* We will put the dynamically generated digital clock here */
-/* line 2208, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2215, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen .headline {
   color: #fff;
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
@@ -13481,19 +13490,19 @@ Component: timeline
   font-size: 90px; }
 
 @media screen and (max-width: 480px) {
-  /* line 2218, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2225, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .lockscreen .headline {
     font-size: 60px;
     margin-bottom: 40px; } }
 /* User name [optional] */
-/* line 2224, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2231, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen .lockscreen-name {
   text-align: center;
   font-weight: 600;
   font-size: 16px; }
 
 /* Will contain the image and the sign in form */
-/* line 2230, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2237, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item {
   padding: 0;
   background: #fff;
@@ -13504,18 +13513,18 @@ Component: timeline
   margin: 10px auto;
   width: 290px; }
 
-/* line 2240, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2247, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item:before,
 .lockscreen-item:after {
   display: table;
   content: " "; }
 
-/* line 2245, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2252, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item:after {
   clear: both; }
 
 /* User image */
-/* line 2249, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2256, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-image {
   position: absolute;
   left: -10px;
@@ -13527,7 +13536,7 @@ Component: timeline
   border-radius: 50%;
   z-index: 10; }
 
-/* line 2260, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2267, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-image > img {
   width: 70px;
   height: 70px;
@@ -13536,21 +13545,21 @@ Component: timeline
   border-radius: 50%; }
 
 /* Contains the password input and the login button */
-/* line 2268, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2275, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-credentials {
   margin-left: 80px; }
 
-/* line 2271, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2278, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-credentials input {
   border: 0 !important; }
 
-/* line 2274, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2281, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-credentials .btn {
   background-color: #fff;
   border: 0; }
 
 /* Extra to give the user an option to navigate the website [optional]*/
-/* line 2279, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2286, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-link {
   margin-top: 30px;
   text-align: center; }
@@ -13558,12 +13567,12 @@ Component: timeline
 /* 
     Page: register and login
 */
-/* line 2286, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2293, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box {
   width: 360px;
   margin: 90px auto 0 auto; }
 
-/* line 2290, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2297, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .header {
   -webkit-border-top-left-radius: 4px;
   -webkit-border-top-right-radius: 4px;
@@ -13585,29 +13594,29 @@ Component: timeline
   font-weight: 300;
   color: #fff; }
 
-/* line 2311, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2318, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .body,
 .form-box .footer {
   padding: 10px 20px;
   background: #fff;
   color: #444; }
 
-/* line 2317, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2324, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .body > .form-group,
 .form-box .footer > .form-group {
   margin-top: 20px; }
 
-/* line 2321, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2328, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .body > .form-group > input,
 .form-box .footer > .form-group > input {
   border: #fff; }
 
-/* line 2325, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2332, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .body > .btn,
 .form-box .footer > .btn {
   margin-bottom: 10px; }
 
-/* line 2329, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2336, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .footer {
   -webkit-border-top-left-radius: 0;
   -webkit-border-top-right-radius: 0;
@@ -13623,65 +13632,65 @@ Component: timeline
   border-bottom-left-radius: 4px; }
 
 @media (max-width: 767px) {
-  /* line 2344, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2351, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .form-box {
     width: 90%; } }
 /* 
     Page: 404 and 500 error pages
 ------------------------------------
 */
-/* line 2352, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2359, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page {
   width: 600px;
   margin: 20px auto 0 auto; }
 
 @media screen and (max-width: 767px) {
-  /* line 2357, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2364, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .error-page {
     width: 100%; } }
-/* line 2361, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2368, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page > .headline {
   float: left;
   font-size: 100px;
   font-weight: 300; }
 
 @media screen and (max-width: 767px) {
-  /* line 2367, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2374, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .error-page > .headline {
     float: none;
     text-align: center; } }
-/* line 2372, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2379, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page > .error-content {
   margin-left: 190px;
   display: block; }
 
 @media screen and (max-width: 767px) {
-  /* line 2377, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2384, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .error-page > .error-content {
     margin-left: 0; } }
-/* line 2381, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2388, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page > .error-content > h3 {
   font-weight: 300;
   font-size: 25px; }
 
 @media screen and (max-width: 767px) {
-  /* line 2386, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2393, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .error-page > .error-content > h3 {
     text-align: center; } }
-/* line 2390, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2397, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page:before,
 .error-page:after {
   display: table;
   content: " "; }
 
-/* line 2395, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2402, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page:after {
   clear: both; }
 
 /* 
     Page: Invoice
 */
-/* line 2401, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2408, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .invoice {
   position: relative;
   width: 90%;
@@ -13689,29 +13698,29 @@ Component: timeline
   background: #fff;
   border: 1px solid #f4f4f4; }
 
-/* line 2408, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2415, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .invoice-title {
   margin-top: 0; }
 
 /* Enhancement for printing */
 @media print {
-  /* line 2413, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2420, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .invoice {
     width: 100%;
     border: 0;
     margin: 0;
     padding: 0; }
 
-  /* line 2419, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2426, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .invoice-col {
     float: left;
     width: 33.3333333%; }
 
-  /* line 2423, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2430, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .table-responsive {
     overflow: auto; }
 
-  /* line 2426, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2433, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .table-responsive > .table tr th,
   .table-responsive > .table tr td {
     white-space: normal !important; } }
@@ -13724,16 +13733,16 @@ Component: timeline
     --------
 */
 /* skin-black navbar */
-/* line 2440, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2447, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #eee; }
 
-/* line 2444, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2451, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .nav a {
   color: #333333; }
 
-/* line 2447, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2454, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .nav > li > a:hover,
 .skin-black .navbar .nav > li > a:active,
 .skin-black .navbar .nav > li > a:focus,
@@ -13743,103 +13752,103 @@ Component: timeline
   background: #ffffff;
   color: #999999; }
 
-/* line 2456, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2463, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .navbar-right > .nav {
   margin-right: 10px; }
 
-/* line 2459, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2466, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .sidebar-toggle .icon-bar {
   background: #333333; }
 
-/* line 2462, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2469, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .sidebar-toggle:hover .icon-bar {
   background: #999999 !important; }
 
 /* skin-black logo */
-/* line 2466, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2473, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .logo {
   background-color: #333333;
   color: #f9f9f9; }
 
-/* line 2470, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2477, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .logo > a {
   color: #f9f9f9; }
 
-/* line 2473, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2480, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .logo:hover {
   background: #303030; }
 
 /* skin-black content header */
-/* line 2477, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2484, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .right-side > .content-header {
   background: transparent;
   box-shadow: none; }
 
 /* Skin-red user panel */
-/* line 2482, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2489, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .user-panel > .image > img {
   border: 1px solid #444; }
 
-/* line 2485, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2492, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .user-panel > .info,
 .skin-black .user-panel > .info > a {
   color: #eee; }
 
 /* skin-black sidebar */
-/* line 2490, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2497, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar {
   border-bottom: 1px solid #333; }
 
-/* line 2493, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2500, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li {
   border-top: 1px solid #333;
   border-bottom: 0px solid #444; }
 
-/* line 2497, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2504, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li:first-of-type {
   border-top: 1px solid #444; }
 
-/* line 2500, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2507, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li:first-of-type > a {
   border-top: 0px solid #333; }
 
-/* line 2503, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2510, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li > a {
   margin-right: 1px; }
 
-/* line 2506, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2513, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li > a:hover,
 .skin-black .sidebar > .sidebar-menu > li.active > a {
   color: #f6f6f6;
   background: #444; }
 
-/* line 2511, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2518, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
   background: #444; }
 
-/* line 2515, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2522, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .left-side {
   background: #333; }
 
-/* line 2518, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2525, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar a {
   color: #eee; }
 
-/* line 2521, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2528, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar a:hover {
   text-decoration: none; }
 
-/* line 2524, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2531, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .treeview-menu > li > a {
   color: #ccc; }
 
-/* line 2527, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2534, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .treeview-menu > li.active > a,
 .skin-black .treeview-menu > li > a:hover {
   color: #fff; }
 
-/* line 2531, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2538, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -13847,7 +13856,7 @@ Component: timeline
   border: 0px solid #555;
   margin: 10px 10px; }
 
-/* line 2538, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2545, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form input[type="text"],
 .skin-black .sidebar-form .btn {
   box-shadow: none;
@@ -13856,7 +13865,7 @@ Component: timeline
   height: 35px;
   outline: none; }
 
-/* line 2546, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2553, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form input[type="text"] {
   color: #666;
   -webkit-border-top-left-radius: 2px !important;
@@ -13872,17 +13881,17 @@ Component: timeline
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 2px !important; }
 
-/* line 2561, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2568, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form input[type="text"]:focus,
 .skin-black .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   background-color: #444;
   border: 0; }
 
-/* line 2566, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2573, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   border-left: 0; }
 
-/* line 2569, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2576, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form .btn {
   color: #999;
   -webkit-border-top-left-radius: 0 !important;
@@ -13904,15 +13913,15 @@ Component: timeline
     ---------
 */
 /* skin-green navbar */
-/* line 2590, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2597, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar {
   background-color: #5cb85c; }
 
-/* line 2593, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2600, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .nav a {
   color: rgba(255, 255, 255, 0.8); }
 
-/* line 2596, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2603, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .nav > li > a:hover,
 .skin-green .navbar .nav > li > a:active,
 .skin-green .navbar .nav > li > a:focus,
@@ -13922,106 +13931,106 @@ Component: timeline
   background: rgba(0, 0, 0, 0.1);
   color: #f6f6f6; }
 
-/* line 2605, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2612, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .navbar-right > .nav {
   margin-right: 10px; }
 
-/* line 2608, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2615, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .sidebar-toggle .icon-bar {
   background: rgba(255, 255, 255, 0.8); }
 
-/* line 2611, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2618, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .sidebar-toggle:hover .icon-bar {
   background: #f6f6f6 !important; }
 
 /* skin-blue logo */
-/* line 2615, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2622, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .logo {
   background-color: #4cae4c;
   color: #f9f9f9; }
 
-/* line 2619, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2626, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .logo > a {
   color: #f9f9f9; }
 
-/* line 2622, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2629, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .logo:hover {
   background: #4aab4a; }
 
 /* skin-blue content header */
-/* line 2626, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2633, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .right-side > .content-header {
   background: #fbfbfb;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
 
 /* Skin-blue user panel */
-/* line 2631, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2638, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .user-panel > .image > img {
   border: 1px solid #dfdfdf; }
 
-/* line 2634, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2641, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .user-panel > .info,
 .skin-green .user-panel > .info > a {
   color: #555555; }
 
 /* skin-blue sidebar */
-/* line 2639, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2646, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar {
   border-bottom: 1px solid #fff; }
 
-/* line 2642, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2649, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #dbdbdb; }
 
-/* line 2646, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2653, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li:first-of-type {
   border-top: 1px solid #dbdbdb; }
 
-/* line 2649, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2656, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li:first-of-type > a {
   border-top: 1px solid #fff; }
 
-/* line 2652, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2659, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li > a {
   margin-right: 1px; }
 
-/* line 2655, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2662, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li > a:hover,
 .skin-green .sidebar > .sidebar-menu > li.active > a {
   color: #222;
   background: #f9f9f9; }
 
-/* line 2660, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2667, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
   background: #f9f9f9; }
 
-/* line 2664, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2671, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .left-side {
   background: #f4f4f4;
   -webkit-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
   box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07); }
 
-/* line 2670, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2677, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar a {
   color: #555555; }
 
-/* line 2673, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2680, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar a:hover {
   text-decoration: none; }
 
-/* line 2676, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2683, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .treeview-menu > li > a {
   color: #777; }
 
-/* line 2679, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2686, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .treeview-menu > li.active > a,
 .skin-green .treeview-menu > li > a:hover {
   color: #111; }
 
-/* line 2683, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2690, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -14029,7 +14038,7 @@ Component: timeline
   border: 1px solid #dbdbdb;
   margin: 10px 10px; }
 
-/* line 2690, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2697, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form input[type="text"],
 .skin-green .sidebar-form .btn {
   box-shadow: none;
@@ -14037,7 +14046,7 @@ Component: timeline
   border: 1px solid #fafafa;
   height: 35px; }
 
-/* line 2697, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2704, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form input[type="text"] {
   color: #666;
   -webkit-border-top-left-radius: 2px !important;
@@ -14053,17 +14062,17 @@ Component: timeline
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 2px !important; }
 
-/* line 2712, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2719, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form input[type="text"]:focus,
 .skin-green .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   background-color: #fff;
   color: #666; }
 
-/* line 2717, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2724, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   border-left-color: #fff; }
 
-/* line 2720, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2727, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form .btn {
   color: #999;
   -webkit-border-top-left-radius: 0 !important;
@@ -14089,7 +14098,7 @@ Component: timeline
  */
 /* iCheck plugin Minimal skin, black
 ----------------------------------- */
-/* line 2745, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2752, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal,
 .iradio_minimal {
   display: inline-block;
@@ -14103,57 +14112,57 @@ Component: timeline
   border: none;
   cursor: pointer; }
 
-/* line 2758, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2765, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal {
   background-position: 0 0; }
 
-/* line 2761, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2768, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal.hover {
   background-position: -20px 0; }
 
-/* line 2764, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2771, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal.checked {
   background-position: -40px 0; }
 
-/* line 2767, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2774, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal.disabled {
   background-position: -60px 0;
   cursor: default; }
 
-/* line 2771, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2778, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal.checked.disabled {
   background-position: -80px 0; }
 
-/* line 2774, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2781, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal {
   background-position: -100px 0; }
 
-/* line 2777, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2784, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal.hover {
   background-position: -120px 0; }
 
-/* line 2780, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2787, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal.checked {
   background-position: -140px 0; }
 
-/* line 2783, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2790, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal.disabled {
   background-position: -160px 0;
   cursor: default; }
 
-/* line 2787, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2794, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal.checked.disabled {
   background-position: -180px 0; }
 
 /* Retina support */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 2792, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2799, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .icheckbox_minimal,
   .iradio_minimal {
     background-image: url("iCheck/minimal/minimal@2x.png");
     -webkit-background-size: 200px 20px;
     background-size: 200px 20px; } }
-/* line 2799, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2806, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .pace .pace-progress {
   background: #00c0ef;
   position: fixed;
@@ -14166,7 +14175,7 @@ Component: timeline
   -o-transition: width 1s;
   transition: width 1s; }
 
-/* line 2811, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2818, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .pace-inactive {
   display: none; }
 
@@ -14241,15 +14250,20 @@ input.typeahead, .tt-input, .tt-hint {
 .tt-suggestion p {
   margin: 0; }
 
-/* line 10, ../sass/styles.scss */
+/* line 9, ../sass/styles.scss */
+.fa-offset {
+  top: 18px;
+  left: 14px; }
+
+/* line 14, ../sass/styles.scss */
 #search-controls div img {
   margin: 15px auto; }
 
-/* line 15, ../sass/styles.scss */
+/* line 19, ../sass/styles.scss */
 .logo img {
   max-height: 30px; }
 
-/* line 20, ../sass/styles.scss */
+/* line 24, ../sass/styles.scss */
 .google-btn {
   margin: 100px auto 0;
   display: block;
@@ -14257,11 +14271,11 @@ input.typeahead, .tt-input, .tt-hint {
   height: 55px;
   background-size: contain;
   background: url(/assets/img/google-signin-base.png); }
-  /* line 28, ../sass/styles.scss */
+  /* line 32, ../sass/styles.scss */
   .google-btn:hover, .google-btn.hover {
     background: url(/assets/img/google-signin-hover.png); }
 
-/* line 33, ../sass/styles.scss */
+/* line 37, ../sass/styles.scss */
 .unmask-pass {
   border: none;
   margin-bottom: 20px; }
