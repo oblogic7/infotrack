@@ -112,7 +112,8 @@
                 <!-- /.box-header -->
                 <div class="box-body">
                     @if ($client->credentials->count() > 0)
-                    <table class="table credentials-table">
+                    <div class="table-responsive">
+                    <table class="table table-condensed credentials-table">
                         <thead>
                         <tr>
                             <th></th>
@@ -145,7 +146,12 @@
 
                                 <td colspan="4">
                                     {{ $login->name }}
-                                    <i class="fa fa-2x fa-lock pull-right" data-toggle="tooltip" data-title="Access to this item is restricted to the following roles: @foreach($login->roles->lists('name') as $name) <br/>{{ strtoupper($name)}} @endforeach"> </i>
+
+                                    <span class="fa-stack fa-lg pull-right">
+
+                                        <i class="fa fa-stack-1x fa-lock"> </i>
+                                        <i class="fa fa-stack-2x fa-ban text-danger text-info" data-toggle="tooltip" data-title="Access to this item is restricted to the following roles: @foreach($login->roles->lists('name') as $name) <br/>{{ strtoupper($name)}} @endforeach"></i>
+                                    </span>
                                 </td>
 
                             @endif
@@ -154,6 +160,7 @@
                         @endforeach
                         </tbody>
                     </table>
+                    </div>
                     @else
                     <div class="alert alert-info text-center">
                         This client does not have any login information. <br/><br/>

@@ -1568,6 +1568,7 @@ body > .header .logo .icon {
   padding: 5px 20px 5px 10px;
 }
 .box .chat .item {
+  padding-right: 5px;
   margin-bottom: 10px;
 }
 .box .chat .item:before,
@@ -1591,6 +1592,12 @@ body > .header .logo .icon {
 }
 .box .chat .item > img.offline {
   border: 2px solid #f56954;
+}
+.box .chat .item:hover {
+  background: #F4F4F4;
+}
+.box .chat .item:hover .fa-offset.fa-inverse {
+  color: #F4F4F4;
 }
 .box .chat .item > i {
   position: relative;
