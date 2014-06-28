@@ -24,10 +24,9 @@
                 <i class="fa fa-stack-2x fa-gear text-info"></i>
                 <i class="fa fa-stack-2x fa-circle fa-inverse fa-offset"></i>
                     @if($item->isChild)
-
-                        <i data-toggle="tooltip" data-title="Message for a child entity." class="fa fa-cubes fa-stack-1x fa-offset text-danger"></i>
+                        <i data-toggle="tooltip" data-placement="right" data-title="Message for a child entity." class="fa fa-cubes fa-stack-1x fa-offset text-danger"></i>
                     @else
-                        <i data-toggle="tooltip" data-title="Message for this entity." class="fa fa-cube fa-stack-1x fa-offset text-danger"></i>
+                        <i data-toggle="tooltip" data-placement="right" data-title="Message for this entity." class="fa fa-cube fa-stack-1x fa-offset text-danger"></i>
                     @endif
             </span>
             <p class="message text-muted">
@@ -48,9 +47,9 @@
                                 <i class="fa fa-stack-2x fa-inverse fa-circle fa-offset"></i>
 
                     @if($item->isChild)
-                        <i data-toggle="tooltip" data-title="Message for a child entity." class="fa fa-cubes fa-stack-1x fa-offset text-danger"></i>
+                        <i data-toggle="tooltip" data-placement="right" data-title="Message for a child entity." class="fa fa-cubes fa-stack-1x fa-offset text-danger"></i>
                     @else
-                        <i data-toggle="tooltip" data-title="Message for this entity." class="fa fa-cube fa-stack-1x fa-offset text-danger"></i>
+                        <i data-toggle="tooltip" data-placement="right" data-title="Message for this entity." class="fa fa-cube fa-stack-1x fa-offset text-danger"></i>
                     @endif
             </span>            <p class="message">
                 <a href="#" class="name">
