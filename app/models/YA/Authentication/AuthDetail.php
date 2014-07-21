@@ -19,8 +19,10 @@ class AuthDetail extends BaseModel {
         'url.required' => 'You must enter a URL where this login can be used.'
     ];
 
+    protected $touches = ['client'];
+
     // Don't forget to fill this array
-    protected $fillable = ['name', 'username', 'password', 'url', 'notes'];
+    protected $fillable = ['name', 'username', 'password', 'url', 'notes', 'client_id'];
 
     public static function boot() {
         parent::boot();
@@ -31,8 +33,8 @@ class AuthDetail extends BaseModel {
         return $this->belongsTo('YA\Client');
     }
 
-    public function service() {
-        return $this->belongsTo('YA\Services\BaseService');
+    public function forClients() {
+        return $this->belongsToMany('YA\Client');
     }
 
     public function software() {

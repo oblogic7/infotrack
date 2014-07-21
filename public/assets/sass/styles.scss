@@ -3,12 +3,23 @@
 @import "vendors/font-awesome/font-awesome";
 @import "vendors/css/ionicons";
 @import "vendors/AdminLTE/AdminLTE";
+@import "vendors/chosen/chosen";
 @import "nav";
 @import "typeahead";
+
 
 .fa-offset {
   top: 18px;
   left: 14px;
+}
+
+.ya-green {
+  background: #4CAE4C;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 #search-controls div img {

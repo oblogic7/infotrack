@@ -4,7 +4,7 @@
 
 <section class="content-header">
     <h1>
-        Younger Associates
+        <a href="{{ URL::route('clients.show', [$client->id]) }}">{{ $client->name }}</a>
         <small>Authentication Details for {{ $auth->name }}</small>
     </h1>
 </section>
@@ -20,11 +20,14 @@
                     <i class="fa fa-lock"></i>
 
                     <h3 class="box-title">Authentication Details</h3>
+                    @if (Access::userAuthorized($auth->roles->lists('name')) )
+                        <a class="btn btn-default btn-xs pull-right" href="{{ URL::route('clients.auth.edit', [$client->id, $auth->id]) }}"><i class="glyphicon glyphicon-edit"></i></a>
+                    @endif
                 </div>
                 <!-- /.box-header -->
 
                 <div class="box-body">
-                    @if( Access::userAuthorized($auth->roles->lists('name')) )
+                    @if(Access::userAuthorized($auth->roles->lists('name')) )
                         <dl class="dl-horizontal">
                             <dt>User</dt>
                             <dd>{{ $auth->username }}</dd>

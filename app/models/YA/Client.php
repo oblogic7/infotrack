@@ -24,6 +24,10 @@ class Client extends BaseModel {
         return $this->hasMany('YA\Authentication\AuthDetail');
     }
 
+    public function yaCredentials() {
+        return $this->belongsToMany('YA\Authentication\AuthDetail');
+    }
+
     public function contacts() {
         return $this->hasMany('YA\ClientContact');
     }
@@ -50,8 +54,8 @@ class Client extends BaseModel {
 
     public function getChildActivityAttribute() {
         $activity = $this->serviceActivity;
-        $activity = $activity->merge($this->authActivity);
         $activity = $activity->merge($this->contactActivity);
+        $activity = $activity->merge($this->authActivity);
 
         $activity = $this->sortCollectionByDate($activity);
 

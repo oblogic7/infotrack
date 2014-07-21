@@ -16,5 +16,13 @@ class ClientContactRepository extends AbstractRepository implements ClientContac
 
     protected $modelClassName = '\YA\ClientContact';
 
+    public function update($id, $input) {
+        $contact = $this->find($id);
 
+        $contact->fill($input);
+
+        $contact->save();
+
+        return $contact;
+    }
 } 

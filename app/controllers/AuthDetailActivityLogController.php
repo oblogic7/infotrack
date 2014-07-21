@@ -30,7 +30,7 @@ class AuthDetailActivityLogController extends BaseController {
         // create activity log entry with passed relations.
         $this->activityLog->create($input, 'user', [ $user, $auth ] );
 
-        return Redirect::route('clients.auth.show', [$auth->client->id, $auth_id]);
+        return Redirect::back();
     }
 
 } 

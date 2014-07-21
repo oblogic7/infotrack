@@ -14,6 +14,8 @@ class BaseService extends BaseModel {
     protected $stiClassField = 'service_class';
     protected $stiBaseClass = 'YA\Services\BaseService';
 
+    protected $touches = ['client'];
+
     public static function boot() {
 
         parent::boot();

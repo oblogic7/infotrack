@@ -13,23 +13,21 @@ use YA\Repositories\ActivityLogRepository;
 
 class ClientObserver extends BaseObserver {
 
-    public function __construct(ActivityLogRepositoryInterface $activity) {
-        $this->activityLog = $activity;
+    public function __construct() {
+        $this->activityLog = new ActivityLogRepository();
         $this->user = \Auth::user();
 
     }
 
     public function created($client) {
 
-       $activityLog = $this->activityLog->create(
+       $this->activityLog->create(
             [
                 'message' => $client->name . ' created.',
                 'message_type' => 'system',
                 'client_id' => $client->id,
                 'user_id' => $this->user->id
             ]);
-
-        $this->user->activity()->save($activityLog);
     }
 
     public function deleting($client) {

@@ -37,7 +37,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="{{ URL::route('credentials.index') }}">
                     <i class="fa fa-lock"></i> YA Accounts
                 </a>
             </li>

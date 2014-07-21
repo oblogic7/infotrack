@@ -4,7 +4,7 @@
 
 <section class="content-header">
     <h1>
-        {{ $client->name }}
+        Younger Associates
         <small>New Credentials</small>
     </h1>
 </section>
@@ -22,7 +22,7 @@
         <div class="col-xs-12">
             <div class="alert alert-info">
                 <i class="fa fa-2x fa-exclamation"> </i>
-                This form is used to create login credentials that are specific to <strong>{{ $client->name }}</strong>. If these credentials are also used to access or manage data or services for any another client, it should be entered as a Younger Associates account and <strong>{{ $client->name }}</strong> should be specified as a client on that entry.
+                This form is used to create login credentials that are used for Younger Associates services or credentials that are used for multiple clients. If these credentials are used to access or manage data or services for multiple clients, the clients should be specified below.
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
 
     <div class="row">
 
-        <form role="form" class="form-horizontal" action="{{ URL::route('clients.auth.store', [$client->id]) }}" method="POST">
+        <form role="form" class="form-horizontal" action="{{ URL::route('credentials.store') }}" method="POST">
             <div class="col-xs-12">
                 <div class="box box-primary">
                     <!-- form start -->
@@ -84,11 +84,24 @@
                             </div>
                             <hr/>
                             <div class="form-group">
+                                <label class="col-md-4 control-label" for="clients">Clients</label>
+
+                                <div class="col-md-5">
+                                    <select name="clients[]" id="clients" multiple="" class="chosen" data-placeholder="Select a client...">
+                                        @foreach ($clients as $client)
+                                            <option value="{{ $client->id }}">{{ $client->name }}</option>
+                                        @endforeach
+                                    </select>
+                                    <span class="help-block">If these credentials are used to access client information, select those clients here.</span>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="form-group">
                                 <label class="col-md-4 control-label" for="roles">Permissions</label>
 
                                 <div class="col-md-5">
 
-                                    <select multiple="" name="roles[]" class="form-control chosen" data-placeholder="Select a role...">
+                                    <select multiple="" name="roles[]" class="chosen form-control input-md" data-placeholder="Select a role...">
                                         @foreach($roles as $role)
                                             <option value="{{ $role->id }}">{{ $role->name }}</option>
                                         @endforeach
@@ -105,7 +118,7 @@
                     <div class="box-footer clearfix">
                         <!-- Button -->
                         <div class="pull-right">
-                            <a class="btn btn-default" href="{{ URL::route('clients.show', [ $client->id ]) }}">Cancel</a>
+                            <a class="btn btn-default" href="{{ URL::route('credentials.index') }}">Cancel</a>
                             <input type="submit" id="singlebutton" name="singlebutton" class="btn btn-success"
                                    value="Save">
                         </div>

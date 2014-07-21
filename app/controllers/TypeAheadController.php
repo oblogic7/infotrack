@@ -10,10 +10,12 @@ class TypeAheadController extends BaseController {
 
     public function __construct(
         \YA\Contracts\ClientRepositoryInterface $clients,
-        \YA\Repositories\ClientAuthRepository $auth
+        \YA\Repositories\ClientAuthRepository $client_auth,
+        \YA\Contracts\YAAuthRepositoryInterface $ya_auth
     ) {
         $this->clients = $clients;
-        $this->auth = $auth;
+        $this->client_auth = $client_auth;
+        $this->ya_auth = $ya_auth;
     }
 
     public function clients() {
@@ -27,11 +29,21 @@ class TypeAheadController extends BaseController {
         return $clients;
     }
 
-    public function auth() {
-        $credentials = $this->auth->typeahead();
+    public function clientAuth() {
+        $credentials = $this->client_auth->typeahead();
 
         foreach ($credentials as &$credential) {
             $credential->ta_url = \URL::route('clients.auth.show', [$credential->client->id, $credential->id]);
+        }
+
+        return $credentials;
+    }
+
+    public function yaAuth() {
+        $credentials = $this->ya_auth->typeahead();
+
+        foreach ($credentials as &$credential) {
+            $credential->ta_url = \URL::route('credentials.show', $credential->id);
         }
 
         return $credentials;

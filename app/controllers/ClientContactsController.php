@@ -4,7 +4,7 @@ class ClientContactsController extends \BaseController {
 
     public function __construct(
         \YA\Contracts\ClientContactRepositoryInterface $contacts,
-        \YA\Contracts\ClientRepositoryInterface $clientsfd) {
+        \YA\Contracts\ClientRepositoryInterface $clients) {
         $this->contacts = $contacts;
         $this->clients = $clients;
     }
@@ -38,18 +38,6 @@ class ClientContactsController extends \BaseController {
 		return Redirect::route('clients.show', $client_id);
 	}
 
-	/**
-	 * Display the specified clientcontact.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		$clientcontact = Clientcontact::findOrFail($id);
-
-		return View::make('clients.contacts.show', compact('clientcontact'));
-	}
 
 	/**
 	 * Show the form for editing the specified clientcontact.
@@ -57,11 +45,12 @@ class ClientContactsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($client_id, $contact_id)
 	{
-		$clientcontact = Clientcontact::find($id);
+		$contact = $this->contacts->find($contact_id);
+        $client = $this->clients->find($client_id);
 
-		return View::make('clients.contacts.edit', compact('clientcontact'));
+		return View::make('clients.contacts.edit')->with(['contact' => $contact, 'client' => $client]);
 	}
 
 	/**
@@ -70,20 +59,12 @@ class ClientContactsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($client_id, $contact_id)
 	{
-		$clientcontact = Clientcontact::findOrFail($id);
 
-		$validator = Validator::make($data = Input::all(), Clientcontact::$rules);
+		$this->contacts->update($contact_id, Input::all());
 
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
-
-		$clientcontact->update($data);
-
-		return Redirect::route('clients.contacts.index');
+		return Redirect::route('clients.show', $client_id);
 	}
 
 	/**

@@ -19,18 +19,10 @@
     </div>
 
     <div class="row">
-        <div class="col-xs-12">
-            <div class="alert alert-info">
-                <i class="fa fa-2x fa-exclamation"> </i>
-                This form is used to create login credentials that are specific to <strong>{{ $client->name }}</strong>. If these credentials are also used to access or manage data or services for any another client, it should be entered as a Younger Associates account and <strong>{{ $client->name }}</strong> should be specified as a client on that entry.
-            </div>
-        </div>
-    </div>
 
+        <form role="form" class="form-horizontal" action="{{ URL::route('clients.auth.update', [$client->id, $auth->id]) }}" method="POST">
+            <input type="hidden" name="_method" value="PUT" />
 
-    <div class="row">
-
-        <form role="form" class="form-horizontal" action="{{ URL::route('clients.auth.store', [$client->id]) }}" method="POST">
             <div class="col-xs-12">
                 <div class="box box-primary">
                     <!-- form start -->
@@ -41,7 +33,7 @@
                                 <label class="col-md-4 control-label" for="name">Website Name</label>
 
                                 <div class="col-md-5">
-                                    <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('name') }}" autofocus>
+                                    <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ $auth->name }}" autofocus>
                                     <span class="help-block">Enter the name of the website or service for which this login is used.  Do not enter the client name as it will be automatically appended when necessary.</span>
                                 </div>
                             </div>
@@ -51,7 +43,7 @@
                                 <label class="col-md-4 control-label" for="label">Login Page</label>
 
                                 <div class="col-md-5">
-                                    <input id="url" name="url" type="url" placeholder="" class="form-control input-md" value="{{ Input::old('url') }}">
+                                    <input id="url" name="url" type="url" placeholder="" class="form-control input-md" value="{{ $auth->url }}">
                                     <span class="help-block">Enter the url of the login page where these credentials can be used.</span>
                                 </div>
                             </div>
@@ -61,7 +53,7 @@
                                 <label class="col-md-4 control-label" for="label">Username</label>
 
                                 <div class="col-md-5">
-                                    <input id="username" name="username" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('username') }}">
+                                    <input id="username" name="username" type="text" placeholder="" class="form-control input-md" value="{{ $auth->username }}">
                                 </div>
                             </div>
 
@@ -70,7 +62,7 @@
                                 <label class="col-md-4 control-label" for="password">Password</label>
 
                                 <div class="col-md-5">
-                                    <input id="password" name="password" type="password" placeholder="" class="form-control input-md">
+                                    <input id="password" name="password" type="password" placeholder="" class="form-control input-md" value="{{ $auth->password }}">
                                 </div>
                             </div>
 
@@ -79,7 +71,7 @@
                                 <label class="col-md-4 control-label" for="password_confirm">Confirm Password</label>
 
                                 <div class="col-md-5">
-                                    <input id="password_confirm" name="password_confirm" type="password" placeholder="" class="form-control input-md">
+                                    <input id="password_confirm" name="password_confirm" type="password" placeholder="" class="form-control input-md" value="{{ $auth->password }}">
                                 </div>
                             </div>
                             <hr/>
@@ -90,7 +82,7 @@
 
                                     <select multiple="" name="roles[]" class="form-control chosen" data-placeholder="Select a role...">
                                         @foreach($roles as $role)
-                                            <option value="{{ $role->id }}">{{ $role->name }}</option>
+                                            <option value="{{ $role->id }}" @if ($auth->roles->contains($auth->id)) selected @endif>{{ $role->name }}</option>
                                         @endforeach
                                     </select>
                                     <span class="help-block">Select the groups that should have access to this login information.  Leave blank for no restriction.</span>

@@ -16,54 +16,50 @@
     </div>
     <div class="box-body chat" id="chat-box">
         @foreach ($activity as $item)
-        @if($item->message_type == 'system')
-        <!-- log item -->
-        <div class="item" data-message-type="{{ $item->message_type }} @if($item->isChild)child @else self @endif">
-            <span class="fa-stack fa-lg">
+            @if($item->message_type == 'system')
+            <!-- log item -->
+            <div class="item" data-message-type="{{ $item->message_type }} @if($item->isChild)child @else self @endif">
+                <i class="fa fa-3x fa-gear text-info"></i>
 
-                <i class="fa fa-stack-2x fa-gear text-info"></i>
-                <i class="fa fa-stack-2x fa-circle fa-inverse fa-offset"></i>
-                    @if($item->isChild)
-                        <i data-toggle="tooltip" data-placement="right" data-title="Message for a child entity." class="fa fa-cubes fa-stack-1x fa-offset text-danger"></i>
-                    @else
-                        <i data-toggle="tooltip" data-placement="right" data-title="Message for this entity." class="fa fa-cube fa-stack-1x fa-offset text-danger"></i>
-                    @endif
-            </span>
-            <p class="message text-muted">
-                <span class="name">
-                    <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}</small>
-                </span>
+                <p class="message text-muted">
+                    <span class="name">
+                        <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}<br/>
+                            @if($item->isChild)
+                            <i data-toggle="tooltip" data-placement="left" data-title="Message for a child entity." class="fa fa-cubes text-muted"></i>
+                            @else
+                            <i data-toggle="tooltip" data-placement="left" data-title="Message for this entity." class="fa fa-cube text-muted"></i>
+                            @endif
+                        </small>
+                    </span>
 
-                @if($item->service) (<b>{{$item->service->domain}}</b>) @endif
-                <p class="clear" style="padding-left: 55px;">{{ $item->message }}</p>
-            </p>
-        </div><!-- /.log -->
-        @else
-        <!-- chat item -->
-        <div class="item" data-log-message data-message-type="{{ $item->message_type }} @if($item->isChild)child @else self @endif">
-            <span class="fa-stack fa-lg">
+                    @if($item->service) (<b>{{$item->service->domain}}</b>) @endif
+                    <p class="clear" style="padding-left: 55px;">{{ $item->message }}</p>
+                </p>
+            </div><!-- /.log -->
+            @else
+            <!-- chat item -->
+            <div class="item" data-log-message data-message-type="{{ $item->message_type }} @if($item->isChild)child @else self @endif">
+                    <img class="img-circle" src="{{ $item->user->profile_image }}" alt="" style="width: 50px; height: auto;"/>
+                           <p class="message">
+                    <a href="#" class="name">
+                        <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}<br/>
+                            @if($item->isChild)
+                                <i data-toggle="tooltip" data-placement="left" data-title="Message for a child entity." class="fa fa-cubes text-muted"></i>
+                            @else
+                                <i data-toggle="tooltip" data-placement="left" data-title="Message for this entity." class="fa fa-cube text-muted"></i>
+                            @endif
+                        </small>
+                    </a>
 
-                <i class="fa fa-stack-2x fa-user text-info"></i>
-                                <i class="fa fa-stack-2x fa-inverse fa-circle fa-offset"></i>
-
-                    @if($item->isChild)
-                        <i data-toggle="tooltip" data-placement="right" data-title="Message for a child entity." class="fa fa-cubes fa-stack-1x fa-offset text-danger"></i>
-                    @else
-                        <i data-toggle="tooltip" data-placement="right" data-title="Message for this entity." class="fa fa-cube fa-stack-1x fa-offset text-danger"></i>
-                    @endif
-            </span>            <p class="message">
-                <a href="#" class="name">
-                    <small class="text-muted pull-right text-right"><i class="fa fa-clock-o"></i> {{ $item->created_at }}<br/>{{ $item->user->name }}</small>
-                </a>
-
-                @if($item->service) (<b>{{$item->service->domain}}</b>) @endif
-                <p class="clear" style="padding-left: 55px;">{{ $item->message }}</p>
-            </p>
-        </div><!-- /.item -->
-        @endif
+                    @if($item->service) (<b>{{$item->service->domain}}</b>) @endif
+                    <p class="clear" style="padding-left: 55px;">{{ $item->message }}</p>
+                </p>
+            </div><!-- /.item -->
+            @endif
         @endforeach
 
     </div><!-- /.chat -->
+
     <div class="box-footer">
         <form action="{{ $formRoute }}" method="POST">
             <div class="input-group">

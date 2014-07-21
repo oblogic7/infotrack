@@ -39,9 +39,7 @@
             </div><!-- /.box -->
         </div>
 
-        <div class="col-md-6">
-            {{ $activityLogView }}
-        </div>
+        {{ $activityLogView }}
 
     </div>
 </section>

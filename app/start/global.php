@@ -97,6 +97,7 @@ App::bind('YA\Contracts\ServiceRepositoryInterface', 'YA\Repositories\ServiceRep
 App::bind('YA\Contracts\YAServiceFactoryInterface', 'YA\Factories\YAServiceFactory');
 App::bind('YA\Contracts\ClientContactRepositoryInterface', 'YA\Repositories\ClientContactRepository');
 App::bind('YA\Contracts\ClientAuthRepositoryInterface', 'YA\Repositories\ClientAuthRepository');
+App::bind('YA\Contracts\YAAuthRepositoryInterface', 'YA\Repositories\YAAuthRepository');
 App::bind('YA\Contracts\ActivityLogRepositoryInterface', 'YA\Repositories\ActivityLogRepository');
 App::bind('YA\Contracts\RoleRepositoryInterface', 'YA\Repositories\RoleRepository');
 

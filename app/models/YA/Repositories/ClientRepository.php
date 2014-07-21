@@ -38,13 +38,13 @@ class ClientRepository extends AbstractRepository implements ClientRepositoryInt
 
     }
 
-    public function attachCredentials($client_id, $auth) {
-
-        $client = Client::findOrFail($client_id);
-
-        $client->credentials()->save($auth);
-
-    }
+//    public function attachCredentials($client_id, $auth) {
+//
+//        $client = Client::findOrFail($client_id);
+//
+//        $client->credentials()->save($auth);
+//
+//    }
 
     public function attachActivity($client_id, $activity) {
 

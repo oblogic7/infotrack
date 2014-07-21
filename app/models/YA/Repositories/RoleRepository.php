@@ -20,7 +20,7 @@ class RoleRepository extends AbstractRepository implements RoleRepositoryInterfa
      * Exclude these ids from results
      * 1 = Super Admin
      */
-    protected $excludedRoles = [0];
+    protected $excludedRoles = [2];
 
     public function all($columns = array('*')) {
 

@@ -68,7 +68,7 @@ Route::group(
 
         Route::resource('clients', 'ClientsController');
         Route::resource('clients.services', 'ClientServicesController');
-        Route::resource('clients.contacts', 'ClientContactsController');
+        Route::resource('clients.contacts', 'ClientContactsController', array('except' => array('show')));
         Route::resource('clients.auth', 'ClientAuthDetailsController');
 
         Route::resource('clients.activity', 'ClientActivityLogController', array('only' => array('store')));
@@ -79,12 +79,11 @@ Route::group(
         Route::resource('software.licenses', 'SoftwareLicensesController');
 
         Route::resource('credentials', 'AuthDetailsController');
-        Route::resource('credentials.type', 'AuthDetailTypesController', array('only' => array('show')));
-
-        Route::resource('credentials/type', 'AuthDetailTypesController', array('except' => array('show')));
 
         Route::get('typeahead/clients', 'TypeAheadController@clients');
-        Route::get('typeahead/auth', 'TypeAheadController@auth');
+        Route::get('typeahead/clientAuth', 'TypeAheadController@clientAuth');
+        Route::get('typeahead/yaAuth', 'TypeAheadController@yaAuth');
+
         Route::get('users', [
                 'as' => 'users.index',
                 'uses' => 'UsersController@index'
@@ -115,6 +114,9 @@ Route::group(
                             $user->given_name = $details->firstName;
                             $user->family_name = $details->lastName;
                             $user->profile_image = $details->imageUrl;
+
+                            // assign default role.
+                            $user->role_id = 2;
                             $user->save();
                         }
                     );

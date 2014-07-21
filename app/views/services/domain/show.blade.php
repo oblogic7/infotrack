@@ -23,17 +23,16 @@
         <div class="col-md-6">
             <div class="box box-solid">
                 <div class="box-header">
-                    <i class="fa fa-certificate"></i>
-                    <h3 class="box-title">Certificate Details</h3>
+                    <h3 class="box-title">Domain Details</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                     <dl  class="dl-horizontal">
-                        <dt>Certificate Provider</dt>
+                        <dt>Domain Provider</dt>
                         <dd>{{ $service->provider }}</dd>
-                        <dt>Created</dt>
-                        <dd>{{ $service->launch_date->toFormattedDateString() }}</dd>
-                        <dt>Expires</dt>
-                        <dd>{{ $service->expires->toFormattedDateString() }}</dd>
+<!--                        <dt>Created</dt>-->
+<!--                        <dd>{{ $service->launch_date->toFormattedDateString() }}</dd>-->
+<!--                        <dt>Expires</dt>-->
+<!--                        <dd>{{ $service->expires->toFormattedDateString() }}</dd>-->
                     </dl>
                 </div><!-- /.box-body -->
             </div><!-- /.box -->

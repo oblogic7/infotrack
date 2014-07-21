@@ -10,14 +10,18 @@ namespace YA\Repositories;
 
 
 use YA\Authentication\AuthDetail;
-use YA\Contracts\ClientAuthRepositoryInterface;
+use YA\Contracts\YAAuthRepositoryInterface;
 
-class ClientAuthRepository extends AbstractRepository implements ClientAuthRepositoryInterface {
+class YAAuthRepository extends AbstractRepository implements YAAuthRepositoryInterface {
 
     protected $modelClassName = '\YA\Authentication\AuthDetail';
 
+    public function all($columns = array()) {
+        return AuthDetail::where('client_id', null)->get();
+    }
+
     public function typeahead() {
-        return AuthDetail::where('client_id' == null)->get();
+        return AuthDetail::where('client_id', null)->get();
     }
 
     public function create(array $input) {
@@ -30,13 +34,11 @@ class ClientAuthRepository extends AbstractRepository implements ClientAuthRepos
             }
         }
 
-        return $auth;
-    }
-
-    public function update($id, $input) {
-        $auth = $this->find($id);
-        $auth->fill($input);
-        $auth->save();
+        if (isset($input['clients'])) {
+            foreach($input['clients'] as $client) {
+                $auth->forClients()->attach($client);
+            }
+        }
 
         return $auth;
     }

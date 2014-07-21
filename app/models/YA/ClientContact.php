@@ -14,6 +14,8 @@ class ClientContact extends BaseModel {
 	// Don't forget to fill this array
 	protected $fillable = ['name', 'email', 'phone', 'type', 'primary'];
 
+    protected $touches = ['client'];
+
     public static function boot() {
         parent::boot();
 
@@ -22,5 +24,9 @@ class ClientContact extends BaseModel {
 
     public function activity() {
         return $this->hasMany('YA\ActivityLog');
+    }
+
+    public function client() {
+        return $this->belongsTo('YA\Client');
     }
 }

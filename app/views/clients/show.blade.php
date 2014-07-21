@@ -8,7 +8,7 @@
         {{ $client->name }}
     </h1>
 
-    <span class="pull-right text-muted">{{ $client->updated_at }}</span>
+    <span class="pull-right text-muted" style="text-align:right;"><small>Created: {{ $client->created_at }}<br/>Last Updated: {{ $client->updated_at }}</small></span>
     <!--		<ol class="breadcrumb">-->
     <!--			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>-->
     <!--			<li><a href="#">Tables</a></li>-->
@@ -143,10 +143,45 @@
                                 </td>
 
                             @else
-
-                                <td colspan="4">
+                                <td>
                                     <a href="{{ URL::route('clients.auth.show', [$client->id, $login->id]) }}">{{ $login->name }}</a>
+                                </td>
+                                <td colspan="3">
+                                    <span class="fa-stack fa-lg pull-right">
 
+                                        <i class="fa fa-stack-1x fa-lock"> </i>
+                                        <i class="fa fa-stack-2x fa-ban text-danger text-info" data-toggle="tooltip" data-title="Restricted access."></i>
+                                    </span>
+                                </td>
+
+                            @endif
+
+                        </tr>
+                        @endforeach
+
+                        @foreach($client->yaCredentials as $login)
+                        <tr>
+
+                            @if( Access::userAuthorized($login->roles->lists('name')) )
+
+                                <td>
+                                    <a href="{{ URL::route('credentials.show', $login->id) }}">YA | {{ $login->name }}</a>
+                                </td>
+                                <td class="hidden-xs">
+                                    {{ $login->username }}
+                                </td>
+                                <td><input class="password unmask-pass" type="password" value="{{ $login->password }}" readonly /></td>
+                                <td>
+                                    <a class="btn btn-default btn-flat btn-sm" href="{{ $login->url }}"
+                                       data-toggle="tooltip" data-original-title="Open login page" target="_blank"><i
+                                            class="fa fa-link"></i></a>
+                                </td>
+
+                            @else
+                                <td>
+                                    <a href="{{ URL::route('credentials.show', $login->id) }}">YA | {{ $login->name }}</a>
+                                </td>
+                                <td colspan="3">
                                     <span class="fa-stack fa-lg pull-right">
 
                                         <i class="fa fa-stack-1x fa-lock"> </i>
@@ -200,7 +235,7 @@
                             <th></th>
                             <th>Name</th>
                             <th>Type</th>
-                            <th>Phone</th>
+                            <th><i class="fa fa-phone"> </i></th>
                             <th></th>
                         </tr>
                         </thead>
@@ -212,11 +247,11 @@
                                 <i class="fa fa-star"></i>
                                 @endif
                             </td>
-                            <td><a href="{{ URL::route('clients.contacts.show', [$contact->id]) }}">{{ $contact->name }}</a></td>
+                            <td><a href="{{ URL::route('clients.contacts.edit', [$client->id, $contact->id]) }}">{{ $contact->name }}</a></td>
                             <td>{{ $contact->type }}</td>
                             <td>
                                 @if ($contact->phone)
-                                <i class="fa fa-phone"> </i> {{ $contact->phone }}
+                                    {{ $contact->phone }}
                                 @endif
                             </td>
                             <td>
