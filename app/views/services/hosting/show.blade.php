@@ -33,7 +33,7 @@
                         <dt>CMS</dt>
                         <dd>{{ $service->cms }}</dd>
                         <dt>Database</dt>
-                        <dd>{{ $service->database }}</dd>
+                        <dd>@if ($service->database) Yes @else No @endif</dd>
 
                     </dl>
                 </div><!-- /.box-body -->
