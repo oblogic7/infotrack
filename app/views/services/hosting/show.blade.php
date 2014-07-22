@@ -4,7 +4,7 @@
 
 <section class="content-header">
     <h1>
-        {{ $client->name }}
+        <a href="{{ URL::route('clients.show', [$client->id]) }}">{{ $client->name }}</a>
         <small>{{ $service->type }} for ({{ $service->domain }}) </small>
     </h1>
 </section>
@@ -28,18 +28,21 @@
                 </div><!-- /.box-header -->
                 <div class="box-body">
                     <dl  class="dl-horizontal">
-                        <dt>Certificate Provider</dt>
-                        <dd>{{ $service->provider }}</dd>
-                        <dt>Created</dt>
-                        <dd>{{ $service->launch_date->toFormattedDateString() }}</dd>
-                        <dt>Expires</dt>
-                        <dd>{{ $service->expires->toFormattedDateString() }}</dd>
+                        <dt>Domain</dt>
+                        <dd>{{ $service->domain }}</dd>
+                        <dt>CMS</dt>
+                        <dd>{{ $service->cms }}</dd>
+                        <dt>Database</dt>
+                        <dd>{{ $service->database }}</dd>
+
                     </dl>
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
         </div>
 
-        {{ $activityLogView }}
+        <div class="col-md-6">
+            {{ $activityLogView }}
+        </div>
 
     </div>
 </section>

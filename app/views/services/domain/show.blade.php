@@ -4,7 +4,7 @@
 
 <section class="content-header">
     <h1>
-        {{ $client->name }}
+        <a href="{{ URL::route('clients.show', [$client->id]) }}">{{ $client->name }}</a>
         <small>{{ $service->type }} for ({{ $service->domain }}) </small>
     </h1>
 </section>

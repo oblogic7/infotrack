@@ -4,7 +4,8 @@
 
 <section class="content-header">
     <h1>
-        {{ $client->name }} <small>New Contact</small>
+        <a href="{{ URL::route('clients.show', [$client->id]) }}">{{ $client->name }}</a>
+        <small>New Contact</small>
     </h1>
 </section>
 

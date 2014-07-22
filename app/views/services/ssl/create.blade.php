@@ -4,7 +4,8 @@
 
 <section class="content-header">
     <h1>
-        {{ $client->name }}
+        <a href="{{ URL::route('clients.show', [$client->id]) }}">{{ $client->name }}</a>
+
         <small>New SSL Certificate</small>
     </h1>
 </section>

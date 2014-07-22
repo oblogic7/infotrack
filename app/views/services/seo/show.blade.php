@@ -4,7 +4,7 @@
 
 <section class="content-header">
     <h1>
-        {{ $client->name }}
+        <a href="{{ URL::route('clients.show', [$client->id]) }}">{{ $client->name }}</a>
         <small>{{ $service->type }} for ({{ $service->domain }}) </small>
     </h1>
 </section>
@@ -24,23 +24,22 @@
             <div class="box box-solid">
                 <div class="box-header">
                     <i class="fa fa-certificate"></i>
-                    <h3 class="box-title">Certificate Details</h3>
+                    <h3 class="box-title">Details</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                     <dl  class="dl-horizontal">
-                        <dt>Certificate Provider</dt>
-                        <dd>{{ $service->provider }}</dd>
-                        <dt>Created</dt>
-                        <dd>{{ $service->launch_date->toFormattedDateString() }}</dd>
-                        <dt>Expires</dt>
-                        <dd>{{ $service->expires->toFormattedDateString() }}</dd>
+                        <dt>Domain</dt>
+                        <dd>{{ $service->domain }}</dd>
                     </dl>
+                    <div class="help-block">This domain has been cleared for SEO work by the client.</div>
+
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
         </div>
 
-        {{ $activityLogView }}
-
+        <div class="col-md-6">
+            {{ $activityLogView }}
+        </div>
     </div>
 </section>
 
