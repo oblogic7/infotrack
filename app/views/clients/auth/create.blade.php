@@ -23,7 +23,7 @@
         <div class="col-xs-12">
             <div class="alert alert-info">
                 <i class="fa fa-2x fa-exclamation"> </i>
-                This form is used to create login credentials that are specific to <strong>{{ $client->name }}</strong>. If these credentials are also used to access or manage data or services for any another client, it should be entered as a Younger Associates account and <strong>{{ $client->name }}</strong> should be specified as a client on that entry.
+                This form is used to create login credentials that are specific to <strong>{{ $client->name }}</strong>. If these credentials are also used to access or manage data or services for any another client, it should be entered as a <a href="{{ URL::route('credentials.create') }}">Younger Associates account</a> and <strong>{{ $client->name }}</strong> should be specified as a client on that entry.
             </div>
         </div>
     </div>
@@ -39,11 +39,11 @@
                         <fieldset>
                             <!-- Text input-->
                             <div class="form-group">
-                                <label class="col-md-4 control-label" for="name">Website Name</label>
+                                <label class="col-md-4 control-label" for="name">Description</label>
 
                                 <div class="col-md-5">
                                     <input id="name" name="name" type="text" placeholder="" class="form-control input-md" value="{{ Input::old('name') }}" autofocus>
-                                    <span class="help-block">Enter the name of the website or service for which this login is used.  Do not enter the client name as it will be automatically appended when necessary.</span>
+                                    <span class="help-block">Enter a short description for these credentials (i.e. ExpressionEngine Client Access).  Do not enter the client name as it will be automatically appended when necessary.</span>
                                 </div>
                             </div>
 

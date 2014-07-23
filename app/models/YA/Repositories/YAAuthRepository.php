@@ -21,7 +21,7 @@ class YAAuthRepository extends AbstractRepository implements YAAuthRepositoryInt
     }
 
     public function typeahead() {
-        return AuthDetail::where('client_id', null)->get();
+        return $this->all();
     }
 
     public function create(array $input) {
