@@ -11,6 +11,53 @@
 // @codekit-prepend "vendors/bower_components/typeahead.js/dist/typeahead.jquery.js"
 // @codekit-prepend "vendors/AdminLTE/app.js"
 
+/*=============================================
+ Module Pattern
+ @Matt Snyder- 2013
+ =============================================*/
+
+var INFOTRACK = (function () {
+
+    /*========== Alias to settings ==========*/
+    var s;
+
+    return {
+
+        /*========== Settings ==========*/
+        settings: {
+            sayHello: 'Hello World',
+            sayBye: 'Bye World'
+        },
+
+        /*========== Table of Contents ==========*/
+        init: function() {
+            s = this.settings;
+            INFOTRACK._InitSayHello();
+            INFOTRACK._InitSayBye();
+        },
+
+        /*========== Say Hello ==========*/
+        _InitSayHello: function() {
+            console.log(s.sayHello);
+        },
+
+        /*========== Say Bye ==========*/
+        _InitSayBye: function() {
+            console.log(s.sayBye);
+        }
+
+    };
+
+})();
+
+
+/*========== Kick Start ==========*/
+(function() {
+    INFOTRACK.init();
+})();
+
+
+
 
 (function () {
     "use strict";
