@@ -17,7 +17,7 @@ class ClientAuthRepository extends AbstractRepository implements ClientAuthRepos
     protected $modelClassName = '\YA\Authentication\AuthDetail';
 
     public function typeahead() {
-        return AuthDetail::where('client_id' == null)->get();
+        return AuthDetail::where('client_id', null)->get();
     }
 
     public function create(array $input) {
