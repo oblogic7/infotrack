@@ -111,7 +111,7 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    @if ($client->credentials->count() > 0)
+                    @if ($client->credentials->count() > 0 || $client->yaCredentials->count() > 0)
                     <div class="table-responsive">
                     <table class="table table-condensed credentials-table">
                         <thead>
