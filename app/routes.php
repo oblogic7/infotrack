@@ -84,10 +84,8 @@ Route::group(
         Route::get('typeahead/clientAuth', 'TypeAheadController@clientAuth');
         Route::get('typeahead/yaAuth', 'TypeAheadController@yaAuth');
 
-        Route::get('users', [
-                'as' => 'users.index',
-                'uses' => 'UsersController@index'
-        ]);
+        Route::resource('users', 'UsersController', array('only' => array('index')));
+        Route::resource('users.roles', 'UserRolesController', array('only' => array('update')));
     }
 );
 

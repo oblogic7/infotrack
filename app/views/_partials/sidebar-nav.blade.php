@@ -63,17 +63,20 @@
 <!--                    <li><a href="#"><i class="fa fa-angle-double-right"></i> YA Accounts</a></li>-->
 <!--                </ul>-->
 <!--            </li>-->
-<!--            <li class="treeview">-->
-<!--                <a href="#">-->
-<!--                    <i class="fa fa-cloud"></i>-->
-<!--                    <span>Hosting</span>-->
-<!--                    <i class="fa fa-angle-left pull-right"></i>-->
-<!--                </a>-->
-<!--                <ul class="treeview-menu">-->
-<!--                    <li><a href="#"><i class="fa fa-angle-double-right"></i> Servers</a></li>-->
-<!--                    <li><a href="#"><i class="fa fa-angle-double-right"></i> Domains</a></li>-->
-<!--                </ul>-->
-<!--            </li>-->
+
+            @if(Access::userAuthorized(['Super Admin']))
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    <span>User Management</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ URL::route('users.index') }}"><i class="fa fa-user"></i> Users</a></li>
+                    <li><a href="#"><i class="fa fa-puzzle-piece"></i> Roles</a></li>
+                </ul>
+            </li>
+            @endif
             <!--<li class="treeview">
                 <a href="#">
                     <i class="fa fa-laptop"></i>

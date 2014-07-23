@@ -8,6 +8,13 @@
 
 class UsersController extends BaseController {
 
+    public function __construct(
+        \YA\Contracts\UserRepositoryInterface $users,
+    \YA\Contracts\RoleRepositoryInterface $roles
+    ) {
+        $this->users = $users;
+        $this->roles = $roles;
+    }
     /**
      * Display a listing of users
      *
@@ -15,10 +22,15 @@ class UsersController extends BaseController {
      */
     public function index()
     {
-        $users = User::all();
 
-        $roles = Role::all();
+        if (! Access::userAuthorized(['Super Admin'])) {
+            App::abort(403, 'Unauthorized action.');
+        }
+
+        $users = $this->users->all();
+        $roles = $this->roles->allWithoutExclusions();
 
         return View::make('users.index', ['users' => $users, 'roles' => $roles]);
     }
+
 } 

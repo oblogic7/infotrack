@@ -19,6 +19,7 @@
                 <div class="box-body table-responsive no-padding">
                     <table class="table table-hover">
                         <tr>
+                            <th></th>
                             <th>User</th>
                             <th>Email</th>
                             <th>Role</th>
@@ -26,19 +27,19 @@
 
                         @foreach($users as $user)
                             <tr>
+                                <td width="80"><img class="img-responsive img-circle" src="{{ $user->profile_image }}" alt="{{ $user->name }}"/></td>
                                 <td>{{ $user->name }}</td>
 
                                 <td>{{ $user->email }}</td>
 
                                 <td>
                                     <div class="form-group">
-                                        <select class="form-control">
+                                        <select class="form-control role-dropdown" data-user-id="{{ $user->id }}">
                                             @foreach($roles as $role)
-                                            <option value="">None</option>
                                                 @if ($user->role && $user->role->id == $role->id)
-                                                    <option selected>{{ $role->name }}</option>
+                                                    <option value="{{ $role->id }}" selected>{{ $role->name }}</option>
                                                 @else
-                                                    <option>{{ $role->name }}</option>
+                                                    <option value="{{ $role->id }}">{{ $role->name }}</option>
                                                 @endif
                                             @endforeach
                                         </select>

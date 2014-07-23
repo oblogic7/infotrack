@@ -40421,6 +40421,24 @@ $(window).load(function(){
         }
     });
 
+    $('.role-dropdown').change(function() {
+
+        var roleId = $(this).val();
+        var userId = $(this).data('user-id');
+        var url = 'http://infotrack.younger-associates.com/users/' + userId + '/roles/' + roleId;
+        var data = $(this).serialize();
+
+        $.ajax({
+            type: "PUT",
+            url: url,
+            data: data,
+            dataType: 'json',
+            success: function() {
+                console.log('success');
+            }
+        });
+    })
+
 
 })(jQuery);
 

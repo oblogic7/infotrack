@@ -27,7 +27,7 @@ class Access {
 
         $common = array_intersect($roles, $this->currentUserRoles);
 
-        // if user does not have any authorized roles, return 403 unauthorized.
+        // if user does not have any authorized roles, return false.
         if (count($common) === 0 && !empty($roles)) {
             return false;
         }
