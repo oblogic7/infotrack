@@ -70,13 +70,13 @@ var INFOTRACK = (function () {
     });
 
     var clientAuth = new Bloodhound({
-        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('token'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
         prefetch: '/typeahead/clientAuth'
     });
 
     var yaAuth = new Bloodhound({
-        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('token'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
         prefetch: '/typeahead/yaAuth'
     });

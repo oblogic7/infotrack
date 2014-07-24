@@ -17,7 +17,19 @@ class YAAuthRepository extends AbstractRepository implements YAAuthRepositoryInt
     protected $modelClassName = '\YA\Authentication\AuthDetail';
 
     public function all($columns = array()) {
-        return AuthDetail::where('client_id', null)->get();
+
+        $auth = AuthDetail::where('client_id', null)->with('forClients')->get();
+
+        // Setup token data for each item
+        foreach($auth as &$a) {
+            $a->token = $a->name . ' ';
+
+            foreach($a->forClients as $client) {
+                $a->token .= $client->name . ' ';
+            }
+        }
+
+        return $auth;
     }
 
     public function typeahead() {
