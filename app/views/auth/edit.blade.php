@@ -21,7 +21,8 @@
 
     <div class="row">
 
-        <form role="form" class="form-horizontal" action="{{ URL::route('credentials.update') }}" method="POST">
+        <form role="form" class="form-horizontal" action="{{ URL::route('credentials.update', $auth->id) }}" method="POST">
+            <input type="hidden" name="_method" value="PUT">
             <div class="col-xs-12">
                 <div class="box box-primary">
                     <!-- form start -->

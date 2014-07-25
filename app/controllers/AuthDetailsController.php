@@ -100,16 +100,7 @@ class AuthDetailsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$auth = Authdetail::findOrFail($id);
-
-		$validator = Validator::make($data = Input::all(), Authdetail::$rules);
-
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
-
-		$auth->update($data);
+		$this->auth->update($id, Input::all());
 
 		return Redirect::route('credentials.index');
 	}
