@@ -5,7 +5,7 @@
 <section class="content-header">
     <h1>
         Younger Associates
-        <small>Authentication Details for {{ $auth->name }}</small>
+        <small>{{ $auth->name }}</small>
     </h1>
 </section>
 
@@ -46,11 +46,37 @@
                 </div>
 
             </div>
+
+            @if ($auth->forClients->count() > 0)
+                <div class="box box-error">
+
+                    <div class="box-header">
+                        <i class="fa fa-briefcase"></i>
+
+                        <h3 class="box-title">Clients</h3>
+                    </div>
+                    <!-- /.box-header -->
+
+                    <div class="box-body">
+                        <div class="help-block">The clients listed below use this login to access the associated service.</div>
+                        <ul class="list-unstyled">
+
+                            @foreach($auth->forClients as $client)
+                                <li>{{ $client->name }}</li>
+                            @endforeach
+
+                        </ul>
+                    </div>
+
+                </div>
+            @endif
         </div>
 
         <div class="col-sm-6">
             {{ $activityLogView }}
         </div>
+
+
 
     </div>
 </section>

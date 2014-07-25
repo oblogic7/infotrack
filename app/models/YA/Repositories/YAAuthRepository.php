@@ -17,7 +17,9 @@ class YAAuthRepository extends AbstractRepository implements YAAuthRepositoryInt
 
     protected $modelClassName = '\YA\Authentication\AuthDetail';
 
-    //TODO: write find method that eager loads forClients.
+    public function find($id, $columns = array()) {
+       return AuthDetail::where('id', $id)->whereNull('client_id')->with('forClients')->firstOrFail();
+    }
 
     public function all($columns = array())
     {
