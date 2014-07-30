@@ -56,7 +56,7 @@ return array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
 			'database'  => 'infotrack',
-			'username'  => 'sql_global',
+			'username'  => 'root',
 			'password'  => 'directors8701',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',

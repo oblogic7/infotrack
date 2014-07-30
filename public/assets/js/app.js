@@ -32,8 +32,7 @@ var INFOTRACK = (function () {
         /*========== Table of Contents ==========*/
         init: function() {
             s = this.settings;
-            INFOTRACK._InitSayHello();
-            INFOTRACK._InitSayBye();
+
         },
 
         /*========== Say Hello ==========*/
@@ -75,16 +74,16 @@ var INFOTRACK = (function () {
         prefetch: '/typeahead/clientAuth'
     });
 
-    var yaAuth = new Bloodhound({
+    var internalAuth = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('token'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
-        prefetch: '/typeahead/yaAuth'
+        prefetch: '/typeahead/internalAuth'
     });
 
     // initialize bloodhound data sets.
     clients.initialize();
     clientAuth.initialize();
-    yaAuth.initialize();
+    internalAuth.initialize();
 
     $('.typeahead').typeahead({
             hint: true,
@@ -112,12 +111,12 @@ var INFOTRACK = (function () {
 
         },
         {
-            name: 'ya_auth',
+            name: 'internal_auth',
             displayKey: 'name',
-            source: yaAuth.ttAdapter(),
+            source: internalAuth.ttAdapter(),
             templates: {
 
-                header: '<h3>YA Credentials</h3>',
+                header: '<h3>Internal Credentials</h3>',
                 suggestion: Handlebars.compile('<strong>{{name}}</strong>')
             }
 
@@ -184,7 +183,7 @@ var INFOTRACK = (function () {
 
         var roleId = $(this).val();
         var userId = $(this).data('user-id');
-        var url = 'http://infotrack.younger-associates.com/users/' + userId + '/roles/' + roleId;
+        var url = 'http://infotrack.obscurelogic.com/users/' + userId + '/roles/' + roleId;
         var data = $(this).serialize();
 
         $.ajax({

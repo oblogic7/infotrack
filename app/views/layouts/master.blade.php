@@ -14,12 +14,12 @@
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body class="skin-green fixed">
+<body class="skin-black fixed">
 <!-- header logo: style can be found in header.less -->
 <header class="header">
 	<a href="/" class="logo">
 		<!-- Add the class icon to your logo image or logo icon to add the margining -->
-		<img src="/assets/img/ya-logo.png" alt=""/> InfoTrack
+		InfoTrack
 	</a>
 
 	@include('_partials.header-nav')

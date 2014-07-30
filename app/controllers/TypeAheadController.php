@@ -15,7 +15,7 @@ class TypeAheadController extends BaseController {
     ) {
         $this->clients = $clients;
         $this->client_auth = $client_auth;
-        $this->ya_auth = $ya_auth;
+        $this->internal_auth = $ya_auth;
     }
 
     public function clients() {
@@ -39,8 +39,8 @@ class TypeAheadController extends BaseController {
         return $credentials;
     }
 
-    public function yaAuth() {
-        $credentials = $this->ya_auth->typeahead();
+    public function internalAuth() {
+        $credentials = $this->internal_auth->typeahead();
 
         foreach ($credentials as &$credential) {
             $credential->ta_url = \URL::route('credentials.show', $credential->id);

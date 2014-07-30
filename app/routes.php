@@ -82,7 +82,7 @@ Route::group(
 
         Route::get('typeahead/clients', 'TypeAheadController@clients');
         Route::get('typeahead/clientAuth', 'TypeAheadController@clientAuth');
-        Route::get('typeahead/yaAuth', 'TypeAheadController@yaAuth');
+        Route::get('typeahead/internalAuth', 'TypeAheadController@internalAuth');
 
         Route::resource('users', 'UsersController', array('only' => array('index')));
         Route::resource('users.roles', 'UserRolesController', array('only' => array('update')));
@@ -125,24 +125,8 @@ Route::group(
                     // code,likely forgery attempt
                 }
 
-                // Current user is now available via Auth facade
-                $user = Auth::user();
-
-                if (strrpos($user->email, 'younger-associates.com')) {
-
-                    // user signed in with a valid younger-associates account.
-                    return Redirect::to('/');
-
-                } else {
-                    // user account is not a valid younger-associates account.
-
-                    // remove user from db, logout and redirect.
-                    $user->delete();
-                    Auth::logout();
-
-                    $message = new \Illuminate\Support\MessageBag(['message' => 'You must use an @younger-associates.com account to login to this application.']);
-                    return \Redirect::to('/login')->withErrors($message);
-                }
+                // user signed in with a valid younger-associates account.
+                return Redirect::to('/');
 
             }
         );

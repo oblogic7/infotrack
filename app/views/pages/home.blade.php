@@ -12,8 +12,9 @@
                 <div class="box box-success">
                     <!-- form start -->
                     <div class="box-body text-center">
-
-                        <img src="/assets/img/ya-logo.png" alt=""><br/><br/>
+                        <br/>
+                        <p class="help-block">Hint: Type "Company"</p>
+                        <br/>
                         <fieldset>
                             <!-- Text input-->
                             <div class="form-group">

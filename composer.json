@@ -22,15 +22,15 @@
 	},
 	"scripts": {
 		"post-install-cmd": [
-			"/usr/local/php54/bin/php artisan clear-compiled",
-			"/usr/local/php54/bin/php artisan optimize"
+			"/usr/bin/hhvm artisan clear-compiled",
+			"/usr/bin/hhvm artisan optimize"
 		],
 		"post-update-cmd": [
-			"/usr/local/php54/bin/php artisan clear-compiled",
-			"/usr/local/php54/bin/php artisan optimize"
+			"/usr/bin/hhvm artisan clear-compiled",
+			"/usr/bin/hhvm artisan optimize"
 		],
 		"post-create-project-cmd": [
-			"/usr/local/php54/bin/php artisan key:generate"
+			"/usr/bin/hhvm artisan key:generate"
 		]
 	},
 	"config": {

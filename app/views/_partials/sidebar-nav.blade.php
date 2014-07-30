@@ -38,7 +38,7 @@
 
             <li>
                 <a href="{{ URL::route('credentials.index') }}">
-                    <i class="fa fa-lock"></i> YA Accounts
+                    <i class="fa fa-lock"></i> Company Accounts
                 </a>
             </li>
 <!--            <li class="treeview">-->
