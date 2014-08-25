@@ -15,6 +15,7 @@ class CreateDomainServicesColumns extends Migration {
 		Schema::table('services', function(Blueprint $table) {
 			$table->string('url');
 			$table->string('provider');
+            $table->date('expires');
 		});
 	}
 

@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://infotrack.obscurelogic.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'America/Chicago',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -107,8 +107,11 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
+        'Prologue\Alerts\AlertsServiceProvider',
+        'AdamWathan\EloquentOAuth\EloquentOAuthServiceProvider',
+        'YA\ServiceProviders\ComposerServiceProvider'
 
-	),
+    ),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -173,6 +176,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+        'Alert'           => 'Prologue\Alerts\Facades\Alert',
+        'OAuth'           => 'AdamWathan\EloquentOAuth\Facades\OAuth',
+        'Access'          => 'YA\Facades\Access'
 
 	),
 

@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'yaportal',
+			'database'  => 'infotrack',
 			'username'  => 'root',
-			'password'  => 'laravel',
+			'password'  => 'directors8701',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

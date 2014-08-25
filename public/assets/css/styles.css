@@ -4839,7 +4839,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .progress-striped .progress-bar {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
   background-size: 40px 40px; }
 
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
@@ -4854,7 +4854,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)); }
 
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .progress-bar-info {
@@ -4863,7 +4863,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)); }
 
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .progress-bar-warning {
@@ -4872,7 +4872,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)); }
 
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .progress-bar-danger {
@@ -4881,7 +4881,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)); }
 
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .media, .media-body {
@@ -5858,7 +5858,7 @@ button.close {
 /* line 1, ../sass/vendors/bootstrap-3.1.1/bootstrap.scss */
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
 
@@ -5867,7 +5867,7 @@ button.close {
   left: auto;
   right: 0;
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
 
@@ -6140,18 +6140,18 @@ button.close {
   .hidden-print {
     display: none !important; } }
 /*!
- *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.1.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* line 14, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 4, ../sass/vendors/font-awesome/_core.scss */
 .fa {
   display: inline-block;
   font-family: FontAwesome;
@@ -6162,78 +6162,75 @@ button.close {
   -moz-osx-font-smoothing: grayscale; }
 
 /* makes the font 33% larger relative to the icon container */
-/* line 24, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 5, ../sass/vendors/font-awesome/_larger.scss */
 .fa-lg {
-  font-size: 1.3333333333333333em;
+  font-size: 1.33333em;
   line-height: 0.75em;
   vertical-align: -15%; }
 
-/* line 29, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 10, ../sass/vendors/font-awesome/_larger.scss */
 .fa-2x {
   font-size: 2em; }
 
-/* line 32, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 11, ../sass/vendors/font-awesome/_larger.scss */
 .fa-3x {
   font-size: 3em; }
 
-/* line 35, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 12, ../sass/vendors/font-awesome/_larger.scss */
 .fa-4x {
   font-size: 4em; }
 
-/* line 38, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 13, ../sass/vendors/font-awesome/_larger.scss */
 .fa-5x {
   font-size: 5em; }
 
-/* line 41, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 3, ../sass/vendors/font-awesome/_fixed-width.scss */
 .fa-fw {
-  width: 1.2857142857142858em;
+  width: 1.28571em;
   text-align: center; }
 
-/* line 45, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 4, ../sass/vendors/font-awesome/_list.scss */
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.142857142857143em;
+  margin-left: 2.14286em;
   list-style-type: none; }
+  /* line 8, ../sass/vendors/font-awesome/_list.scss */
+  .fa-ul > li {
+    position: relative; }
 
-/* line 50, ../sass/vendors/font-awesome/font-awesome.scss */
-.fa-ul > li {
-  position: relative; }
-
-/* line 53, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 10, ../sass/vendors/font-awesome/_list.scss */
 .fa-li {
   position: absolute;
-  left: -2.142857142857143em;
-  width: 2.142857142857143em;
-  top: 0.14285714285714285em;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
   text-align: center; }
+  /* line 16, ../sass/vendors/font-awesome/_list.scss */
+  .fa-li.fa-lg {
+    left: -1.85714em; }
 
-/* line 60, ../sass/vendors/font-awesome/font-awesome.scss */
-.fa-li.fa-lg {
-  left: -1.8571428571428572em; }
-
-/* line 63, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 4, ../sass/vendors/font-awesome/_bordered-pulled.scss */
 .fa-border {
   padding: .2em .25em .15em;
   border: solid 0.08em #eeeeee;
   border-radius: .1em; }
 
-/* line 68, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 10, ../sass/vendors/font-awesome/_bordered-pulled.scss */
 .pull-right {
   float: right; }
 
-/* line 71, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 11, ../sass/vendors/font-awesome/_bordered-pulled.scss */
 .pull-left {
   float: left; }
 
-/* line 74, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 14, ../sass/vendors/font-awesome/_bordered-pulled.scss */
 .fa.pull-left {
   margin-right: .3em; }
-
-/* line 77, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 15, ../sass/vendors/font-awesome/_bordered-pulled.scss */
 .fa.pull-right {
   margin-left: .3em; }
 
-/* line 80, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 4, ../sass/vendors/font-awesome/_spinning.scss */
 .fa-spin {
   -webkit-animation: spin 2s infinite linear;
   -moz-animation: spin 2s infinite linear;
@@ -6241,46 +6238,40 @@ button.close {
   animation: spin 2s infinite linear; }
 
 @-moz-keyframes spin {
-  /* line 87, ../sass/vendors/font-awesome/font-awesome.scss */
+  /* line 12, ../sass/vendors/font-awesome/_spinning.scss */
   0% {
     -moz-transform: rotate(0deg); }
 
-  /* line 90, ../sass/vendors/font-awesome/font-awesome.scss */
+  /* line 13, ../sass/vendors/font-awesome/_spinning.scss */
   100% {
     -moz-transform: rotate(359deg); } }
 @-webkit-keyframes spin {
-  /* line 95, ../sass/vendors/font-awesome/font-awesome.scss */
+  /* line 16, ../sass/vendors/font-awesome/_spinning.scss */
   0% {
     -webkit-transform: rotate(0deg); }
 
-  /* line 98, ../sass/vendors/font-awesome/font-awesome.scss */
+  /* line 17, ../sass/vendors/font-awesome/_spinning.scss */
   100% {
     -webkit-transform: rotate(359deg); } }
 @-o-keyframes spin {
-  /* line 103, ../sass/vendors/font-awesome/font-awesome.scss */
+  /* line 20, ../sass/vendors/font-awesome/_spinning.scss */
   0% {
     -o-transform: rotate(0deg); }
 
-  /* line 106, ../sass/vendors/font-awesome/font-awesome.scss */
+  /* line 21, ../sass/vendors/font-awesome/_spinning.scss */
   100% {
     -o-transform: rotate(359deg); } }
-@-ms-keyframes spin {
-  /* line 111, ../sass/vendors/font-awesome/font-awesome.scss */
-  0% {
-    -ms-transform: rotate(0deg); }
-
-  /* line 114, ../sass/vendors/font-awesome/font-awesome.scss */
-  100% {
-    -ms-transform: rotate(359deg); } }
 @keyframes spin {
-  /* line 119, ../sass/vendors/font-awesome/font-awesome.scss */
+  /* line 24, ../sass/vendors/font-awesome/_spinning.scss */
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 122, ../sass/vendors/font-awesome/font-awesome.scss */
+  /* line 28, ../sass/vendors/font-awesome/_spinning.scss */
   100% {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
-/* line 126, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 4, ../sass/vendors/font-awesome/_rotated-flipped.scss */
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
@@ -6289,7 +6280,7 @@ button.close {
   -o-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-/* line 134, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 5, ../sass/vendors/font-awesome/_rotated-flipped.scss */
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
@@ -6298,7 +6289,7 @@ button.close {
   -o-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-/* line 142, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 6, ../sass/vendors/font-awesome/_rotated-flipped.scss */
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
@@ -6307,25 +6298,25 @@ button.close {
   -o-transform: rotate(270deg);
   transform: rotate(270deg); }
 
-/* line 150, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 8, ../sass/vendors/font-awesome/_rotated-flipped.scss */
 .fa-flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
   -moz-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   -o-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
-/* line 158, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 9, ../sass/vendors/font-awesome/_rotated-flipped.scss */
 .fa-flip-vertical {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
   -moz-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   -o-transform: scale(1, -1);
   transform: scale(1, -1); }
 
-/* line 166, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 4, ../sass/vendors/font-awesome/_stacked.scss */
 .fa-stack {
   position: relative;
   display: inline-block;
@@ -6334,1543 +6325,1846 @@ button.close {
   line-height: 2em;
   vertical-align: middle; }
 
-/* line 174, ../sass/vendors/font-awesome/font-awesome.scss */
-.fa-stack-1x,
-.fa-stack-2x {
+/* line 12, ../sass/vendors/font-awesome/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
   text-align: center; }
 
-/* line 181, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 18, ../sass/vendors/font-awesome/_stacked.scss */
 .fa-stack-1x {
   line-height: inherit; }
 
-/* line 184, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 19, ../sass/vendors/font-awesome/_stacked.scss */
 .fa-stack-2x {
   font-size: 2em; }
 
-/* line 187, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 20, ../sass/vendors/font-awesome/_stacked.scss */
 .fa-inverse {
-  color: #ffffff; }
+  color: white; }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-/* line 192, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 4, ../sass/vendors/font-awesome/_icons.scss */
 .fa-glass:before {
   content: "\f000"; }
 
-/* line 195, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 5, ../sass/vendors/font-awesome/_icons.scss */
 .fa-music:before {
   content: "\f001"; }
 
-/* line 198, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 6, ../sass/vendors/font-awesome/_icons.scss */
 .fa-search:before {
   content: "\f002"; }
 
-/* line 201, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 7, ../sass/vendors/font-awesome/_icons.scss */
 .fa-envelope-o:before {
   content: "\f003"; }
 
-/* line 204, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 8, ../sass/vendors/font-awesome/_icons.scss */
 .fa-heart:before {
   content: "\f004"; }
 
-/* line 207, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 9, ../sass/vendors/font-awesome/_icons.scss */
 .fa-star:before {
   content: "\f005"; }
 
-/* line 210, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 10, ../sass/vendors/font-awesome/_icons.scss */
 .fa-star-o:before {
   content: "\f006"; }
 
-/* line 213, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 11, ../sass/vendors/font-awesome/_icons.scss */
 .fa-user:before {
   content: "\f007"; }
 
-/* line 216, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 12, ../sass/vendors/font-awesome/_icons.scss */
 .fa-film:before {
   content: "\f008"; }
 
-/* line 219, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 13, ../sass/vendors/font-awesome/_icons.scss */
 .fa-th-large:before {
   content: "\f009"; }
 
-/* line 222, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 14, ../sass/vendors/font-awesome/_icons.scss */
 .fa-th:before {
   content: "\f00a"; }
 
-/* line 225, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 15, ../sass/vendors/font-awesome/_icons.scss */
 .fa-th-list:before {
   content: "\f00b"; }
 
-/* line 228, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 16, ../sass/vendors/font-awesome/_icons.scss */
 .fa-check:before {
   content: "\f00c"; }
 
-/* line 231, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 17, ../sass/vendors/font-awesome/_icons.scss */
 .fa-times:before {
   content: "\f00d"; }
 
-/* line 234, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 18, ../sass/vendors/font-awesome/_icons.scss */
 .fa-search-plus:before {
   content: "\f00e"; }
 
-/* line 237, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 19, ../sass/vendors/font-awesome/_icons.scss */
 .fa-search-minus:before {
   content: "\f010"; }
 
-/* line 240, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 20, ../sass/vendors/font-awesome/_icons.scss */
 .fa-power-off:before {
   content: "\f011"; }
 
-/* line 243, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 21, ../sass/vendors/font-awesome/_icons.scss */
 .fa-signal:before {
   content: "\f012"; }
 
-/* line 246, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 22, ../sass/vendors/font-awesome/_icons.scss */
 .fa-gear:before,
 .fa-cog:before {
   content: "\f013"; }
 
-/* line 250, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 24, ../sass/vendors/font-awesome/_icons.scss */
 .fa-trash-o:before {
   content: "\f014"; }
 
-/* line 253, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 25, ../sass/vendors/font-awesome/_icons.scss */
 .fa-home:before {
   content: "\f015"; }
 
-/* line 256, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 26, ../sass/vendors/font-awesome/_icons.scss */
 .fa-file-o:before {
   content: "\f016"; }
 
-/* line 259, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 27, ../sass/vendors/font-awesome/_icons.scss */
 .fa-clock-o:before {
   content: "\f017"; }
 
-/* line 262, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 28, ../sass/vendors/font-awesome/_icons.scss */
 .fa-road:before {
   content: "\f018"; }
 
-/* line 265, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 29, ../sass/vendors/font-awesome/_icons.scss */
 .fa-download:before {
   content: "\f019"; }
 
-/* line 268, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 30, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-circle-o-down:before {
   content: "\f01a"; }
 
-/* line 271, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 31, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-circle-o-up:before {
   content: "\f01b"; }
 
-/* line 274, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 32, ../sass/vendors/font-awesome/_icons.scss */
 .fa-inbox:before {
   content: "\f01c"; }
 
-/* line 277, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 33, ../sass/vendors/font-awesome/_icons.scss */
 .fa-play-circle-o:before {
   content: "\f01d"; }
 
-/* line 280, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 34, ../sass/vendors/font-awesome/_icons.scss */
 .fa-rotate-right:before,
 .fa-repeat:before {
   content: "\f01e"; }
 
-/* line 284, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 36, ../sass/vendors/font-awesome/_icons.scss */
 .fa-refresh:before {
   content: "\f021"; }
 
-/* line 287, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 37, ../sass/vendors/font-awesome/_icons.scss */
 .fa-list-alt:before {
   content: "\f022"; }
 
-/* line 290, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 38, ../sass/vendors/font-awesome/_icons.scss */
 .fa-lock:before {
   content: "\f023"; }
 
-/* line 293, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 39, ../sass/vendors/font-awesome/_icons.scss */
 .fa-flag:before {
   content: "\f024"; }
 
-/* line 296, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 40, ../sass/vendors/font-awesome/_icons.scss */
 .fa-headphones:before {
   content: "\f025"; }
 
-/* line 299, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 41, ../sass/vendors/font-awesome/_icons.scss */
 .fa-volume-off:before {
   content: "\f026"; }
 
-/* line 302, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 42, ../sass/vendors/font-awesome/_icons.scss */
 .fa-volume-down:before {
   content: "\f027"; }
 
-/* line 305, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 43, ../sass/vendors/font-awesome/_icons.scss */
 .fa-volume-up:before {
   content: "\f028"; }
 
-/* line 308, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 44, ../sass/vendors/font-awesome/_icons.scss */
 .fa-qrcode:before {
   content: "\f029"; }
 
-/* line 311, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 45, ../sass/vendors/font-awesome/_icons.scss */
 .fa-barcode:before {
   content: "\f02a"; }
 
-/* line 314, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 46, ../sass/vendors/font-awesome/_icons.scss */
 .fa-tag:before {
   content: "\f02b"; }
 
-/* line 317, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 47, ../sass/vendors/font-awesome/_icons.scss */
 .fa-tags:before {
   content: "\f02c"; }
 
-/* line 320, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 48, ../sass/vendors/font-awesome/_icons.scss */
 .fa-book:before {
   content: "\f02d"; }
 
-/* line 323, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 49, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bookmark:before {
   content: "\f02e"; }
 
-/* line 326, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 50, ../sass/vendors/font-awesome/_icons.scss */
 .fa-print:before {
   content: "\f02f"; }
 
-/* line 329, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 51, ../sass/vendors/font-awesome/_icons.scss */
 .fa-camera:before {
   content: "\f030"; }
 
-/* line 332, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 52, ../sass/vendors/font-awesome/_icons.scss */
 .fa-font:before {
   content: "\f031"; }
 
-/* line 335, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 53, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bold:before {
   content: "\f032"; }
 
-/* line 338, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 54, ../sass/vendors/font-awesome/_icons.scss */
 .fa-italic:before {
   content: "\f033"; }
 
-/* line 341, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 55, ../sass/vendors/font-awesome/_icons.scss */
 .fa-text-height:before {
   content: "\f034"; }
 
-/* line 344, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 56, ../sass/vendors/font-awesome/_icons.scss */
 .fa-text-width:before {
   content: "\f035"; }
 
-/* line 347, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 57, ../sass/vendors/font-awesome/_icons.scss */
 .fa-align-left:before {
   content: "\f036"; }
 
-/* line 350, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 58, ../sass/vendors/font-awesome/_icons.scss */
 .fa-align-center:before {
   content: "\f037"; }
 
-/* line 353, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 59, ../sass/vendors/font-awesome/_icons.scss */
 .fa-align-right:before {
   content: "\f038"; }
 
-/* line 356, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 60, ../sass/vendors/font-awesome/_icons.scss */
 .fa-align-justify:before {
   content: "\f039"; }
 
-/* line 359, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 61, ../sass/vendors/font-awesome/_icons.scss */
 .fa-list:before {
   content: "\f03a"; }
 
-/* line 362, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 62, ../sass/vendors/font-awesome/_icons.scss */
 .fa-dedent:before,
 .fa-outdent:before {
   content: "\f03b"; }
 
-/* line 366, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 64, ../sass/vendors/font-awesome/_icons.scss */
 .fa-indent:before {
   content: "\f03c"; }
 
-/* line 369, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 65, ../sass/vendors/font-awesome/_icons.scss */
 .fa-video-camera:before {
   content: "\f03d"; }
 
-/* line 372, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 66, ../sass/vendors/font-awesome/_icons.scss */
+.fa-photo:before,
+.fa-image:before,
 .fa-picture-o:before {
   content: "\f03e"; }
 
-/* line 375, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 69, ../sass/vendors/font-awesome/_icons.scss */
 .fa-pencil:before {
   content: "\f040"; }
 
-/* line 378, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 70, ../sass/vendors/font-awesome/_icons.scss */
 .fa-map-marker:before {
   content: "\f041"; }
 
-/* line 381, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 71, ../sass/vendors/font-awesome/_icons.scss */
 .fa-adjust:before {
   content: "\f042"; }
 
-/* line 384, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 72, ../sass/vendors/font-awesome/_icons.scss */
 .fa-tint:before {
   content: "\f043"; }
 
-/* line 387, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 73, ../sass/vendors/font-awesome/_icons.scss */
 .fa-edit:before,
 .fa-pencil-square-o:before {
   content: "\f044"; }
 
-/* line 391, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 75, ../sass/vendors/font-awesome/_icons.scss */
 .fa-share-square-o:before {
   content: "\f045"; }
 
-/* line 394, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 76, ../sass/vendors/font-awesome/_icons.scss */
 .fa-check-square-o:before {
   content: "\f046"; }
 
-/* line 397, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 77, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrows:before {
   content: "\f047"; }
 
-/* line 400, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 78, ../sass/vendors/font-awesome/_icons.scss */
 .fa-step-backward:before {
   content: "\f048"; }
 
-/* line 403, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 79, ../sass/vendors/font-awesome/_icons.scss */
 .fa-fast-backward:before {
   content: "\f049"; }
 
-/* line 406, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 80, ../sass/vendors/font-awesome/_icons.scss */
 .fa-backward:before {
   content: "\f04a"; }
 
-/* line 409, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 81, ../sass/vendors/font-awesome/_icons.scss */
 .fa-play:before {
   content: "\f04b"; }
 
-/* line 412, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 82, ../sass/vendors/font-awesome/_icons.scss */
 .fa-pause:before {
   content: "\f04c"; }
 
-/* line 415, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 83, ../sass/vendors/font-awesome/_icons.scss */
 .fa-stop:before {
   content: "\f04d"; }
 
-/* line 418, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 84, ../sass/vendors/font-awesome/_icons.scss */
 .fa-forward:before {
   content: "\f04e"; }
 
-/* line 421, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 85, ../sass/vendors/font-awesome/_icons.scss */
 .fa-fast-forward:before {
   content: "\f050"; }
 
-/* line 424, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 86, ../sass/vendors/font-awesome/_icons.scss */
 .fa-step-forward:before {
   content: "\f051"; }
 
-/* line 427, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 87, ../sass/vendors/font-awesome/_icons.scss */
 .fa-eject:before {
   content: "\f052"; }
 
-/* line 430, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 88, ../sass/vendors/font-awesome/_icons.scss */
 .fa-chevron-left:before {
   content: "\f053"; }
 
-/* line 433, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 89, ../sass/vendors/font-awesome/_icons.scss */
 .fa-chevron-right:before {
   content: "\f054"; }
 
-/* line 436, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 90, ../sass/vendors/font-awesome/_icons.scss */
 .fa-plus-circle:before {
   content: "\f055"; }
 
-/* line 439, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 91, ../sass/vendors/font-awesome/_icons.scss */
 .fa-minus-circle:before {
   content: "\f056"; }
 
-/* line 442, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 92, ../sass/vendors/font-awesome/_icons.scss */
 .fa-times-circle:before {
   content: "\f057"; }
 
-/* line 445, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 93, ../sass/vendors/font-awesome/_icons.scss */
 .fa-check-circle:before {
   content: "\f058"; }
 
-/* line 448, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 94, ../sass/vendors/font-awesome/_icons.scss */
 .fa-question-circle:before {
   content: "\f059"; }
 
-/* line 451, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 95, ../sass/vendors/font-awesome/_icons.scss */
 .fa-info-circle:before {
   content: "\f05a"; }
 
-/* line 454, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 96, ../sass/vendors/font-awesome/_icons.scss */
 .fa-crosshairs:before {
   content: "\f05b"; }
 
-/* line 457, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 97, ../sass/vendors/font-awesome/_icons.scss */
 .fa-times-circle-o:before {
   content: "\f05c"; }
 
-/* line 460, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 98, ../sass/vendors/font-awesome/_icons.scss */
 .fa-check-circle-o:before {
   content: "\f05d"; }
 
-/* line 463, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 99, ../sass/vendors/font-awesome/_icons.scss */
 .fa-ban:before {
   content: "\f05e"; }
 
-/* line 466, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 100, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-left:before {
   content: "\f060"; }
 
-/* line 469, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 101, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-right:before {
   content: "\f061"; }
 
-/* line 472, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 102, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-up:before {
   content: "\f062"; }
 
-/* line 475, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 103, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-down:before {
   content: "\f063"; }
 
-/* line 478, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 104, ../sass/vendors/font-awesome/_icons.scss */
 .fa-mail-forward:before,
 .fa-share:before {
   content: "\f064"; }
 
-/* line 482, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 106, ../sass/vendors/font-awesome/_icons.scss */
 .fa-expand:before {
   content: "\f065"; }
 
-/* line 485, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 107, ../sass/vendors/font-awesome/_icons.scss */
 .fa-compress:before {
   content: "\f066"; }
 
-/* line 488, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 108, ../sass/vendors/font-awesome/_icons.scss */
 .fa-plus:before {
   content: "\f067"; }
 
-/* line 491, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 109, ../sass/vendors/font-awesome/_icons.scss */
 .fa-minus:before {
   content: "\f068"; }
 
-/* line 494, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 110, ../sass/vendors/font-awesome/_icons.scss */
 .fa-asterisk:before {
   content: "\f069"; }
 
-/* line 497, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 111, ../sass/vendors/font-awesome/_icons.scss */
 .fa-exclamation-circle:before {
   content: "\f06a"; }
 
-/* line 500, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 112, ../sass/vendors/font-awesome/_icons.scss */
 .fa-gift:before {
   content: "\f06b"; }
 
-/* line 503, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 113, ../sass/vendors/font-awesome/_icons.scss */
 .fa-leaf:before {
   content: "\f06c"; }
 
-/* line 506, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 114, ../sass/vendors/font-awesome/_icons.scss */
 .fa-fire:before {
   content: "\f06d"; }
 
-/* line 509, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 115, ../sass/vendors/font-awesome/_icons.scss */
 .fa-eye:before {
   content: "\f06e"; }
 
-/* line 512, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 116, ../sass/vendors/font-awesome/_icons.scss */
 .fa-eye-slash:before {
   content: "\f070"; }
 
-/* line 515, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 117, ../sass/vendors/font-awesome/_icons.scss */
 .fa-warning:before,
 .fa-exclamation-triangle:before {
   content: "\f071"; }
 
-/* line 519, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 119, ../sass/vendors/font-awesome/_icons.scss */
 .fa-plane:before {
   content: "\f072"; }
 
-/* line 522, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 120, ../sass/vendors/font-awesome/_icons.scss */
 .fa-calendar:before {
   content: "\f073"; }
 
-/* line 525, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 121, ../sass/vendors/font-awesome/_icons.scss */
 .fa-random:before {
   content: "\f074"; }
 
-/* line 528, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 122, ../sass/vendors/font-awesome/_icons.scss */
 .fa-comment:before {
   content: "\f075"; }
 
-/* line 531, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 123, ../sass/vendors/font-awesome/_icons.scss */
 .fa-magnet:before {
   content: "\f076"; }
 
-/* line 534, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 124, ../sass/vendors/font-awesome/_icons.scss */
 .fa-chevron-up:before {
   content: "\f077"; }
 
-/* line 537, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 125, ../sass/vendors/font-awesome/_icons.scss */
 .fa-chevron-down:before {
   content: "\f078"; }
 
-/* line 540, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 126, ../sass/vendors/font-awesome/_icons.scss */
 .fa-retweet:before {
   content: "\f079"; }
 
-/* line 543, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 127, ../sass/vendors/font-awesome/_icons.scss */
 .fa-shopping-cart:before {
   content: "\f07a"; }
 
-/* line 546, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 128, ../sass/vendors/font-awesome/_icons.scss */
 .fa-folder:before {
   content: "\f07b"; }
 
-/* line 549, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 129, ../sass/vendors/font-awesome/_icons.scss */
 .fa-folder-open:before {
   content: "\f07c"; }
 
-/* line 552, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 130, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrows-v:before {
   content: "\f07d"; }
 
-/* line 555, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 131, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrows-h:before {
   content: "\f07e"; }
 
-/* line 558, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 132, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bar-chart-o:before {
   content: "\f080"; }
 
-/* line 561, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 133, ../sass/vendors/font-awesome/_icons.scss */
 .fa-twitter-square:before {
   content: "\f081"; }
 
-/* line 564, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 134, ../sass/vendors/font-awesome/_icons.scss */
 .fa-facebook-square:before {
   content: "\f082"; }
 
-/* line 567, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 135, ../sass/vendors/font-awesome/_icons.scss */
 .fa-camera-retro:before {
   content: "\f083"; }
 
-/* line 570, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 136, ../sass/vendors/font-awesome/_icons.scss */
 .fa-key:before {
   content: "\f084"; }
 
-/* line 573, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 137, ../sass/vendors/font-awesome/_icons.scss */
 .fa-gears:before,
 .fa-cogs:before {
   content: "\f085"; }
 
-/* line 577, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 139, ../sass/vendors/font-awesome/_icons.scss */
 .fa-comments:before {
   content: "\f086"; }
 
-/* line 580, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 140, ../sass/vendors/font-awesome/_icons.scss */
 .fa-thumbs-o-up:before {
   content: "\f087"; }
 
-/* line 583, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 141, ../sass/vendors/font-awesome/_icons.scss */
 .fa-thumbs-o-down:before {
   content: "\f088"; }
 
-/* line 586, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 142, ../sass/vendors/font-awesome/_icons.scss */
 .fa-star-half:before {
   content: "\f089"; }
 
-/* line 589, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 143, ../sass/vendors/font-awesome/_icons.scss */
 .fa-heart-o:before {
   content: "\f08a"; }
 
-/* line 592, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 144, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sign-out:before {
   content: "\f08b"; }
 
-/* line 595, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 145, ../sass/vendors/font-awesome/_icons.scss */
 .fa-linkedin-square:before {
   content: "\f08c"; }
 
-/* line 598, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 146, ../sass/vendors/font-awesome/_icons.scss */
 .fa-thumb-tack:before {
   content: "\f08d"; }
 
-/* line 601, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 147, ../sass/vendors/font-awesome/_icons.scss */
 .fa-external-link:before {
   content: "\f08e"; }
 
-/* line 604, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 148, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sign-in:before {
   content: "\f090"; }
 
-/* line 607, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 149, ../sass/vendors/font-awesome/_icons.scss */
 .fa-trophy:before {
   content: "\f091"; }
 
-/* line 610, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 150, ../sass/vendors/font-awesome/_icons.scss */
 .fa-github-square:before {
   content: "\f092"; }
 
-/* line 613, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 151, ../sass/vendors/font-awesome/_icons.scss */
 .fa-upload:before {
   content: "\f093"; }
 
-/* line 616, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 152, ../sass/vendors/font-awesome/_icons.scss */
 .fa-lemon-o:before {
   content: "\f094"; }
 
-/* line 619, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 153, ../sass/vendors/font-awesome/_icons.scss */
 .fa-phone:before {
   content: "\f095"; }
 
-/* line 622, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 154, ../sass/vendors/font-awesome/_icons.scss */
 .fa-square-o:before {
   content: "\f096"; }
 
-/* line 625, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 155, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bookmark-o:before {
   content: "\f097"; }
 
-/* line 628, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 156, ../sass/vendors/font-awesome/_icons.scss */
 .fa-phone-square:before {
   content: "\f098"; }
 
-/* line 631, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 157, ../sass/vendors/font-awesome/_icons.scss */
 .fa-twitter:before {
   content: "\f099"; }
 
-/* line 634, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 158, ../sass/vendors/font-awesome/_icons.scss */
 .fa-facebook:before {
   content: "\f09a"; }
 
-/* line 637, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 159, ../sass/vendors/font-awesome/_icons.scss */
 .fa-github:before {
   content: "\f09b"; }
 
-/* line 640, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 160, ../sass/vendors/font-awesome/_icons.scss */
 .fa-unlock:before {
   content: "\f09c"; }
 
-/* line 643, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 161, ../sass/vendors/font-awesome/_icons.scss */
 .fa-credit-card:before {
   content: "\f09d"; }
 
-/* line 646, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 162, ../sass/vendors/font-awesome/_icons.scss */
 .fa-rss:before {
   content: "\f09e"; }
 
-/* line 649, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 163, ../sass/vendors/font-awesome/_icons.scss */
 .fa-hdd-o:before {
   content: "\f0a0"; }
 
-/* line 652, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 164, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bullhorn:before {
   content: "\f0a1"; }
 
-/* line 655, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 165, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bell:before {
   content: "\f0f3"; }
 
-/* line 658, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 166, ../sass/vendors/font-awesome/_icons.scss */
 .fa-certificate:before {
   content: "\f0a3"; }
 
-/* line 661, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 167, ../sass/vendors/font-awesome/_icons.scss */
 .fa-hand-o-right:before {
   content: "\f0a4"; }
 
-/* line 664, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 168, ../sass/vendors/font-awesome/_icons.scss */
 .fa-hand-o-left:before {
   content: "\f0a5"; }
 
-/* line 667, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 169, ../sass/vendors/font-awesome/_icons.scss */
 .fa-hand-o-up:before {
   content: "\f0a6"; }
 
-/* line 670, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 170, ../sass/vendors/font-awesome/_icons.scss */
 .fa-hand-o-down:before {
   content: "\f0a7"; }
 
-/* line 673, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 171, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-circle-left:before {
   content: "\f0a8"; }
 
-/* line 676, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 172, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-circle-right:before {
   content: "\f0a9"; }
 
-/* line 679, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 173, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-circle-up:before {
   content: "\f0aa"; }
 
-/* line 682, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 174, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-circle-down:before {
   content: "\f0ab"; }
 
-/* line 685, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 175, ../sass/vendors/font-awesome/_icons.scss */
 .fa-globe:before {
   content: "\f0ac"; }
 
-/* line 688, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 176, ../sass/vendors/font-awesome/_icons.scss */
 .fa-wrench:before {
   content: "\f0ad"; }
 
-/* line 691, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 177, ../sass/vendors/font-awesome/_icons.scss */
 .fa-tasks:before {
   content: "\f0ae"; }
 
-/* line 694, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 178, ../sass/vendors/font-awesome/_icons.scss */
 .fa-filter:before {
   content: "\f0b0"; }
 
-/* line 697, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 179, ../sass/vendors/font-awesome/_icons.scss */
 .fa-briefcase:before {
   content: "\f0b1"; }
 
-/* line 700, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 180, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrows-alt:before {
   content: "\f0b2"; }
 
-/* line 703, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 181, ../sass/vendors/font-awesome/_icons.scss */
 .fa-group:before,
 .fa-users:before {
   content: "\f0c0"; }
 
-/* line 707, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 183, ../sass/vendors/font-awesome/_icons.scss */
 .fa-chain:before,
 .fa-link:before {
   content: "\f0c1"; }
 
-/* line 711, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 185, ../sass/vendors/font-awesome/_icons.scss */
 .fa-cloud:before {
   content: "\f0c2"; }
 
-/* line 714, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 186, ../sass/vendors/font-awesome/_icons.scss */
 .fa-flask:before {
   content: "\f0c3"; }
 
-/* line 717, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 187, ../sass/vendors/font-awesome/_icons.scss */
 .fa-cut:before,
 .fa-scissors:before {
   content: "\f0c4"; }
 
-/* line 721, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 189, ../sass/vendors/font-awesome/_icons.scss */
 .fa-copy:before,
 .fa-files-o:before {
   content: "\f0c5"; }
 
-/* line 725, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 191, ../sass/vendors/font-awesome/_icons.scss */
 .fa-paperclip:before {
   content: "\f0c6"; }
 
-/* line 728, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 192, ../sass/vendors/font-awesome/_icons.scss */
 .fa-save:before,
 .fa-floppy-o:before {
   content: "\f0c7"; }
 
-/* line 732, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 194, ../sass/vendors/font-awesome/_icons.scss */
 .fa-square:before {
   content: "\f0c8"; }
 
-/* line 735, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 195, ../sass/vendors/font-awesome/_icons.scss */
+.fa-navicon:before,
+.fa-reorder:before,
 .fa-bars:before {
   content: "\f0c9"; }
 
-/* line 738, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 198, ../sass/vendors/font-awesome/_icons.scss */
 .fa-list-ul:before {
   content: "\f0ca"; }
 
-/* line 741, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 199, ../sass/vendors/font-awesome/_icons.scss */
 .fa-list-ol:before {
   content: "\f0cb"; }
 
-/* line 744, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 200, ../sass/vendors/font-awesome/_icons.scss */
 .fa-strikethrough:before {
   content: "\f0cc"; }
 
-/* line 747, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 201, ../sass/vendors/font-awesome/_icons.scss */
 .fa-underline:before {
   content: "\f0cd"; }
 
-/* line 750, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 202, ../sass/vendors/font-awesome/_icons.scss */
 .fa-table:before {
   content: "\f0ce"; }
 
-/* line 753, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 203, ../sass/vendors/font-awesome/_icons.scss */
 .fa-magic:before {
   content: "\f0d0"; }
 
-/* line 756, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 204, ../sass/vendors/font-awesome/_icons.scss */
 .fa-truck:before {
   content: "\f0d1"; }
 
-/* line 759, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 205, ../sass/vendors/font-awesome/_icons.scss */
 .fa-pinterest:before {
   content: "\f0d2"; }
 
-/* line 762, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 206, ../sass/vendors/font-awesome/_icons.scss */
 .fa-pinterest-square:before {
   content: "\f0d3"; }
 
-/* line 765, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 207, ../sass/vendors/font-awesome/_icons.scss */
 .fa-google-plus-square:before {
   content: "\f0d4"; }
 
-/* line 768, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 208, ../sass/vendors/font-awesome/_icons.scss */
 .fa-google-plus:before {
   content: "\f0d5"; }
 
-/* line 771, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 209, ../sass/vendors/font-awesome/_icons.scss */
 .fa-money:before {
   content: "\f0d6"; }
 
-/* line 774, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 210, ../sass/vendors/font-awesome/_icons.scss */
 .fa-caret-down:before {
   content: "\f0d7"; }
 
-/* line 777, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 211, ../sass/vendors/font-awesome/_icons.scss */
 .fa-caret-up:before {
   content: "\f0d8"; }
 
-/* line 780, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 212, ../sass/vendors/font-awesome/_icons.scss */
 .fa-caret-left:before {
   content: "\f0d9"; }
 
-/* line 783, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 213, ../sass/vendors/font-awesome/_icons.scss */
 .fa-caret-right:before {
   content: "\f0da"; }
 
-/* line 786, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 214, ../sass/vendors/font-awesome/_icons.scss */
 .fa-columns:before {
   content: "\f0db"; }
 
-/* line 789, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 215, ../sass/vendors/font-awesome/_icons.scss */
 .fa-unsorted:before,
 .fa-sort:before {
   content: "\f0dc"; }
 
-/* line 793, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 217, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sort-down:before,
-.fa-sort-asc:before {
+.fa-sort-desc:before {
   content: "\f0dd"; }
 
-/* line 797, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 219, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sort-up:before,
-.fa-sort-desc:before {
+.fa-sort-asc:before {
   content: "\f0de"; }
 
-/* line 801, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 221, ../sass/vendors/font-awesome/_icons.scss */
 .fa-envelope:before {
   content: "\f0e0"; }
 
-/* line 804, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 222, ../sass/vendors/font-awesome/_icons.scss */
 .fa-linkedin:before {
   content: "\f0e1"; }
 
-/* line 807, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 223, ../sass/vendors/font-awesome/_icons.scss */
 .fa-rotate-left:before,
 .fa-undo:before {
   content: "\f0e2"; }
 
-/* line 811, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 225, ../sass/vendors/font-awesome/_icons.scss */
 .fa-legal:before,
 .fa-gavel:before {
   content: "\f0e3"; }
 
-/* line 815, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 227, ../sass/vendors/font-awesome/_icons.scss */
 .fa-dashboard:before,
 .fa-tachometer:before {
   content: "\f0e4"; }
 
-/* line 819, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 229, ../sass/vendors/font-awesome/_icons.scss */
 .fa-comment-o:before {
   content: "\f0e5"; }
 
-/* line 822, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 230, ../sass/vendors/font-awesome/_icons.scss */
 .fa-comments-o:before {
   content: "\f0e6"; }
 
-/* line 825, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 231, ../sass/vendors/font-awesome/_icons.scss */
 .fa-flash:before,
 .fa-bolt:before {
   content: "\f0e7"; }
 
-/* line 829, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 233, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sitemap:before {
   content: "\f0e8"; }
 
-/* line 832, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 234, ../sass/vendors/font-awesome/_icons.scss */
 .fa-umbrella:before {
   content: "\f0e9"; }
 
-/* line 835, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 235, ../sass/vendors/font-awesome/_icons.scss */
 .fa-paste:before,
 .fa-clipboard:before {
   content: "\f0ea"; }
 
-/* line 839, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 237, ../sass/vendors/font-awesome/_icons.scss */
 .fa-lightbulb-o:before {
   content: "\f0eb"; }
 
-/* line 842, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 238, ../sass/vendors/font-awesome/_icons.scss */
 .fa-exchange:before {
   content: "\f0ec"; }
 
-/* line 845, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 239, ../sass/vendors/font-awesome/_icons.scss */
 .fa-cloud-download:before {
   content: "\f0ed"; }
 
-/* line 848, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 240, ../sass/vendors/font-awesome/_icons.scss */
 .fa-cloud-upload:before {
   content: "\f0ee"; }
 
-/* line 851, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 241, ../sass/vendors/font-awesome/_icons.scss */
 .fa-user-md:before {
   content: "\f0f0"; }
 
-/* line 854, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 242, ../sass/vendors/font-awesome/_icons.scss */
 .fa-stethoscope:before {
   content: "\f0f1"; }
 
-/* line 857, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 243, ../sass/vendors/font-awesome/_icons.scss */
 .fa-suitcase:before {
   content: "\f0f2"; }
 
-/* line 860, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 244, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bell-o:before {
   content: "\f0a2"; }
 
-/* line 863, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 245, ../sass/vendors/font-awesome/_icons.scss */
 .fa-coffee:before {
   content: "\f0f4"; }
 
-/* line 866, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 246, ../sass/vendors/font-awesome/_icons.scss */
 .fa-cutlery:before {
   content: "\f0f5"; }
 
-/* line 869, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 247, ../sass/vendors/font-awesome/_icons.scss */
 .fa-file-text-o:before {
   content: "\f0f6"; }
 
-/* line 872, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 248, ../sass/vendors/font-awesome/_icons.scss */
 .fa-building-o:before {
   content: "\f0f7"; }
 
-/* line 875, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 249, ../sass/vendors/font-awesome/_icons.scss */
 .fa-hospital-o:before {
   content: "\f0f8"; }
 
-/* line 878, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 250, ../sass/vendors/font-awesome/_icons.scss */
 .fa-ambulance:before {
   content: "\f0f9"; }
 
-/* line 881, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 251, ../sass/vendors/font-awesome/_icons.scss */
 .fa-medkit:before {
   content: "\f0fa"; }
 
-/* line 884, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 252, ../sass/vendors/font-awesome/_icons.scss */
 .fa-fighter-jet:before {
   content: "\f0fb"; }
 
-/* line 887, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 253, ../sass/vendors/font-awesome/_icons.scss */
 .fa-beer:before {
   content: "\f0fc"; }
 
-/* line 890, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 254, ../sass/vendors/font-awesome/_icons.scss */
 .fa-h-square:before {
   content: "\f0fd"; }
 
-/* line 893, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 255, ../sass/vendors/font-awesome/_icons.scss */
 .fa-plus-square:before {
   content: "\f0fe"; }
 
-/* line 896, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 256, ../sass/vendors/font-awesome/_icons.scss */
 .fa-angle-double-left:before {
   content: "\f100"; }
 
-/* line 899, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 257, ../sass/vendors/font-awesome/_icons.scss */
 .fa-angle-double-right:before {
   content: "\f101"; }
 
-/* line 902, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 258, ../sass/vendors/font-awesome/_icons.scss */
 .fa-angle-double-up:before {
   content: "\f102"; }
 
-/* line 905, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 259, ../sass/vendors/font-awesome/_icons.scss */
 .fa-angle-double-down:before {
   content: "\f103"; }
 
-/* line 908, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 260, ../sass/vendors/font-awesome/_icons.scss */
 .fa-angle-left:before {
   content: "\f104"; }
 
-/* line 911, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 261, ../sass/vendors/font-awesome/_icons.scss */
 .fa-angle-right:before {
   content: "\f105"; }
 
-/* line 914, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 262, ../sass/vendors/font-awesome/_icons.scss */
 .fa-angle-up:before {
   content: "\f106"; }
 
-/* line 917, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 263, ../sass/vendors/font-awesome/_icons.scss */
 .fa-angle-down:before {
   content: "\f107"; }
 
-/* line 920, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 264, ../sass/vendors/font-awesome/_icons.scss */
 .fa-desktop:before {
   content: "\f108"; }
 
-/* line 923, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 265, ../sass/vendors/font-awesome/_icons.scss */
 .fa-laptop:before {
   content: "\f109"; }
 
-/* line 926, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 266, ../sass/vendors/font-awesome/_icons.scss */
 .fa-tablet:before {
   content: "\f10a"; }
 
-/* line 929, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 267, ../sass/vendors/font-awesome/_icons.scss */
 .fa-mobile-phone:before,
 .fa-mobile:before {
   content: "\f10b"; }
 
-/* line 933, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 269, ../sass/vendors/font-awesome/_icons.scss */
 .fa-circle-o:before {
   content: "\f10c"; }
 
-/* line 936, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 270, ../sass/vendors/font-awesome/_icons.scss */
 .fa-quote-left:before {
   content: "\f10d"; }
 
-/* line 939, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 271, ../sass/vendors/font-awesome/_icons.scss */
 .fa-quote-right:before {
   content: "\f10e"; }
 
-/* line 942, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 272, ../sass/vendors/font-awesome/_icons.scss */
 .fa-spinner:before {
   content: "\f110"; }
 
-/* line 945, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 273, ../sass/vendors/font-awesome/_icons.scss */
 .fa-circle:before {
   content: "\f111"; }
 
-/* line 948, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 274, ../sass/vendors/font-awesome/_icons.scss */
 .fa-mail-reply:before,
 .fa-reply:before {
   content: "\f112"; }
 
-/* line 952, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 276, ../sass/vendors/font-awesome/_icons.scss */
 .fa-github-alt:before {
   content: "\f113"; }
 
-/* line 955, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 277, ../sass/vendors/font-awesome/_icons.scss */
 .fa-folder-o:before {
   content: "\f114"; }
 
-/* line 958, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 278, ../sass/vendors/font-awesome/_icons.scss */
 .fa-folder-open-o:before {
   content: "\f115"; }
 
-/* line 961, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 279, ../sass/vendors/font-awesome/_icons.scss */
 .fa-smile-o:before {
   content: "\f118"; }
 
-/* line 964, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 280, ../sass/vendors/font-awesome/_icons.scss */
 .fa-frown-o:before {
   content: "\f119"; }
 
-/* line 967, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 281, ../sass/vendors/font-awesome/_icons.scss */
 .fa-meh-o:before {
   content: "\f11a"; }
 
-/* line 970, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 282, ../sass/vendors/font-awesome/_icons.scss */
 .fa-gamepad:before {
   content: "\f11b"; }
 
-/* line 973, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 283, ../sass/vendors/font-awesome/_icons.scss */
 .fa-keyboard-o:before {
   content: "\f11c"; }
 
-/* line 976, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 284, ../sass/vendors/font-awesome/_icons.scss */
 .fa-flag-o:before {
   content: "\f11d"; }
 
-/* line 979, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 285, ../sass/vendors/font-awesome/_icons.scss */
 .fa-flag-checkered:before {
   content: "\f11e"; }
 
-/* line 982, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 286, ../sass/vendors/font-awesome/_icons.scss */
 .fa-terminal:before {
   content: "\f120"; }
 
-/* line 985, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 287, ../sass/vendors/font-awesome/_icons.scss */
 .fa-code:before {
   content: "\f121"; }
 
-/* line 988, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 288, ../sass/vendors/font-awesome/_icons.scss */
+.fa-mail-reply-all:before,
 .fa-reply-all:before {
   content: "\f122"; }
 
-/* line 991, ../sass/vendors/font-awesome/font-awesome.scss */
-.fa-mail-reply-all:before {
-  content: "\f122"; }
-
-/* line 994, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 290, ../sass/vendors/font-awesome/_icons.scss */
 .fa-star-half-empty:before,
 .fa-star-half-full:before,
 .fa-star-half-o:before {
   content: "\f123"; }
 
-/* line 999, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 293, ../sass/vendors/font-awesome/_icons.scss */
 .fa-location-arrow:before {
   content: "\f124"; }
 
-/* line 1002, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 294, ../sass/vendors/font-awesome/_icons.scss */
 .fa-crop:before {
   content: "\f125"; }
 
-/* line 1005, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 295, ../sass/vendors/font-awesome/_icons.scss */
 .fa-code-fork:before {
   content: "\f126"; }
 
-/* line 1008, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 296, ../sass/vendors/font-awesome/_icons.scss */
 .fa-unlink:before,
 .fa-chain-broken:before {
   content: "\f127"; }
 
-/* line 1012, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 298, ../sass/vendors/font-awesome/_icons.scss */
 .fa-question:before {
   content: "\f128"; }
 
-/* line 1015, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 299, ../sass/vendors/font-awesome/_icons.scss */
 .fa-info:before {
   content: "\f129"; }
 
-/* line 1018, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 300, ../sass/vendors/font-awesome/_icons.scss */
 .fa-exclamation:before {
   content: "\f12a"; }
 
-/* line 1021, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 301, ../sass/vendors/font-awesome/_icons.scss */
 .fa-superscript:before {
   content: "\f12b"; }
 
-/* line 1024, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 302, ../sass/vendors/font-awesome/_icons.scss */
 .fa-subscript:before {
   content: "\f12c"; }
 
-/* line 1027, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 303, ../sass/vendors/font-awesome/_icons.scss */
 .fa-eraser:before {
   content: "\f12d"; }
 
-/* line 1030, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 304, ../sass/vendors/font-awesome/_icons.scss */
 .fa-puzzle-piece:before {
   content: "\f12e"; }
 
-/* line 1033, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 305, ../sass/vendors/font-awesome/_icons.scss */
 .fa-microphone:before {
   content: "\f130"; }
 
-/* line 1036, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 306, ../sass/vendors/font-awesome/_icons.scss */
 .fa-microphone-slash:before {
   content: "\f131"; }
 
-/* line 1039, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 307, ../sass/vendors/font-awesome/_icons.scss */
 .fa-shield:before {
   content: "\f132"; }
 
-/* line 1042, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 308, ../sass/vendors/font-awesome/_icons.scss */
 .fa-calendar-o:before {
   content: "\f133"; }
 
-/* line 1045, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 309, ../sass/vendors/font-awesome/_icons.scss */
 .fa-fire-extinguisher:before {
   content: "\f134"; }
 
-/* line 1048, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 310, ../sass/vendors/font-awesome/_icons.scss */
 .fa-rocket:before {
   content: "\f135"; }
 
-/* line 1051, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 311, ../sass/vendors/font-awesome/_icons.scss */
 .fa-maxcdn:before {
   content: "\f136"; }
 
-/* line 1054, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 312, ../sass/vendors/font-awesome/_icons.scss */
 .fa-chevron-circle-left:before {
   content: "\f137"; }
 
-/* line 1057, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 313, ../sass/vendors/font-awesome/_icons.scss */
 .fa-chevron-circle-right:before {
   content: "\f138"; }
 
-/* line 1060, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 314, ../sass/vendors/font-awesome/_icons.scss */
 .fa-chevron-circle-up:before {
   content: "\f139"; }
 
-/* line 1063, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 315, ../sass/vendors/font-awesome/_icons.scss */
 .fa-chevron-circle-down:before {
   content: "\f13a"; }
 
-/* line 1066, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 316, ../sass/vendors/font-awesome/_icons.scss */
 .fa-html5:before {
   content: "\f13b"; }
 
-/* line 1069, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 317, ../sass/vendors/font-awesome/_icons.scss */
 .fa-css3:before {
   content: "\f13c"; }
 
-/* line 1072, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 318, ../sass/vendors/font-awesome/_icons.scss */
 .fa-anchor:before {
   content: "\f13d"; }
 
-/* line 1075, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 319, ../sass/vendors/font-awesome/_icons.scss */
 .fa-unlock-alt:before {
   content: "\f13e"; }
 
-/* line 1078, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 320, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bullseye:before {
   content: "\f140"; }
 
-/* line 1081, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 321, ../sass/vendors/font-awesome/_icons.scss */
 .fa-ellipsis-h:before {
   content: "\f141"; }
 
-/* line 1084, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 322, ../sass/vendors/font-awesome/_icons.scss */
 .fa-ellipsis-v:before {
   content: "\f142"; }
 
-/* line 1087, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 323, ../sass/vendors/font-awesome/_icons.scss */
 .fa-rss-square:before {
   content: "\f143"; }
 
-/* line 1090, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 324, ../sass/vendors/font-awesome/_icons.scss */
 .fa-play-circle:before {
   content: "\f144"; }
 
-/* line 1093, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 325, ../sass/vendors/font-awesome/_icons.scss */
 .fa-ticket:before {
   content: "\f145"; }
 
-/* line 1096, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 326, ../sass/vendors/font-awesome/_icons.scss */
 .fa-minus-square:before {
   content: "\f146"; }
 
-/* line 1099, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 327, ../sass/vendors/font-awesome/_icons.scss */
 .fa-minus-square-o:before {
   content: "\f147"; }
 
-/* line 1102, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 328, ../sass/vendors/font-awesome/_icons.scss */
 .fa-level-up:before {
   content: "\f148"; }
 
-/* line 1105, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 329, ../sass/vendors/font-awesome/_icons.scss */
 .fa-level-down:before {
   content: "\f149"; }
 
-/* line 1108, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 330, ../sass/vendors/font-awesome/_icons.scss */
 .fa-check-square:before {
   content: "\f14a"; }
 
-/* line 1111, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 331, ../sass/vendors/font-awesome/_icons.scss */
 .fa-pencil-square:before {
   content: "\f14b"; }
 
-/* line 1114, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 332, ../sass/vendors/font-awesome/_icons.scss */
 .fa-external-link-square:before {
   content: "\f14c"; }
 
-/* line 1117, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 333, ../sass/vendors/font-awesome/_icons.scss */
 .fa-share-square:before {
   content: "\f14d"; }
 
-/* line 1120, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 334, ../sass/vendors/font-awesome/_icons.scss */
 .fa-compass:before {
   content: "\f14e"; }
 
-/* line 1123, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 335, ../sass/vendors/font-awesome/_icons.scss */
 .fa-toggle-down:before,
 .fa-caret-square-o-down:before {
   content: "\f150"; }
 
-/* line 1127, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 337, ../sass/vendors/font-awesome/_icons.scss */
 .fa-toggle-up:before,
 .fa-caret-square-o-up:before {
   content: "\f151"; }
 
-/* line 1131, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 339, ../sass/vendors/font-awesome/_icons.scss */
 .fa-toggle-right:before,
 .fa-caret-square-o-right:before {
   content: "\f152"; }
 
-/* line 1135, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 341, ../sass/vendors/font-awesome/_icons.scss */
 .fa-euro:before,
 .fa-eur:before {
   content: "\f153"; }
 
-/* line 1139, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 343, ../sass/vendors/font-awesome/_icons.scss */
 .fa-gbp:before {
   content: "\f154"; }
 
-/* line 1142, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 344, ../sass/vendors/font-awesome/_icons.scss */
 .fa-dollar:before,
 .fa-usd:before {
   content: "\f155"; }
 
-/* line 1146, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 346, ../sass/vendors/font-awesome/_icons.scss */
 .fa-rupee:before,
 .fa-inr:before {
   content: "\f156"; }
 
-/* line 1150, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 348, ../sass/vendors/font-awesome/_icons.scss */
 .fa-cny:before,
 .fa-rmb:before,
 .fa-yen:before,
 .fa-jpy:before {
   content: "\f157"; }
 
-/* line 1156, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 352, ../sass/vendors/font-awesome/_icons.scss */
 .fa-ruble:before,
 .fa-rouble:before,
 .fa-rub:before {
   content: "\f158"; }
 
-/* line 1161, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 355, ../sass/vendors/font-awesome/_icons.scss */
 .fa-won:before,
 .fa-krw:before {
   content: "\f159"; }
 
-/* line 1165, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 357, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bitcoin:before,
 .fa-btc:before {
   content: "\f15a"; }
 
-/* line 1169, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 359, ../sass/vendors/font-awesome/_icons.scss */
 .fa-file:before {
   content: "\f15b"; }
 
-/* line 1172, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 360, ../sass/vendors/font-awesome/_icons.scss */
 .fa-file-text:before {
   content: "\f15c"; }
 
-/* line 1175, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 361, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sort-alpha-asc:before {
   content: "\f15d"; }
 
-/* line 1178, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 362, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sort-alpha-desc:before {
   content: "\f15e"; }
 
-/* line 1181, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 363, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sort-amount-asc:before {
   content: "\f160"; }
 
-/* line 1184, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 364, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sort-amount-desc:before {
   content: "\f161"; }
 
-/* line 1187, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 365, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sort-numeric-asc:before {
   content: "\f162"; }
 
-/* line 1190, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 366, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sort-numeric-desc:before {
   content: "\f163"; }
 
-/* line 1193, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 367, ../sass/vendors/font-awesome/_icons.scss */
 .fa-thumbs-up:before {
   content: "\f164"; }
 
-/* line 1196, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 368, ../sass/vendors/font-awesome/_icons.scss */
 .fa-thumbs-down:before {
   content: "\f165"; }
 
-/* line 1199, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 369, ../sass/vendors/font-awesome/_icons.scss */
 .fa-youtube-square:before {
   content: "\f166"; }
 
-/* line 1202, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 370, ../sass/vendors/font-awesome/_icons.scss */
 .fa-youtube:before {
   content: "\f167"; }
 
-/* line 1205, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 371, ../sass/vendors/font-awesome/_icons.scss */
 .fa-xing:before {
   content: "\f168"; }
 
-/* line 1208, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 372, ../sass/vendors/font-awesome/_icons.scss */
 .fa-xing-square:before {
   content: "\f169"; }
 
-/* line 1211, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 373, ../sass/vendors/font-awesome/_icons.scss */
 .fa-youtube-play:before {
   content: "\f16a"; }
 
-/* line 1214, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 374, ../sass/vendors/font-awesome/_icons.scss */
 .fa-dropbox:before {
   content: "\f16b"; }
 
-/* line 1217, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 375, ../sass/vendors/font-awesome/_icons.scss */
 .fa-stack-overflow:before {
   content: "\f16c"; }
 
-/* line 1220, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 376, ../sass/vendors/font-awesome/_icons.scss */
 .fa-instagram:before {
   content: "\f16d"; }
 
-/* line 1223, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 377, ../sass/vendors/font-awesome/_icons.scss */
 .fa-flickr:before {
   content: "\f16e"; }
 
-/* line 1226, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 378, ../sass/vendors/font-awesome/_icons.scss */
 .fa-adn:before {
   content: "\f170"; }
 
-/* line 1229, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 379, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bitbucket:before {
   content: "\f171"; }
 
-/* line 1232, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 380, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bitbucket-square:before {
   content: "\f172"; }
 
-/* line 1235, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 381, ../sass/vendors/font-awesome/_icons.scss */
 .fa-tumblr:before {
   content: "\f173"; }
 
-/* line 1238, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 382, ../sass/vendors/font-awesome/_icons.scss */
 .fa-tumblr-square:before {
   content: "\f174"; }
 
-/* line 1241, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 383, ../sass/vendors/font-awesome/_icons.scss */
 .fa-long-arrow-down:before {
   content: "\f175"; }
 
-/* line 1244, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 384, ../sass/vendors/font-awesome/_icons.scss */
 .fa-long-arrow-up:before {
   content: "\f176"; }
 
-/* line 1247, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 385, ../sass/vendors/font-awesome/_icons.scss */
 .fa-long-arrow-left:before {
   content: "\f177"; }
 
-/* line 1250, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 386, ../sass/vendors/font-awesome/_icons.scss */
 .fa-long-arrow-right:before {
   content: "\f178"; }
 
-/* line 1253, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 387, ../sass/vendors/font-awesome/_icons.scss */
 .fa-apple:before {
   content: "\f179"; }
 
-/* line 1256, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 388, ../sass/vendors/font-awesome/_icons.scss */
 .fa-windows:before {
   content: "\f17a"; }
 
-/* line 1259, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 389, ../sass/vendors/font-awesome/_icons.scss */
 .fa-android:before {
   content: "\f17b"; }
 
-/* line 1262, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 390, ../sass/vendors/font-awesome/_icons.scss */
 .fa-linux:before {
   content: "\f17c"; }
 
-/* line 1265, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 391, ../sass/vendors/font-awesome/_icons.scss */
 .fa-dribbble:before {
   content: "\f17d"; }
 
-/* line 1268, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 392, ../sass/vendors/font-awesome/_icons.scss */
 .fa-skype:before {
   content: "\f17e"; }
 
-/* line 1271, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 393, ../sass/vendors/font-awesome/_icons.scss */
 .fa-foursquare:before {
   content: "\f180"; }
 
-/* line 1274, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 394, ../sass/vendors/font-awesome/_icons.scss */
 .fa-trello:before {
   content: "\f181"; }
 
-/* line 1277, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 395, ../sass/vendors/font-awesome/_icons.scss */
 .fa-female:before {
   content: "\f182"; }
 
-/* line 1280, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 396, ../sass/vendors/font-awesome/_icons.scss */
 .fa-male:before {
   content: "\f183"; }
 
-/* line 1283, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 397, ../sass/vendors/font-awesome/_icons.scss */
 .fa-gittip:before {
   content: "\f184"; }
 
-/* line 1286, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 398, ../sass/vendors/font-awesome/_icons.scss */
 .fa-sun-o:before {
   content: "\f185"; }
 
-/* line 1289, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 399, ../sass/vendors/font-awesome/_icons.scss */
 .fa-moon-o:before {
   content: "\f186"; }
 
-/* line 1292, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 400, ../sass/vendors/font-awesome/_icons.scss */
 .fa-archive:before {
   content: "\f187"; }
 
-/* line 1295, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 401, ../sass/vendors/font-awesome/_icons.scss */
 .fa-bug:before {
   content: "\f188"; }
 
-/* line 1298, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 402, ../sass/vendors/font-awesome/_icons.scss */
 .fa-vk:before {
   content: "\f189"; }
 
-/* line 1301, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 403, ../sass/vendors/font-awesome/_icons.scss */
 .fa-weibo:before {
   content: "\f18a"; }
 
-/* line 1304, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 404, ../sass/vendors/font-awesome/_icons.scss */
 .fa-renren:before {
   content: "\f18b"; }
 
-/* line 1307, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 405, ../sass/vendors/font-awesome/_icons.scss */
 .fa-pagelines:before {
   content: "\f18c"; }
 
-/* line 1310, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 406, ../sass/vendors/font-awesome/_icons.scss */
 .fa-stack-exchange:before {
   content: "\f18d"; }
 
-/* line 1313, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 407, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-circle-o-right:before {
   content: "\f18e"; }
 
-/* line 1316, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 408, ../sass/vendors/font-awesome/_icons.scss */
 .fa-arrow-circle-o-left:before {
   content: "\f190"; }
 
-/* line 1319, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 409, ../sass/vendors/font-awesome/_icons.scss */
 .fa-toggle-left:before,
 .fa-caret-square-o-left:before {
   content: "\f191"; }
 
-/* line 1323, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 411, ../sass/vendors/font-awesome/_icons.scss */
 .fa-dot-circle-o:before {
   content: "\f192"; }
 
-/* line 1326, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 412, ../sass/vendors/font-awesome/_icons.scss */
 .fa-wheelchair:before {
   content: "\f193"; }
 
-/* line 1329, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 413, ../sass/vendors/font-awesome/_icons.scss */
 .fa-vimeo-square:before {
   content: "\f194"; }
 
-/* line 1332, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 414, ../sass/vendors/font-awesome/_icons.scss */
 .fa-turkish-lira:before,
 .fa-try:before {
   content: "\f195"; }
 
-/* line 1336, ../sass/vendors/font-awesome/font-awesome.scss */
+/* line 416, ../sass/vendors/font-awesome/_icons.scss */
 .fa-plus-square-o:before {
   content: "\f196"; }
+
+/* line 417, ../sass/vendors/font-awesome/_icons.scss */
+.fa-space-shuttle:before {
+  content: "\f197"; }
+
+/* line 418, ../sass/vendors/font-awesome/_icons.scss */
+.fa-slack:before {
+  content: "\f198"; }
+
+/* line 419, ../sass/vendors/font-awesome/_icons.scss */
+.fa-envelope-square:before {
+  content: "\f199"; }
+
+/* line 420, ../sass/vendors/font-awesome/_icons.scss */
+.fa-wordpress:before {
+  content: "\f19a"; }
+
+/* line 421, ../sass/vendors/font-awesome/_icons.scss */
+.fa-openid:before {
+  content: "\f19b"; }
+
+/* line 422, ../sass/vendors/font-awesome/_icons.scss */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "\f19c"; }
+
+/* line 425, ../sass/vendors/font-awesome/_icons.scss */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\f19d"; }
+
+/* line 427, ../sass/vendors/font-awesome/_icons.scss */
+.fa-yahoo:before {
+  content: "\f19e"; }
+
+/* line 428, ../sass/vendors/font-awesome/_icons.scss */
+.fa-google:before {
+  content: "\f1a0"; }
+
+/* line 429, ../sass/vendors/font-awesome/_icons.scss */
+.fa-reddit:before {
+  content: "\f1a1"; }
+
+/* line 430, ../sass/vendors/font-awesome/_icons.scss */
+.fa-reddit-square:before {
+  content: "\f1a2"; }
+
+/* line 431, ../sass/vendors/font-awesome/_icons.scss */
+.fa-stumbleupon-circle:before {
+  content: "\f1a3"; }
+
+/* line 432, ../sass/vendors/font-awesome/_icons.scss */
+.fa-stumbleupon:before {
+  content: "\f1a4"; }
+
+/* line 433, ../sass/vendors/font-awesome/_icons.scss */
+.fa-delicious:before {
+  content: "\f1a5"; }
+
+/* line 434, ../sass/vendors/font-awesome/_icons.scss */
+.fa-digg:before {
+  content: "\f1a6"; }
+
+/* line 435, ../sass/vendors/font-awesome/_icons.scss */
+.fa-pied-piper-square:before,
+.fa-pied-piper:before {
+  content: "\f1a7"; }
+
+/* line 437, ../sass/vendors/font-awesome/_icons.scss */
+.fa-pied-piper-alt:before {
+  content: "\f1a8"; }
+
+/* line 438, ../sass/vendors/font-awesome/_icons.scss */
+.fa-drupal:before {
+  content: "\f1a9"; }
+
+/* line 439, ../sass/vendors/font-awesome/_icons.scss */
+.fa-joomla:before {
+  content: "\f1aa"; }
+
+/* line 440, ../sass/vendors/font-awesome/_icons.scss */
+.fa-language:before {
+  content: "\f1ab"; }
+
+/* line 441, ../sass/vendors/font-awesome/_icons.scss */
+.fa-fax:before {
+  content: "\f1ac"; }
+
+/* line 442, ../sass/vendors/font-awesome/_icons.scss */
+.fa-building:before {
+  content: "\f1ad"; }
+
+/* line 443, ../sass/vendors/font-awesome/_icons.scss */
+.fa-child:before {
+  content: "\f1ae"; }
+
+/* line 444, ../sass/vendors/font-awesome/_icons.scss */
+.fa-paw:before {
+  content: "\f1b0"; }
+
+/* line 445, ../sass/vendors/font-awesome/_icons.scss */
+.fa-spoon:before {
+  content: "\f1b1"; }
+
+/* line 446, ../sass/vendors/font-awesome/_icons.scss */
+.fa-cube:before {
+  content: "\f1b2"; }
+
+/* line 447, ../sass/vendors/font-awesome/_icons.scss */
+.fa-cubes:before {
+  content: "\f1b3"; }
+
+/* line 448, ../sass/vendors/font-awesome/_icons.scss */
+.fa-behance:before {
+  content: "\f1b4"; }
+
+/* line 449, ../sass/vendors/font-awesome/_icons.scss */
+.fa-behance-square:before {
+  content: "\f1b5"; }
+
+/* line 450, ../sass/vendors/font-awesome/_icons.scss */
+.fa-steam:before {
+  content: "\f1b6"; }
+
+/* line 451, ../sass/vendors/font-awesome/_icons.scss */
+.fa-steam-square:before {
+  content: "\f1b7"; }
+
+/* line 452, ../sass/vendors/font-awesome/_icons.scss */
+.fa-recycle:before {
+  content: "\f1b8"; }
+
+/* line 453, ../sass/vendors/font-awesome/_icons.scss */
+.fa-automobile:before,
+.fa-car:before {
+  content: "\f1b9"; }
+
+/* line 455, ../sass/vendors/font-awesome/_icons.scss */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "\f1ba"; }
+
+/* line 457, ../sass/vendors/font-awesome/_icons.scss */
+.fa-tree:before {
+  content: "\f1bb"; }
+
+/* line 458, ../sass/vendors/font-awesome/_icons.scss */
+.fa-spotify:before {
+  content: "\f1bc"; }
+
+/* line 459, ../sass/vendors/font-awesome/_icons.scss */
+.fa-deviantart:before {
+  content: "\f1bd"; }
+
+/* line 460, ../sass/vendors/font-awesome/_icons.scss */
+.fa-soundcloud:before {
+  content: "\f1be"; }
+
+/* line 461, ../sass/vendors/font-awesome/_icons.scss */
+.fa-database:before {
+  content: "\f1c0"; }
+
+/* line 462, ../sass/vendors/font-awesome/_icons.scss */
+.fa-file-pdf-o:before {
+  content: "\f1c1"; }
+
+/* line 463, ../sass/vendors/font-awesome/_icons.scss */
+.fa-file-word-o:before {
+  content: "\f1c2"; }
+
+/* line 464, ../sass/vendors/font-awesome/_icons.scss */
+.fa-file-excel-o:before {
+  content: "\f1c3"; }
+
+/* line 465, ../sass/vendors/font-awesome/_icons.scss */
+.fa-file-powerpoint-o:before {
+  content: "\f1c4"; }
+
+/* line 466, ../sass/vendors/font-awesome/_icons.scss */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "\f1c5"; }
+
+/* line 469, ../sass/vendors/font-awesome/_icons.scss */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "\f1c6"; }
+
+/* line 471, ../sass/vendors/font-awesome/_icons.scss */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "\f1c7"; }
+
+/* line 473, ../sass/vendors/font-awesome/_icons.scss */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "\f1c8"; }
+
+/* line 475, ../sass/vendors/font-awesome/_icons.scss */
+.fa-file-code-o:before {
+  content: "\f1c9"; }
+
+/* line 476, ../sass/vendors/font-awesome/_icons.scss */
+.fa-vine:before {
+  content: "\f1ca"; }
+
+/* line 477, ../sass/vendors/font-awesome/_icons.scss */
+.fa-codepen:before {
+  content: "\f1cb"; }
+
+/* line 478, ../sass/vendors/font-awesome/_icons.scss */
+.fa-jsfiddle:before {
+  content: "\f1cc"; }
+
+/* line 479, ../sass/vendors/font-awesome/_icons.scss */
+.fa-life-bouy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "\f1cd"; }
+
+/* line 483, ../sass/vendors/font-awesome/_icons.scss */
+.fa-circle-o-notch:before {
+  content: "\f1ce"; }
+
+/* line 484, ../sass/vendors/font-awesome/_icons.scss */
+.fa-ra:before,
+.fa-rebel:before {
+  content: "\f1d0"; }
+
+/* line 486, ../sass/vendors/font-awesome/_icons.scss */
+.fa-ge:before,
+.fa-empire:before {
+  content: "\f1d1"; }
+
+/* line 488, ../sass/vendors/font-awesome/_icons.scss */
+.fa-git-square:before {
+  content: "\f1d2"; }
+
+/* line 489, ../sass/vendors/font-awesome/_icons.scss */
+.fa-git:before {
+  content: "\f1d3"; }
+
+/* line 490, ../sass/vendors/font-awesome/_icons.scss */
+.fa-hacker-news:before {
+  content: "\f1d4"; }
+
+/* line 491, ../sass/vendors/font-awesome/_icons.scss */
+.fa-tencent-weibo:before {
+  content: "\f1d5"; }
+
+/* line 492, ../sass/vendors/font-awesome/_icons.scss */
+.fa-qq:before {
+  content: "\f1d6"; }
+
+/* line 493, ../sass/vendors/font-awesome/_icons.scss */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "\f1d7"; }
+
+/* line 495, ../sass/vendors/font-awesome/_icons.scss */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "\f1d8"; }
+
+/* line 497, ../sass/vendors/font-awesome/_icons.scss */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "\f1d9"; }
+
+/* line 499, ../sass/vendors/font-awesome/_icons.scss */
+.fa-history:before {
+  content: "\f1da"; }
+
+/* line 500, ../sass/vendors/font-awesome/_icons.scss */
+.fa-circle-thin:before {
+  content: "\f1db"; }
+
+/* line 501, ../sass/vendors/font-awesome/_icons.scss */
+.fa-header:before {
+  content: "\f1dc"; }
+
+/* line 502, ../sass/vendors/font-awesome/_icons.scss */
+.fa-paragraph:before {
+  content: "\f1dd"; }
+
+/* line 503, ../sass/vendors/font-awesome/_icons.scss */
+.fa-sliders:before {
+  content: "\f1de"; }
+
+/* line 504, ../sass/vendors/font-awesome/_icons.scss */
+.fa-share-alt:before {
+  content: "\f1e0"; }
+
+/* line 505, ../sass/vendors/font-awesome/_icons.scss */
+.fa-share-alt-square:before {
+  content: "\f1e1"; }
+
+/* line 506, ../sass/vendors/font-awesome/_icons.scss */
+.fa-bomb:before {
+  content: "\f1e2"; }
 
 /*!
   Ionicons, v1.4.0
@@ -11076,7 +11370,7 @@ body > .header .logo .icon {
 /* line 411, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .right-side > .content-header {
   position: relative;
-  padding: 0px 0 0; }
+  padding: 10px 15px; }
 
 /* line 415, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .right-side > .content-header h1 {
@@ -11856,7 +12150,7 @@ body > .header .logo .icon {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)); }
 
 /* line 1095, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .progress-bar-green,
@@ -11869,7 +12163,7 @@ body > .header .logo .icon {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)); }
 
 /* line 1106, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .progress-bar-aqua,
@@ -11882,7 +12176,7 @@ body > .header .logo .icon {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)); }
 
 /* line 1117, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .progress-bar-yellow,
@@ -11895,7 +12189,7 @@ body > .header .logo .icon {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)); }
 
 /* line 1128, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .progress-bar-red,
@@ -11908,7 +12202,7 @@ body > .header .logo .icon {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0)); }
 
 /*
     Component: Small boxes
@@ -12120,6 +12414,14 @@ body > .header .logo .icon {
   padding: 5px 10px 5px 5px; }
 
 /* line 1323, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+.box .box-header .btn-xs {
+  margin: 10px; }
+
+/* line 1326, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+.box .box-header .input-group {
+  margin: 7px; }
+
+/* line 1329, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body {
   padding: 10px;
   -webkit-border-top-left-radius: 0;
@@ -12135,80 +12437,84 @@ body > .header .logo .icon {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px; }
 
-/* line 1338, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1344, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body > table,
 .box .box-body > .table {
   margin-bottom: 0; }
 
-/* line 1342, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1348, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+.box .box-body .alert {
+  margin: 0 15px 10px; }
+
+/* line 1351, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body.chart-responsive {
   width: 100%;
   overflow: hidden; }
 
-/* line 1346, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1355, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body > .chart {
   position: relative;
   overflow: hidden;
   width: 100%; }
 
-/* line 1351, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1360, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body > .chart svg,
 .box .box-body > .chart canvas {
   width: 100% !important; }
 
-/* line 1355, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1364, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .fc {
   margin-top: 5px; }
 
-/* line 1358, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1367, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .fc-header-title h2 {
   font-size: 15px;
   line-height: 1.6em;
   color: #666;
   margin-left: 10px; }
 
-/* line 1364, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1373, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .fc-header-right {
   padding-right: 10px; }
 
-/* line 1367, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1376, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .fc-header-left {
   padding-left: 10px; }
 
-/* line 1370, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1379, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .fc-widget-header {
   background: #fafafa;
   box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.02); }
 
-/* line 1374, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1383, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .fc-grid {
   width: 100%;
   border: 0; }
 
-/* line 1378, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1387, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .fc-widget-header:first-of-type,
 .box .box-body .fc-widget-content:first-of-type {
   border-left: 0;
   border-right: 0; }
 
-/* line 1383, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1392, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .fc-widget-header:last-of-type,
 .box .box-body .fc-widget-content:last-of-type {
   border-right: 0; }
 
-/* line 1387, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1396, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .table {
   margin-bottom: 0; }
 
-/* line 1390, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1399, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body .full-width-chart {
   margin: -19px; }
 
-/* line 1393, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1402, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-body.no-padding .full-width-chart {
   margin: -9px; }
 
-/* line 1396, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1405, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-footer {
   border-top: 1px solid #f4f4f4;
   -webkit-border-top-left-radius: 0;
@@ -12226,88 +12532,88 @@ body > .header .logo .icon {
   padding: 10px;
   background-color: #ffffff; }
 
-/* line 1413, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1422, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid {
   border-top: 0px; }
 
-/* line 1416, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1425, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid > .box-header {
   padding-bottom: 0px !important; }
 
-/* line 1419, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1428, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid > .box-header .btn.btn-default {
   background: transparent; }
 
-/* line 1422, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1431, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-primary > .box-header {
   color: #fff;
   background: #3c8dbc;
   background-color: #3c8dbc; }
 
-/* line 1427, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1436, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-primary > .box-header a {
   color: #444; }
 
-/* line 1430, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1439, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-info > .box-header {
   color: #fff;
   background: #00c0ef;
   background-color: #00c0ef; }
 
-/* line 1435, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1444, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-info > .box-header a {
   color: #444; }
 
-/* line 1438, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1447, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-danger > .box-header {
   color: #fff;
   background: #f56954;
   background-color: #f56954; }
 
-/* line 1443, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1452, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-danger > .box-header a {
   color: #444; }
 
-/* line 1446, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1455, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-warning > .box-header {
   color: #fff;
   background: #f39c12;
   background-color: #f39c12; }
 
-/* line 1451, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1460, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-warning > .box-header a {
   color: #444; }
 
-/* line 1454, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1463, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-success > .box-header {
   color: #fff;
   background: #00a65a;
   background-color: #00a65a; }
 
-/* line 1459, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1468, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.box-success > .box-header a {
   color: #444; }
 
-/* line 1462, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1471, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid > .box-header > .box-tools > .btn {
   border: 0;
   box-shadow: none; }
 
-/* line 1466, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1475, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid.collapsed-box .box-header {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
-/* line 1471, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1480, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box.box-solid[class*='bg'] > .box-header {
   color: #fff; }
 
-/* line 1474, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1483, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .box-group > .box {
   margin-bottom: 5px; }
 
-/* line 1477, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1486, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .knob-label {
   text-align: center;
   color: #333;
@@ -12315,13 +12621,13 @@ body > .header .logo .icon {
   font-size: 12px;
   margin-bottom: 0.3em; }
 
-/* line 1484, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1493, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list {
   margin: 0;
   padding: 0px 0px;
   list-style: none; }
 
-/* line 1489, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1498, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -12332,100 +12638,101 @@ body > .header .logo .icon {
   border-left: 2px solid #e6e7e8;
   color: #444; }
 
-/* line 1499, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1508, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li:last-of-type {
   margin-bottom: 0; }
 
-/* line 1502, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1511, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li.danger {
   border-left-color: #f56954; }
 
-/* line 1505, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1514, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li.warning {
   border-left-color: #f39c12; }
 
-/* line 1508, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1517, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li.info {
   border-left-color: #00c0ef; }
 
-/* line 1511, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1520, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li.success {
   border-left-color: #00a65a; }
 
-/* line 1514, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1523, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li.primary {
   border-left-color: #3c8dbc; }
 
-/* line 1517, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1526, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li > input[type='checkbox'] {
   margin: 0 10px 0 5px; }
 
-/* line 1520, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1529, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li .text {
   display: inline-block;
   margin-left: 5px;
   font-weight: 600; }
 
-/* line 1525, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1534, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li .label {
   margin-left: 10px;
   font-size: 9px; }
 
-/* line 1529, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1538, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li .tools {
   display: none;
   float: right;
   color: #f56954; }
 
-/* line 1534, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1543, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li .tools > .fa,
 .box .todo-list > li .tools > .glyphicon,
 .box .todo-list > li .tools > .ion {
   margin-right: 5px;
   cursor: pointer; }
 
-/* line 1540, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1549, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li:hover .tools {
   display: inline-block; }
 
-/* line 1543, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1552, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li.done {
   color: #999; }
 
-/* line 1546, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1555, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li.done .text {
   text-decoration: line-through;
   font-weight: 500; }
 
-/* line 1550, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1559, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list > li.done .label {
   background: #eaeaec !important; }
 
-/* line 1553, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1562, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .todo-list .handle {
   display: inline-block;
   cursor: move;
   margin: 0 5px; }
 
-/* line 1558, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1567, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat {
   padding: 5px 20px 5px 10px; }
 
-/* line 1561, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1570, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item {
+  padding-right: 5px;
   margin-bottom: 10px; }
 
-/* line 1564, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1574, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item:before,
 .box .chat .item:after {
   display: table;
   content: " "; }
 
-/* line 1569, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1579, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item:after {
   clear: both; }
 
-/* line 1572, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1582, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > img {
   width: 40px;
   height: 40px;
@@ -12434,25 +12741,39 @@ body > .header .logo .icon {
   -moz-border-radius: 50% !important;
   border-radius: 50% !important; }
 
-/* line 1580, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1590, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > img.online {
   border: 2px solid #00a65a; }
 
-/* line 1583, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1593, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > img.offline {
   border: 2px solid #f56954; }
 
-/* line 1586, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1596, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+.box .chat .item:hover {
+  background: #F4F4F4; }
+
+/* line 1599, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+.box .chat .item:hover .fa-offset.fa-inverse {
+  color: #F4F4F4; }
+
+/* line 1602, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+.box .chat .item > i {
+  position: relative;
+  top: 5px;
+  margin-left: 8px; }
+
+/* line 1607, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .message {
   margin-left: 55px;
-  margin-top: -40px; }
+  margin-top: -45px; }
 
-/* line 1590, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1611, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .message > .name {
   display: block;
   font-weight: 600; }
 
-/* line 1594, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1615, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -12462,13 +12783,13 @@ body > .header .logo .icon {
   margin-right: 15px;
   padding: 10px; }
 
-/* line 1603, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1624, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment > h4 {
   margin: 0 0 5px 0;
   font-weight: 600;
   font-size: 14px; }
 
-/* line 1608, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1629, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment > p,
 .box .chat .item > .attachment > .filename {
   font-weight: 600;
@@ -12476,17 +12797,17 @@ body > .header .logo .icon {
   font-style: italic;
   margin: 0; }
 
-/* line 1615, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1636, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment:before,
 .box .chat .item > .attachment:after {
   display: table;
   content: " "; }
 
-/* line 1620, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1641, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box .chat .item > .attachment:after {
   clear: both; }
 
-/* line 1623, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1644, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box > .overlay,
 .box > .loading-img {
   position: absolute;
@@ -12495,16 +12816,16 @@ body > .header .logo .icon {
   width: 100%;
   height: 100%; }
 
-/* line 1631, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1652, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box > .overlay {
   z-index: 1010;
   background: rgba(255, 255, 255, 0.7); }
 
-/* line 1635, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1656, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box > .overlay.dark {
   background: rgba(0, 0, 0, 0.5); }
 
-/* line 1638, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1659, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .box > .loading-img {
   z-index: 1020;
   background: transparent url("../img/ajax-loader1.gif") 50% 50% no-repeat; }
@@ -12513,13 +12834,13 @@ body > .header .logo .icon {
 Component: timeline
 --------------------
 */
-/* line 1646, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1667, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline {
   margin: 0 0 30px 0;
   padding: 0;
   list-style: none; }
 
-/* line 1651, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1672, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline:before {
   content: '';
   position: absolute;
@@ -12534,23 +12855,23 @@ Component: timeline
   -moz-border-radius: 2px;
   border-radius: 2px; }
 
-/* line 1665, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1686, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li {
   position: relative;
   margin-right: 10px;
   margin-bottom: 15px; }
 
-/* line 1670, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1691, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li:before,
 .timeline > li:after {
   display: table;
   content: " "; }
 
-/* line 1675, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1696, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li:after {
   clear: both; }
 
-/* line 1678, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1699, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item {
   margin-top: 10px;
   border: 0px solid #dfdfdf;
@@ -12562,13 +12883,13 @@ Component: timeline
   position: relative;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
 
-/* line 1689, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1710, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item > .time {
   color: #999;
   float: right;
   margin: 2px 0 0 0; }
 
-/* line 1694, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1715, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item > .timeline-header {
   margin: 0;
   color: #555;
@@ -12577,16 +12898,16 @@ Component: timeline
   font-size: 16px;
   line-height: 1.1; }
 
-/* line 1702, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1723, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item > .timeline-header > a {
   font-weight: 600; }
 
-/* line 1705, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1726, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .timeline-item > .timeline-body,
 .timeline > li > .timeline-item > .timeline-footer {
   padding: 10px; }
 
-/* line 1709, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1730, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li.time-label > span {
   font-weight: 600;
   padding: 5px;
@@ -12597,7 +12918,7 @@ Component: timeline
   -moz-border-radius: 4px;
   border-radius: 4px; }
 
-/* line 1719, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1740, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .timeline > li > .fa,
 .timeline > li > .glyphicon,
 .timeline > li > .ion {
@@ -12618,7 +12939,7 @@ Component: timeline
     Component: Buttons
 -------------------------
 */
-/* line 1739, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1760, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn {
   font-weight: 500;
   -webkit-border-radius: 3px;
@@ -12629,97 +12950,97 @@ Component: timeline
   -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.09);
   box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.09); }
 
-/* line 1749, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1770, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-default {
   background-color: #fafafa;
   color: #666;
   border-color: #ddd;
   border-bottom-color: #ddd; }
 
-/* line 1755, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1776, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-default:hover,
 .btn.btn-default:active,
 .btn.btn-default.hover {
   background-color: #f4f4f4 !important; }
 
-/* line 1760, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1781, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-default.btn-flat {
   border-bottom-color: #d9dadc; }
 
-/* line 1763, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1784, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-primary {
   background-color: #3c8dbc;
   border-color: #367fa9; }
 
-/* line 1767, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1788, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary.hover {
   background-color: #367fa9; }
 
-/* line 1772, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1793, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-success {
   background-color: #00a65a;
   border-color: #008d4c; }
 
-/* line 1776, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1797, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-success:hover,
 .btn.btn-success:active,
 .btn.btn-success.hover {
   background-color: #008d4c; }
 
-/* line 1781, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1802, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-info {
   background-color: #00c0ef;
   border-color: #00acd6; }
 
-/* line 1785, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1806, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-info:hover,
 .btn.btn-info:active,
 .btn.btn-info.hover {
   background-color: #00acd6; }
 
-/* line 1790, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1811, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-danger {
   background-color: #f56954;
   border-color: #f4543c; }
 
-/* line 1794, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1815, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-danger:hover,
 .btn.btn-danger:active,
 .btn.btn-danger.hover {
   background-color: #f4543c; }
 
-/* line 1799, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1820, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-warning {
   background-color: #f39c12;
   border-color: #e08e0b; }
 
-/* line 1803, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1824, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-warning:hover,
 .btn.btn-warning:active,
 .btn.btn-warning.hover {
   background-color: #e08e0b; }
 
-/* line 1808, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1829, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-sm {
   font-size: 12px; }
 
-/* line 1811, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1832, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-lg {
   padding: 10px 16px; }
 
-/* line 1814, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1835, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-block {
   font-size: 15px;
   padding: 10px; }
 
-/* line 1818, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1839, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-block.btn-sm {
   font-size: 13px;
   padding: 7px; }
 
-/* line 1822, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1843, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-flat {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -12729,24 +13050,24 @@ Component: timeline
   box-shadow: none;
   border-width: 1px; }
 
-/* line 1831, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1852, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn:active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
-/* line 1836, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1857, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn:focus {
   outline: none; }
 
-/* line 1839, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1860, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-file {
   position: relative;
   width: 120px;
   height: 35px;
   overflow: hidden; }
 
-/* line 1845, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1866, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-file > input[type='file'] {
   display: block !important;
   width: 100% !important;
@@ -12756,7 +13077,7 @@ Component: timeline
   top: -10px;
   cursor: pointer; }
 
-/* line 1854, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1875, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app {
   position: relative;
   padding: 15px 5px;
@@ -12775,27 +13096,27 @@ Component: timeline
   background-color: #fafafa;
   font-size: 12px; }
 
-/* line 1872, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1893, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app > .fa,
 .btn.btn-app > .glyphicon,
 .btn.btn-app > .ion {
   font-size: 20px;
   display: block; }
 
-/* line 1878, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1899, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app:hover {
   background: #f4f4f4;
   color: #444;
   border-color: #aaa; }
 
-/* line 1883, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1904, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app:active,
 .btn.btn-app:focus {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
-/* line 1889, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1910, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-app > .badge {
   position: absolute;
   top: -3px;
@@ -12803,7 +13124,7 @@ Component: timeline
   font-size: 10px;
   font-weight: 400; }
 
-/* line 1896, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1917, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -12811,24 +13132,24 @@ Component: timeline
   opacity: 0.9;
   padding: 0; }
 
-/* line 1903, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1924, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social > .fa {
   padding: 10px 0;
   width: 40px; }
 
-/* line 1907, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1928, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social > .fa + span {
   border-left: 1px solid rgba(255, 255, 255, 0.3); }
 
-/* line 1910, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1931, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social span {
   padding: 10px; }
 
-/* line 1913, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1934, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-social:hover {
   opacity: 1; }
 
-/* line 1916, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1937, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .btn.btn-circle {
   width: 30px;
   height: 30px;
@@ -12842,49 +13163,49 @@ Component: timeline
     Component: callout
 ------------------------
 */
-/* line 1929, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1950, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout {
   margin: 0 0 20px 0;
   padding: 15px 30px 15px 15px;
   border-left: 5px solid #eee; }
 
-/* line 1934, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1955, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout h4 {
   margin-top: 0; }
 
-/* line 1937, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1958, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout p:last-child {
   margin-bottom: 0; }
 
-/* line 1940, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1961, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout code,
 .callout .highlight {
   background-color: #fff; }
 
-/* line 1944, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1965, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-danger {
   background-color: #fcf2f2;
   border-color: #dFb5b4; }
 
-/* line 1948, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1969, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-warning {
   background-color: #fefbed;
   border-color: #f1e7bc; }
 
-/* line 1952, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1973, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-info {
   background-color: #f0f7fd;
   border-color: #d0e3f0; }
 
-/* line 1956, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1977, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-danger h4 {
   color: #B94A48; }
 
-/* line 1959, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1980, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-warning h4 {
   color: #C09853; }
 
-/* line 1962, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1983, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .callout.callout-info h4 {
   color: #3A87AD; }
 
@@ -12892,13 +13213,12 @@ Component: timeline
     Component: alert
 ------------------------
 */
-/* line 1969, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1990, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .alert {
   padding-left: 30px;
-  margin-left: 15px;
   position: relative; }
 
-/* line 1974, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 1994, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .alert > .fa,
 .alert > .glyphicon {
   position: absolute;
@@ -12918,7 +13238,7 @@ Component: timeline
     Component: Navs
 */
 /* NAV PILLS */
-/* line 1993, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2013, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li > a {
   border-top: 3px solid transparent;
   -webkit-border-radius: 0;
@@ -12926,28 +13246,28 @@ Component: timeline
   border-radius: 0;
   color: #444; }
 
-/* line 2000, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2020, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li > a > .fa,
 .nav.nav-pills > li > a > .glyphicon,
 .nav.nav-pills > li > a > .ion {
   margin-right: 5px; }
 
-/* line 2005, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2025, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li.active > a,
 .nav.nav-pills > li.active > a:hover {
   background-color: #f6f6f6;
   border-top-color: #3c8dbc;
   color: #444; }
 
-/* line 2011, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2031, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li.active > a {
   font-weight: 600; }
 
-/* line 2014, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2034, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills > li > a:hover {
   background-color: #f6f6f6; }
 
-/* line 2017, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2037, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills.nav-stacked > li > a {
   border-top: 0;
   border-left: 3px solid transparent;
@@ -12956,14 +13276,14 @@ Component: timeline
   border-radius: 0;
   color: #444; }
 
-/* line 2025, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2045, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills.nav-stacked > li.active > a,
 .nav.nav-pills.nav-stacked > li.active > a:hover {
   background-color: #f6f6f6;
   border-left-color: #3c8dbc;
   color: #444; }
 
-/* line 2031, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2051, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav.nav-pills.nav-stacked > li.header {
   border-bottom: 1px solid #ddd;
   color: #777;
@@ -12972,82 +13292,82 @@ Component: timeline
   text-transform: uppercase; }
 
 /* NAV TABS */
-/* line 2039, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2059, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom {
   margin-bottom: 20px;
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
 
-/* line 2044, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2064, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs {
   margin: 0;
   border-bottom-color: #f4f4f4; }
 
-/* line 2048, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2068, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li {
   border-top: 3px solid transparent;
   margin-bottom: -2px;
   margin-right: 5px; }
 
-/* line 2053, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2073, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li > a {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important; }
 
-/* line 2058, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2078, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li > a,
 .nav-tabs-custom > .nav-tabs > li > a:hover {
   background: transparent;
   margin: 0; }
 
-/* line 2063, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2083, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li:not(.active) > a:hover,
 .nav-tabs-custom > .nav-tabs > li:not(.active) > a:focus,
 .nav-tabs-custom > .nav-tabs > li:not(.active) > a:active {
   border-color: transparent; }
 
-/* line 2068, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2088, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.active {
   border-top-color: #3c8dbc; }
 
-/* line 2071, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2091, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.active > a,
 .nav-tabs-custom > .nav-tabs > li.active:hover > a {
   background-color: #fff; }
 
-/* line 2075, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2095, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.active > a {
   border-top: 0;
   border-left-color: #f4f4f4;
   border-right-color: #f4f4f4; }
 
-/* line 2080, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2100, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li:first-of-type {
   margin-left: 0px; }
 
-/* line 2083, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2103, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li:first-of-type.active > a {
   border-left-width: 0; }
 
-/* line 2086, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2106, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs.pull-right {
   float: none !important; }
 
-/* line 2089, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2109, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs.pull-right > li {
   float: right; }
 
-/* line 2092, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2112, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type {
   margin-right: 0px; }
 
-/* line 2095, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2115, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type.active > a {
   border-left-width: 1px;
   border-right-width: 0px; }
 
-/* line 2099, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2119, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.header {
   font-weight: 400;
   line-height: 35px;
@@ -13056,19 +13376,19 @@ Component: timeline
   color: #444;
   cursor: default; }
 
-/* line 2107, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2127, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .nav-tabs > li.header > .fa,
 .nav-tabs-custom > .nav-tabs > li.header > .glyphicon,
 .nav-tabs-custom > .nav-tabs > li.header > .ion {
   margin-right: 10px; }
 
-/* line 2112, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2132, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .nav-tabs-custom > .tab-content {
   background: #fff;
   padding: 10px; }
 
 /* PAGINATION */
-/* line 2117, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2137, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .pagination > li > a {
   background: #fafafa;
   color: #666;
@@ -13076,7 +13396,7 @@ Component: timeline
   -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.09);
   box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.09); }
 
-/* line 2124, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2144, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .pagination > li:first-of-type a,
 .pagination > li:last-of-type a {
   -webkit-border-radius: 0;
@@ -13086,19 +13406,19 @@ Component: timeline
 /*
     Component: Mailbox
 */
-/* line 2133, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2153, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd; }
 
-/* line 2138, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2158, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr.unread > td {
   background-color: rgba(0, 0, 0, 0.05);
   color: #000;
   font-weight: 600; }
 
-/* line 2143, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2163, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td > .fa.fa-star,
 .mailbox .table-mailbox tr > td > .fa.fa-star-o,
 .mailbox .table-mailbox tr > td > .glyphicon.glyphicon-star,
@@ -13106,46 +13426,46 @@ Component: timeline
   color: #f39c12;
   cursor: pointer; }
 
-/* line 2150, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2170, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td.small-col {
   width: 30px; }
 
-/* line 2153, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2173, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td.name {
   width: 150px;
   font-weight: 600; }
 
-/* line 2157, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2177, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td.time {
   text-align: right;
   width: 100px; }
 
-/* line 2161, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2181, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td {
   white-space: nowrap; }
 
-/* line 2164, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2184, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .mailbox .table-mailbox tr > td > a {
   color: #444; }
 
 @media screen and (max-width: 767px) {
-  /* line 2168, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2188, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .mailbox .nav-stacked > li:not(.header) {
     float: left;
     width: 50%; }
 
-  /* line 2172, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2192, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .mailbox .nav-stacked > li:not(.header).header {
     border: 0 !important; }
 
-  /* line 2175, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2195, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .mailbox .search-form {
     margin-top: 10px; } }
 /*
     Page: locked screen
 */
 /* ADD THIS CLASS TO THE <HTML> TAG */
-/* line 2183, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2203, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen {
   background: url(../img/blur-background09.jpg) repeat center center fixed;
   -webkit-background-size: cover;
@@ -13154,12 +13474,12 @@ Component: timeline
   background-size: cover; }
 
 /* Remove the background from the body element */
-/* line 2191, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2211, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen > body {
   background: transparent; }
 
 /* We will put the dynamically generated digital clock here */
-/* line 2195, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2215, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen .headline {
   color: #fff;
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
@@ -13170,19 +13490,19 @@ Component: timeline
   font-size: 90px; }
 
 @media screen and (max-width: 480px) {
-  /* line 2205, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2225, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .lockscreen .headline {
     font-size: 60px;
     margin-bottom: 40px; } }
 /* User name [optional] */
-/* line 2211, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2231, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen .lockscreen-name {
   text-align: center;
   font-weight: 600;
   font-size: 16px; }
 
 /* Will contain the image and the sign in form */
-/* line 2217, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2237, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item {
   padding: 0;
   background: #fff;
@@ -13193,18 +13513,18 @@ Component: timeline
   margin: 10px auto;
   width: 290px; }
 
-/* line 2227, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2247, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item:before,
 .lockscreen-item:after {
   display: table;
   content: " "; }
 
-/* line 2232, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2252, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item:after {
   clear: both; }
 
 /* User image */
-/* line 2236, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2256, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-image {
   position: absolute;
   left: -10px;
@@ -13216,7 +13536,7 @@ Component: timeline
   border-radius: 50%;
   z-index: 10; }
 
-/* line 2247, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2267, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-image > img {
   width: 70px;
   height: 70px;
@@ -13225,21 +13545,21 @@ Component: timeline
   border-radius: 50%; }
 
 /* Contains the password input and the login button */
-/* line 2255, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2275, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-credentials {
   margin-left: 80px; }
 
-/* line 2258, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2278, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-credentials input {
   border: 0 !important; }
 
-/* line 2261, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2281, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-item > .lockscreen-credentials .btn {
   background-color: #fff;
   border: 0; }
 
 /* Extra to give the user an option to navigate the website [optional]*/
-/* line 2266, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2286, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .lockscreen-link {
   margin-top: 30px;
   text-align: center; }
@@ -13247,12 +13567,12 @@ Component: timeline
 /* 
     Page: register and login
 */
-/* line 2273, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2293, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box {
   width: 360px;
   margin: 90px auto 0 auto; }
 
-/* line 2277, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2297, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .header {
   -webkit-border-top-left-radius: 4px;
   -webkit-border-top-right-radius: 4px;
@@ -13274,29 +13594,29 @@ Component: timeline
   font-weight: 300;
   color: #fff; }
 
-/* line 2298, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2318, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .body,
 .form-box .footer {
   padding: 10px 20px;
   background: #fff;
   color: #444; }
 
-/* line 2304, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2324, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .body > .form-group,
 .form-box .footer > .form-group {
   margin-top: 20px; }
 
-/* line 2308, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2328, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .body > .form-group > input,
 .form-box .footer > .form-group > input {
   border: #fff; }
 
-/* line 2312, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2332, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .body > .btn,
 .form-box .footer > .btn {
   margin-bottom: 10px; }
 
-/* line 2316, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2336, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .form-box .footer {
   -webkit-border-top-left-radius: 0;
   -webkit-border-top-right-radius: 0;
@@ -13312,65 +13632,65 @@ Component: timeline
   border-bottom-left-radius: 4px; }
 
 @media (max-width: 767px) {
-  /* line 2331, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2351, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .form-box {
     width: 90%; } }
 /* 
     Page: 404 and 500 error pages
 ------------------------------------
 */
-/* line 2339, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2359, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page {
   width: 600px;
   margin: 20px auto 0 auto; }
 
 @media screen and (max-width: 767px) {
-  /* line 2344, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2364, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .error-page {
     width: 100%; } }
-/* line 2348, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2368, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page > .headline {
   float: left;
   font-size: 100px;
   font-weight: 300; }
 
 @media screen and (max-width: 767px) {
-  /* line 2354, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2374, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .error-page > .headline {
     float: none;
     text-align: center; } }
-/* line 2359, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2379, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page > .error-content {
   margin-left: 190px;
   display: block; }
 
 @media screen and (max-width: 767px) {
-  /* line 2364, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2384, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .error-page > .error-content {
     margin-left: 0; } }
-/* line 2368, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2388, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page > .error-content > h3 {
   font-weight: 300;
   font-size: 25px; }
 
 @media screen and (max-width: 767px) {
-  /* line 2373, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2393, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .error-page > .error-content > h3 {
     text-align: center; } }
-/* line 2377, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2397, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page:before,
 .error-page:after {
   display: table;
   content: " "; }
 
-/* line 2382, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2402, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .error-page:after {
   clear: both; }
 
 /* 
     Page: Invoice
 */
-/* line 2388, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2408, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .invoice {
   position: relative;
   width: 90%;
@@ -13378,29 +13698,29 @@ Component: timeline
   background: #fff;
   border: 1px solid #f4f4f4; }
 
-/* line 2395, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2415, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .invoice-title {
   margin-top: 0; }
 
 /* Enhancement for printing */
 @media print {
-  /* line 2400, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2420, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .invoice {
     width: 100%;
     border: 0;
     margin: 0;
     padding: 0; }
 
-  /* line 2406, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2426, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .invoice-col {
     float: left;
     width: 33.3333333%; }
 
-  /* line 2410, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2430, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .table-responsive {
     overflow: auto; }
 
-  /* line 2413, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2433, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .table-responsive > .table tr th,
   .table-responsive > .table tr td {
     white-space: normal !important; } }
@@ -13413,16 +13733,16 @@ Component: timeline
     --------
 */
 /* skin-black navbar */
-/* line 2427, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2447, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #eee; }
 
-/* line 2431, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2451, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .nav a {
   color: #333333; }
 
-/* line 2434, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2454, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .nav > li > a:hover,
 .skin-black .navbar .nav > li > a:active,
 .skin-black .navbar .nav > li > a:focus,
@@ -13432,103 +13752,103 @@ Component: timeline
   background: #ffffff;
   color: #999999; }
 
-/* line 2443, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2463, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .navbar-right > .nav {
   margin-right: 10px; }
 
-/* line 2446, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2466, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .sidebar-toggle .icon-bar {
   background: #333333; }
 
-/* line 2449, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2469, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .navbar .sidebar-toggle:hover .icon-bar {
   background: #999999 !important; }
 
 /* skin-black logo */
-/* line 2453, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2473, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .logo {
   background-color: #333333;
   color: #f9f9f9; }
 
-/* line 2457, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2477, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .logo > a {
   color: #f9f9f9; }
 
-/* line 2460, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2480, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .logo:hover {
   background: #303030; }
 
 /* skin-black content header */
-/* line 2464, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2484, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .right-side > .content-header {
   background: transparent;
   box-shadow: none; }
 
 /* Skin-red user panel */
-/* line 2469, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2489, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .user-panel > .image > img {
   border: 1px solid #444; }
 
-/* line 2472, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2492, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .user-panel > .info,
 .skin-black .user-panel > .info > a {
   color: #eee; }
 
 /* skin-black sidebar */
-/* line 2477, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2497, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar {
   border-bottom: 1px solid #333; }
 
-/* line 2480, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2500, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li {
   border-top: 1px solid #333;
   border-bottom: 0px solid #444; }
 
-/* line 2484, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2504, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li:first-of-type {
   border-top: 1px solid #444; }
 
-/* line 2487, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2507, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li:first-of-type > a {
   border-top: 0px solid #333; }
 
-/* line 2490, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2510, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li > a {
   margin-right: 1px; }
 
-/* line 2493, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2513, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li > a:hover,
 .skin-black .sidebar > .sidebar-menu > li.active > a {
   color: #f6f6f6;
   background: #444; }
 
-/* line 2498, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2518, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar > .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
   background: #444; }
 
-/* line 2502, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2522, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .left-side {
   background: #333; }
 
-/* line 2505, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2525, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar a {
   color: #eee; }
 
-/* line 2508, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2528, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar a:hover {
   text-decoration: none; }
 
-/* line 2511, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2531, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .treeview-menu > li > a {
   color: #ccc; }
 
-/* line 2514, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2534, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .treeview-menu > li.active > a,
 .skin-black .treeview-menu > li > a:hover {
   color: #fff; }
 
-/* line 2518, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2538, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -13536,7 +13856,7 @@ Component: timeline
   border: 0px solid #555;
   margin: 10px 10px; }
 
-/* line 2525, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2545, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form input[type="text"],
 .skin-black .sidebar-form .btn {
   box-shadow: none;
@@ -13545,7 +13865,7 @@ Component: timeline
   height: 35px;
   outline: none; }
 
-/* line 2533, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2553, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form input[type="text"] {
   color: #666;
   -webkit-border-top-left-radius: 2px !important;
@@ -13561,17 +13881,17 @@ Component: timeline
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 2px !important; }
 
-/* line 2548, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2568, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form input[type="text"]:focus,
 .skin-black .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   background-color: #444;
   border: 0; }
 
-/* line 2553, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2573, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   border-left: 0; }
 
-/* line 2556, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2576, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-black .sidebar-form .btn {
   color: #999;
   -webkit-border-top-left-radius: 0 !important;
@@ -13593,15 +13913,15 @@ Component: timeline
     ---------
 */
 /* skin-green navbar */
-/* line 2577, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2597, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar {
   background-color: #5cb85c; }
 
-/* line 2580, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2600, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .nav a {
   color: rgba(255, 255, 255, 0.8); }
 
-/* line 2583, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2603, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .nav > li > a:hover,
 .skin-green .navbar .nav > li > a:active,
 .skin-green .navbar .nav > li > a:focus,
@@ -13611,106 +13931,106 @@ Component: timeline
   background: rgba(0, 0, 0, 0.1);
   color: #f6f6f6; }
 
-/* line 2592, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2612, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .navbar-right > .nav {
   margin-right: 10px; }
 
-/* line 2595, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2615, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .sidebar-toggle .icon-bar {
   background: rgba(255, 255, 255, 0.8); }
 
-/* line 2598, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2618, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .navbar .sidebar-toggle:hover .icon-bar {
   background: #f6f6f6 !important; }
 
 /* skin-blue logo */
-/* line 2602, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2622, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .logo {
   background-color: #4cae4c;
   color: #f9f9f9; }
 
-/* line 2606, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2626, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .logo > a {
   color: #f9f9f9; }
 
-/* line 2609, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2629, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .logo:hover {
   background: #4aab4a; }
 
 /* skin-blue content header */
-/* line 2613, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2633, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .right-side > .content-header {
   background: #fbfbfb;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); }
 
 /* Skin-blue user panel */
-/* line 2618, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2638, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .user-panel > .image > img {
   border: 1px solid #dfdfdf; }
 
-/* line 2621, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2641, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .user-panel > .info,
 .skin-green .user-panel > .info > a {
   color: #555555; }
 
 /* skin-blue sidebar */
-/* line 2626, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2646, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar {
   border-bottom: 1px solid #fff; }
 
-/* line 2629, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2649, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #dbdbdb; }
 
-/* line 2633, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2653, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li:first-of-type {
   border-top: 1px solid #dbdbdb; }
 
-/* line 2636, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2656, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li:first-of-type > a {
   border-top: 1px solid #fff; }
 
-/* line 2639, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2659, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li > a {
   margin-right: 1px; }
 
-/* line 2642, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2662, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li > a:hover,
 .skin-green .sidebar > .sidebar-menu > li.active > a {
   color: #222;
   background: #f9f9f9; }
 
-/* line 2647, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2667, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar > .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
   background: #f9f9f9; }
 
-/* line 2651, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2671, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .left-side {
   background: #f4f4f4;
   -webkit-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
   box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07); }
 
-/* line 2657, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2677, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar a {
   color: #555555; }
 
-/* line 2660, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2680, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar a:hover {
   text-decoration: none; }
 
-/* line 2663, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2683, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .treeview-menu > li > a {
   color: #777; }
 
-/* line 2666, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2686, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .treeview-menu > li.active > a,
 .skin-green .treeview-menu > li > a:hover {
   color: #111; }
 
-/* line 2670, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2690, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -13718,7 +14038,7 @@ Component: timeline
   border: 1px solid #dbdbdb;
   margin: 10px 10px; }
 
-/* line 2677, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2697, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form input[type="text"],
 .skin-green .sidebar-form .btn {
   box-shadow: none;
@@ -13726,7 +14046,7 @@ Component: timeline
   border: 1px solid #fafafa;
   height: 35px; }
 
-/* line 2684, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2704, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form input[type="text"] {
   color: #666;
   -webkit-border-top-left-radius: 2px !important;
@@ -13742,17 +14062,17 @@ Component: timeline
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 2px !important; }
 
-/* line 2699, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2719, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form input[type="text"]:focus,
 .skin-green .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   background-color: #fff;
   color: #666; }
 
-/* line 2704, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2724, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   border-left-color: #fff; }
 
-/* line 2707, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2727, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .skin-green .sidebar-form .btn {
   color: #999;
   -webkit-border-top-left-radius: 0 !important;
@@ -13778,7 +14098,7 @@ Component: timeline
  */
 /* iCheck plugin Minimal skin, black
 ----------------------------------- */
-/* line 2732, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2752, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal,
 .iradio_minimal {
   display: inline-block;
@@ -13792,57 +14112,57 @@ Component: timeline
   border: none;
   cursor: pointer; }
 
-/* line 2745, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2765, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal {
   background-position: 0 0; }
 
-/* line 2748, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2768, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal.hover {
   background-position: -20px 0; }
 
-/* line 2751, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2771, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal.checked {
   background-position: -40px 0; }
 
-/* line 2754, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2774, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal.disabled {
   background-position: -60px 0;
   cursor: default; }
 
-/* line 2758, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2778, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .icheckbox_minimal.checked.disabled {
   background-position: -80px 0; }
 
-/* line 2761, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2781, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal {
   background-position: -100px 0; }
 
-/* line 2764, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2784, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal.hover {
   background-position: -120px 0; }
 
-/* line 2767, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2787, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal.checked {
   background-position: -140px 0; }
 
-/* line 2770, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2790, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal.disabled {
   background-position: -160px 0;
   cursor: default; }
 
-/* line 2774, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2794, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .iradio_minimal.checked.disabled {
   background-position: -180px 0; }
 
 /* Retina support */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 2779, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+  /* line 2799, ../sass/vendors/AdminLTE/_AdminLTE.scss */
   .icheckbox_minimal,
   .iradio_minimal {
     background-image: url("iCheck/minimal/minimal@2x.png");
     -webkit-background-size: 200px 20px;
     background-size: 200px 20px; } }
-/* line 2786, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2806, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .pace .pace-progress {
   background: #00c0ef;
   position: fixed;
@@ -13855,18 +14175,601 @@ Component: timeline
   -o-transition: width 1s;
   transition: width 1s; }
 
-/* line 2798, ../sass/vendors/AdminLTE/_AdminLTE.scss */
+/* line 2818, ../sass/vendors/AdminLTE/_AdminLTE.scss */
 .pace-inactive {
   display: none; }
 
+/*!
+Chosen, a Select Box Enhancer for jQuery and Prototype
+by Patrick Filler for Harvest, http://getharvest.com
+
+Version 1.1.0
+Full source at https://github.com/harvesthq/chosen
+Copyright (c) 2011 Harvest http://getharvest.com
+
+MIT License, https://github.com/harvesthq/chosen/blob/master/LICENSE.md
+This file is generated by `grunt build`, do not edit it by hand.
+*/
+/* @group Base */
+/* line 14, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  zoom: 1;
+  *display: inline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  width: 100%; }
+
+/* line 26, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-drop {
+  position: absolute;
+  top: 100%;
+  left: -9999px;
+  z-index: 1010;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-top: 0;
+  background: #fff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15); }
+
+/* line 40, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container.chosen-with-drop .chosen-drop {
+  left: 0; }
+
+/* line 43, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container a {
+  cursor: pointer; }
+
+/* @end */
+/* @group Single Chosen */
+/* line 49, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 23px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, white), color-stop(50%, #f6f6f6), color-stop(52%, #eeeeee), color-stop(100%, #f4f4f4));
+  background: -webkit-linear-gradient(top, white 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background: -moz-linear-gradient(top, white 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background: -o-linear-gradient(top, white 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background: linear-gradient(to bottom, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background-clip: padding-box;
+  box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 24px; }
+
+/* line 70, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-default {
+  color: #999; }
+
+/* line 73, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-single span {
+  display: block;
+  overflow: hidden;
+  margin-right: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+/* line 80, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-single-with-deselect span {
+  margin-right: 38px; }
+
+/* line 83, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-single abbr {
+  position: absolute;
+  top: 6px;
+  right: 26px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("/assets/img/chosen-sprite.png") -42px 1px no-repeat;
+  font-size: 1px; }
+
+/* line 93, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-single abbr:hover {
+  background-position: -42px -10px; }
+
+/* line 96, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single.chosen-disabled .chosen-single abbr:hover {
+  background-position: -42px -10px; }
+
+/* line 99, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-single div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 18px;
+  height: 100%; }
+
+/* line 107, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-single div b {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/img/chosen-sprite.png") no-repeat 0px 2px; }
+
+/* line 113, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-search {
+  position: relative;
+  z-index: 1010;
+  margin: 0;
+  padding: 3px 4px;
+  white-space: nowrap; }
+
+/* line 120, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-search input[type="text"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  width: 100%;
+  height: auto;
+  outline: 0;
+  border: 1px solid #aaa;
+  background: white url("/assets/img/chosen-sprite.png") no-repeat 100% -20px;
+  background: url("/assets/img/chosen-sprite.png") no-repeat 100% -20px;
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0; }
+
+/* line 137, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single .chosen-drop {
+  margin-top: -1px;
+  border-radius: 0 0 4px 4px;
+  background-clip: padding-box; }
+
+/* line 142, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  position: absolute;
+  left: -9999px; }
+
+/* @end */
+/* @group Results */
+/* line 149, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-results {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 4px 4px 0;
+  padding: 0 0 0 4px;
+  max-height: 240px;
+  -webkit-overflow-scrolling: touch; }
+
+/* line 158, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-results li {
+  display: none;
+  margin: 0;
+  padding: 5px 6px;
+  list-style: none;
+  line-height: 15px;
+  -webkit-touch-callout: none; }
+
+/* line 166, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-results li.active-result {
+  display: list-item;
+  cursor: pointer; }
+
+/* line 170, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-results li.disabled-result {
+  display: list-item;
+  color: #ccc;
+  cursor: default; }
+
+/* line 175, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-results li.highlighted {
+  background-color: #3875d7;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+  background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+  color: #fff; }
+
+/* line 184, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-results li.no-results {
+  display: list-item;
+  background: #f4f4f4; }
+
+/* line 188, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-results li.group-result {
+  display: list-item;
+  font-weight: bold;
+  cursor: default; }
+
+/* line 193, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-results li.group-option {
+  padding-left: 15px; }
+
+/* line 196, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container .chosen-results li em {
+  font-style: normal;
+  text-decoration: underline; }
+
+/* @end */
+/* @group Multi Chosen */
+/* line 203, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: text; }
+
+/* line 216, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li {
+  float: left;
+  list-style: none; }
+
+/* line 220, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; }
+
+/* line 225, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  margin: 1px 0;
+  padding: 5px;
+  outline: 0;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none;
+  color: #666;
+  font-size: 100%;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0; }
+
+/* line 238, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field .default {
+  color: #999; }
+
+/* line 241, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice {
+  position: relative;
+  margin: 2px 0;
+  padding: 3px 20px 3px 5px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+  background-image: -webkit-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -moz-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -o-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-clip: padding-box;
+  box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+  color: #333;
+  line-height: 13px;
+  cursor: default;
+  width: 100%; }
+
+/* line 260, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("/assets/img/chosen-sprite.png") -42px 1px no-repeat;
+  font-size: 1px; }
+
+/* line 270, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+  background-position: -42px -10px; }
+
+/* line 273, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+  padding-right: 5px;
+  border: 1px solid #ccc;
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+  background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -o-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  color: #666; }
+
+/* line 284, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-focus {
+  background: #d4d4d4; }
+
+/* line 287, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
+  background-position: -42px -10px; }
+
+/* line 290, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-results {
+  margin: 0;
+  padding: 0; }
+
+/* line 294, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-multi .chosen-drop .result-selected {
+  display: list-item;
+  color: #ccc;
+  cursor: default; }
+
+/* @end */
+/* @group Active  */
+/* line 302, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-active .chosen-single {
+  border: 1px solid #5897fb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
+/* line 306, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 1px solid #aaa;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #eeeeee), color-stop(80%, white));
+  background-image: -webkit-linear-gradient(#eeeeee 20%, white 80%);
+  background-image: -moz-linear-gradient(#eeeeee 20%, white 80%);
+  background-image: -o-linear-gradient(#eeeeee 20%, white 80%);
+  background-image: linear-gradient(#eeeeee 20%, #ffffff 80%);
+  box-shadow: 0 1px 0 #fff inset; }
+
+/* line 319, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-left: none;
+  background: transparent; }
+
+/* line 323, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  background-position: -18px 2px; }
+
+/* line 326, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-active .chosen-choices {
+  border: 1px solid #5897fb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 5px; }
+
+/* line 331, ../sass/vendors/chosen/_chosen.scss */
+.chosen-container-active .chosen-choices li.search-field input[type="text"] {
+  color: #111 !important; }
+
+/* @end */
+/* @group Disabled Support */
+/* line 337, ../sass/vendors/chosen/_chosen.scss */
+.chosen-disabled {
+  opacity: 0.5 !important;
+  cursor: default; }
+
+/* line 341, ../sass/vendors/chosen/_chosen.scss */
+.chosen-disabled .chosen-single {
+  cursor: default; }
+
+/* line 344, ../sass/vendors/chosen/_chosen.scss */
+.chosen-disabled .chosen-choices .search-choice .search-choice-close {
+  cursor: default; }
+
+/* @end */
+/* @group Right to Left */
+/* line 350, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl {
+  text-align: right; }
+
+/* line 353, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-single {
+  overflow: visible;
+  padding: 0 8px 0 0; }
+
+/* line 357, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-single span {
+  margin-right: 0;
+  margin-left: 26px;
+  direction: rtl; }
+
+/* line 362, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-single-with-deselect span {
+  margin-left: 38px; }
+
+/* line 365, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-single div {
+  right: auto;
+  left: 3px; }
+
+/* line 369, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-single abbr {
+  right: auto;
+  left: 26px; }
+
+/* line 373, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-choices li {
+  float: right; }
+
+/* line 376, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-choices li.search-field input[type="text"] {
+  direction: rtl; }
+
+/* line 379, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-choices li.search-choice {
+  margin: 3px 5px 3px 0;
+  padding: 3px 5px 3px 19px; }
+
+/* line 383, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-choices li.search-choice .search-choice-close {
+  right: auto;
+  left: 4px; }
+
+/* line 387, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl.chosen-container-single-nosearch .chosen-search,
+.chosen-rtl .chosen-drop {
+  left: 9999px; }
+
+/* line 391, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl.chosen-container-single .chosen-results {
+  margin: 0 0 4px 4px;
+  padding: 0 4px 0 0; }
+
+/* line 395, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-results li.group-option {
+  padding-right: 15px;
+  padding-left: 0; }
+
+/* line 399, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-right: none; }
+
+/* line 402, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl .chosen-search input[type="text"] {
+  padding: 4px 5px 4px 20px;
+  background: white url("/assets/img/chosen-sprite.png") no-repeat -30px -20px;
+  background: url("/assets/img/chosen-sprite.png") no-repeat -30px -20px;
+  direction: rtl; }
+
+/* line 408, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl.chosen-container-single .chosen-single div b {
+  background-position: 6px 2px; }
+
+/* line 411, ../sass/vendors/chosen/_chosen.scss */
+.chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b {
+  background-position: -12px 2px; }
+
+/* @end */
+/* @group Retina compatibility */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
+  /* line 418, ../sass/vendors/chosen/_chosen.scss */
+  .chosen-rtl .chosen-search input[type="text"],
+  .chosen-container-single .chosen-single abbr,
+  .chosen-container-single .chosen-single div b,
+  .chosen-container-single .chosen-search input[type="text"],
+  .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .chosen-container .chosen-results-scroll-down span,
+  .chosen-container .chosen-results-scroll-up span {
+    background-image: url("../../../img/chosen-sprite@2x.png") !important;
+    background-size: 52px 37px !important;
+    background-repeat: no-repeat !important; } }
+/* @end */
 /* line 2, ../sass/_nav.scss */
 .nav-actions li {
   display: inline-block; }
 
-/* line 7, ../sass/styles.scss */
+/* line 1, ../sass/_typeahead.scss */
+.twitter-typeahead {
+  width: 100%;
+  position: relative; }
+
+/* line 6, ../sass/_typeahead.scss */
+input.typeahead, .tt-input, .tt-hint {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px; }
+
+/* line 12, ../sass/_typeahead.scss */
+.tt-hint {
+  color: #eee; }
+
+/* line 16, ../sass/_typeahead.scss */
+.tt-dropdown-menu {
+  width: 100%;
+  min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  text-align: left; }
+  /* line 37, ../sass/_typeahead.scss */
+  .tt-dropdown-menu h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+/* line 43, ../sass/_typeahead.scss */
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px; }
+
+/* line 47, ../sass/_typeahead.scss */
+.twitter-typeahead .tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0); }
+
+/* line 58, ../sass/_typeahead.scss */
+.tt-suggestion.tt-cursor a {
+  color: #fff; }
+
+/* line 61, ../sass/_typeahead.scss */
+.tt-suggestion p {
+  margin: 0; }
+
+/* line 11, ../sass/styles.scss */
+.fa-offset {
+  top: 18px;
+  left: 14px; }
+
+/* line 16, ../sass/styles.scss */
+.ya-green {
+  background: #4CAE4C;
+  color: #fff; }
+  /* line 20, ../sass/styles.scss */
+  .ya-green a {
+    color: #fff; }
+
+/* line 25, ../sass/styles.scss */
 #search-controls div img {
   margin: 15px auto; }
 
-/* line 12, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 .logo img {
   max-height: 30px; }
+
+/* line 35, ../sass/styles.scss */
+.google-btn {
+  margin: 100px auto 0;
+  display: block;
+  width: 300px;
+  height: 55px;
+  background-size: contain;
+  background: url(/assets/img/google-signin-base.png); }
+  /* line 43, ../sass/styles.scss */
+  .google-btn:hover, .google-btn.hover {
+    background: url(/assets/img/google-signin-hover.png); }
+
+/* line 48, ../sass/styles.scss */
+.unmask-pass {
+  border: none;
+  margin-bottom: 20px; }

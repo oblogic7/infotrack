@@ -66,6 +66,13 @@
             padding: 5px 10px 5px 5px;
         }
 
+        .btn-xs {
+          margin: 10px;
+        }
+
+      .input-group {
+        margin: 7px;
+      }
 
     }
 
@@ -76,6 +83,10 @@
         // Tables within the box body
         > table, > .table {
             margin-bottom: 0;
+        }
+
+        .alert {
+          margin: 0 15px 10px;
         }
 
         &.chart-responsive {
@@ -318,6 +329,7 @@
         padding: 5px 20px 5px 10px;
 
         .item {
+            padding-right: 5px;
             .clearfix();
             margin-bottom: 10px;
             // The image
@@ -335,10 +347,24 @@
                 }
             }
 
+            &:hover {
+              background: #F4F4F4;
+
+              & .fa-offset.fa-inverse {
+                color: #F4F4F4;
+              }
+            }
+
+          > i {
+            position: relative;
+            top: 5px;
+            margin-left: 8px;
+          }
+
             // The message body
             > .message {
                 margin-left: 55px;
-                margin-top: -40px;
+                margin-top: -45px;
                 > .name {
                     display: block;
                     font-weight: 600;

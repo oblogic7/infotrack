@@ -2,27 +2,51 @@
 
 namespace YA\Authentication;
 
-class AuthDetail extends \Eloquent {
+use YA\BaseModel;
+use YA\Observers\AuthDetailObserver;
 
-	// Add your validation rules here
-	public static $rules = [
-		 'username' => 'required',
-		 'password' => 'required'
-	];
+class AuthDetail extends BaseModel {
 
-	// Don't forget to fill this array
-	protected $fillable = ['description', 'username', 'password', 'url', 'notes'];
+    // Add your validation rules here
+    protected static $rules = [
+        'name' => 'required',
+        'url' => 'required|url',
+        'username' => 'required',
+        'password' => 'required',
+    ];
 
-	public function client() {
-		return $this->belongsTo('YA\Client');
-	}
+    protected static $messages = [
+        'url.required' => 'You must enter a URL where this login can be used.'
+    ];
 
-	public function service() {
-		return $this->belongsTo('YA\Services\BaseService');
-	}
+    protected $touches = ['client'];
 
-	public function software() {
-		return $this->belongsTo('YA\Assets\Software\SoftwareDownload');
-	}
+    // Don't forget to fill this array
+    protected $fillable = ['name', 'username', 'password', 'url', 'notes', 'client_id'];
+
+    public static function boot() {
+        parent::boot();
+        static::observe(new AuthDetailObserver());
+    }
+
+    public function client() {
+        return $this->belongsTo('YA\Client');
+    }
+
+    public function forClients() {
+        return $this->belongsToMany('YA\Client');
+    }
+
+    public function software() {
+        return $this->belongsTo('YA\Assets\Software\SoftwareDownload');
+    }
+
+    public function activity() {
+        return $this->hasMany('YA\ActivityLog');
+    }
+
+    public function roles() {
+        return $this->belongsToMany('Role');
+    }
 
 }

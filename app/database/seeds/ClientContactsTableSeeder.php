@@ -11,6 +11,7 @@ class ClientContactsTableSeeder extends Seeder
 		$faker = Faker::create();
 		$faker->addProvider(new \Faker\Provider\CustomFormatters($faker));
 
+		$types = ['Technical Contact', 'Billing Contact', 'General Contact', 'Other'];
 
 		foreach (\YA\Client::all() as $client) {
 			if (rand(0, 1)) {
@@ -22,8 +23,10 @@ class ClientContactsTableSeeder extends Seeder
 
 					$contact = \YA\ClientContact::create([
 						'name' => $first_name . ' ' . $last_name,
-						'email' => $first_name . '.' . $last_name . '@' . $faker->safeEmailDomain,
-						'phone' => $faker->phoneNumber
+						'email' => rand(0, 1) ? null : $first_name . '.' . $last_name . '@' . $faker->safeEmailDomain,
+						'phone' => $faker->phoneNumber,
+						'type' => $types[rand(0,3)],
+						'primary' => rand(0,1)
 					]);
 
 					$client->contacts()->save($contact);

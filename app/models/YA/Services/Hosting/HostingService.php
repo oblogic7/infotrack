@@ -2,25 +2,33 @@
 
 namespace YA\Services\Hosting;
 
-use YA\Services\Billing\BillableService;
+use Dryval\ValidationTrait;
+use YA\Services\BaseService;
 
-class HostingService extends BillableService {
+class HostingService extends BaseService {
 
-	protected $table = 'services';
-	protected $stiBaseClass = 'YA\Services\BaseService';
+    use ValidationTrait;
 
-	public function __construct($attributes = array())
-	{
-		$rules = [
-			 'name' => 'required'
-		];
+    protected $table = 'services';
+    protected $stiBaseClass = 'YA\Services\BaseService';
 
-		$fillable = ['name'];
+    protected static $rules = [
+        'domain' => 'required',
+        'cms' => 'required',
+        'launch_date' => 'date'
+    ];
 
-		$this->rules = array_merge($this->rules, $rules);
-		$this->fillable = array_merge($this->fillable, $fillable);
+    protected static $messages = [
+        'domain.required' => 'Domain name is required.'
+    ];
 
-		parent::__construct($attributes);
-	}
+    protected $fillable = ['domain', 'provider', 'cms', 'database', 'launch_date'];
+
+    public function __construct($attributes = array()) {
+
+        parent::__construct($attributes);
+
+        $this->type = 'Web Hosting';
+    }
 
 }

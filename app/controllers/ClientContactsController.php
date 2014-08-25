@@ -2,6 +2,13 @@
 
 class ClientContactsController extends \BaseController {
 
+    public function __construct(
+        \YA\Contracts\ClientContactRepositoryInterface $contacts,
+        \YA\Contracts\ClientRepositoryInterface $clients) {
+        $this->contacts = $contacts;
+        $this->clients = $clients;
+    }
+
 	/**
 	 * Display a listing of clientcontacts
 	 *
@@ -9,52 +16,28 @@ class ClientContactsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$clientcontacts = Clientcontact::all();
-
-		return View::make('clientcontacts.index', compact('clientcontacts'));
+		return View::make('clients.contacts.index')->with(array('contacts' => $this->contacts->all()));
 	}
 
-	/**
-	 * Show the form for creating a new clientcontact
-	 *
-	 * @return Response
-	 */
-	public function create()
+
+	public function create($client_id)
 	{
-		return View::make('clientcontacts.create');
+        $client = $this->clients->find($client_id);
+
+		return View::make('clients.contacts.create')->with(['client' => $client]);
 	}
 
-	/**
-	 * Store a newly created clientcontact in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
+	public function store($client_id)
 	{
-		$validator = Validator::make($data = Input::all(), Clientcontact::$rules);
+        $input = Input::all();
 
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
+		$contact = $this->contacts->create($input);
 
-		Clientcontact::create($data);
+        $this->clients->attachContact($client_id, $contact);
 
-		return Redirect::route('clientcontacts.index');
+		return Redirect::route('clients.show', $client_id);
 	}
 
-	/**
-	 * Display the specified clientcontact.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		$clientcontact = Clientcontact::findOrFail($id);
-
-		return View::make('clientcontacts.show', compact('clientcontact'));
-	}
 
 	/**
 	 * Show the form for editing the specified clientcontact.
@@ -62,11 +45,12 @@ class ClientContactsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($client_id, $contact_id)
 	{
-		$clientcontact = Clientcontact::find($id);
+		$contact = $this->contacts->find($contact_id);
+        $client = $this->clients->find($client_id);
 
-		return View::make('clientcontacts.edit', compact('clientcontact'));
+		return View::make('clients.contacts.edit')->with(['contact' => $contact, 'client' => $client]);
 	}
 
 	/**
@@ -75,20 +59,12 @@ class ClientContactsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($client_id, $contact_id)
 	{
-		$clientcontact = Clientcontact::findOrFail($id);
 
-		$validator = Validator::make($data = Input::all(), Clientcontact::$rules);
+		$this->contacts->update($contact_id, Input::all());
 
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
-
-		$clientcontact->update($data);
-
-		return Redirect::route('clientcontacts.index');
+		return Redirect::route('clients.show', $client_id);
 	}
 
 	/**
@@ -101,7 +77,7 @@ class ClientContactsController extends \BaseController {
 	{
 		Clientcontact::destroy($id);
 
-		return Redirect::route('clientcontacts.index');
+		return Redirect::route('clients.contacts.index');
 	}
 
 }

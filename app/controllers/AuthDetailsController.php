@@ -2,69 +2,94 @@
 
 class AuthDetailsController extends \BaseController {
 
+    public function __construct(
+        \YA\Contracts\RoleRepositoryInterface $roles,
+        \YA\Contracts\ClientRepositoryInterface $clients,
+        \YA\Contracts\YAAuthRepositoryInterface $auth) {
+        $this->roles = $roles;
+        $this->clients = $clients;
+        $this->auth = $auth;
+    }
+
 	/**
-	 * Display a listing of authdetail
+	 * Display a listing of auth
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-		return Authdetail::all();
-	}
+        $credentials = $this->auth->all();
+        return View::make('auth.index')->with(['credentials' => $credentials]);
+    }
 
 	/**
-	 * Show the form for creating a new authdetail
+	 * Show the form for creating a new auth
 	 *
 	 * @return Response
 	 */
 	public function create()
 	{
-		return View::make('authdetail.create');
+        $roles = $this->roles->all();
+        $clients = $this->clients->all();
+
+        return View::make('auth.create')->with(['roles' => $roles, 'clients' => $clients]);
 	}
 
 	/**
-	 * Store a newly created authdetail in storage.
+	 * Store a newly created auth in storage.
 	 *
 	 * @return Response
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), Authdetail::$rules);
+        $input = Input::all();
 
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
+        // Validate that password fields match before creating entity.
+        if ($input['password'] != $input['password_confirm']) {
+            throw new \Dryval\ValidationException('Password fields must match.');
+        }
 
-		Authdetail::create($data);
+        $auth = $this->auth->create($input);
 
-		return Redirect::route('authdetail.index');
+        return Redirect::route('credentials.show', $auth->id);
 	}
 
 	/**
-	 * Display the specified authdetail.
+	 * Display the specified auth.
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
 	public function show($id)
 	{
-		$authdetail = Authdetail::findOrFail($id);
+		$auth = $this->auth->find($id);
 
-		return View::make('authdetail.show', compact('authdetail'));
+        $activity_data = [
+            'activity' => $auth->activity,
+            'formRoute' => URL::route('auth.activity.store', [$auth->id])
+        ];
+
+		return View::make('auth.show', compact('auth'))
+            ->nest('activityLogView', '_partials.activitylog', $activity_data);
 	}
 
 	/**
-	 * Show the form for editing the specified authdetail.
+	 * Show the form for editing the specified auth.
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
 	public function edit($id)
 	{
-		$authdetail = Authdetail::find($id);
+		$auth = $this->auth->find($id);
+        $clients = $this->clients->all();
+        $roles = $this->roles->all();
 
-		return View::make('authdetail.edit', compact('authdetail'));
+        if ( ! Access::userAuthorized($auth->roles->lists('name')) ) {
+            return Redirect::route('credentials.index')->withErrors('Quit that!  You don\'t have permission to do that!');
+        }
+
+		return View::make('auth.edit')->with(['auth' => $auth, 'clients' => $clients, 'roles' => $roles]);
 	}
 
 	/**
@@ -75,18 +100,9 @@ class AuthDetailsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$authdetail = Authdetail::findOrFail($id);
+		$this->auth->update($id, Input::all());
 
-		$validator = Validator::make($data = Input::all(), Authdetail::$rules);
-
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
-
-		$authdetail->update($data);
-
-		return Redirect::route('authdetail.index');
+		return Redirect::route('credentials.index');
 	}
 
 	/**
@@ -99,7 +115,7 @@ class AuthDetailsController extends \BaseController {
 	{
 		Authdetail::destroy($id);
 
-		return Redirect::route('authdetail.index');
+		return Redirect::route('auth.index');
 	}
 
 }

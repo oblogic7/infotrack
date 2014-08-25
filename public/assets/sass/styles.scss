@@ -1,8 +1,26 @@
+@import "compass/css3";
 @import "vendors/bootstrap-3.1.1/bootstrap";
 @import "vendors/font-awesome/font-awesome";
 @import "vendors/css/ionicons";
 @import "vendors/AdminLTE/AdminLTE";
+@import "vendors/chosen/chosen";
 @import "nav";
+@import "typeahead";
+
+
+.fa-offset {
+  top: 18px;
+  left: 14px;
+}
+
+.ya-green {
+  background: #4CAE4C;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
 
 #search-controls div img {
   margin: 15px auto;
@@ -12,4 +30,22 @@
   img {
     max-height: 30px;
   }
+}
+
+.google-btn {
+  margin: 100px auto 0;
+  display: block;
+  width: 300px;
+  height: 55px;
+  background-size: contain;
+  @include background(url(/assets/img/google-signin-base.png));
+
+  &:hover, &.hover {
+    @include background(url(/assets/img/google-signin-hover.png));
+  }
+}
+
+.unmask-pass {
+  border: none;
+  margin-bottom: 20px;
 }

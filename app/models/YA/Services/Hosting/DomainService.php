@@ -2,28 +2,33 @@
 
 namespace YA\Services\Hosting;
 
-use YA\Services\Billing\BillableService;
+use YA\Services\BaseService;
 
-class DomainService extends BillableService
-{
+class DomainService extends BaseService {
 
-	protected $table = 'services';
-	protected $stiBaseClass = 'YA\Services\BaseService';
+    protected $table = 'services';
+    protected $stiBaseClass = 'YA\Services\BaseService';
 
-	public function __construct($attributes = array())
-	{
+    protected static $rules = [
+        'domain' => 'required',
+        'provider' => 'required'
+    ];
 
-		$rules = [
-			'url'      => 'required',
-			'provider' => 'required'
-		];
+    protected static $messages = [
+        'domain.required' => 'Domain name is required.',
+        'provider.required' => 'Please enter a provider.'
+    ];
 
-		$fillable = ['url', 'provider'];
+    protected $fillable = [
+        'domain',
+        'provider'
+    ];
 
-		$this->rules    = array_merge($this->rules, $rules);
-		$this->fillable = array_merge($this->fillable, $fillable);
+    public function __construct($attributes = array()) {
 
-		parent::__construct($attributes);
-	}
+        parent::__construct($attributes);
+
+        $this->type = 'Domain Registration';
+    }
 
 }

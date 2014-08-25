@@ -2,19 +2,38 @@
 
 namespace YA\Services;
 
+use Dryval\ValidationTrait;
 use YA\BaseModel;
+use YA\Observers\YAServiceObserver;
 
 class BaseService extends BaseModel {
 
-	protected $table = 'services';
-	protected $stiClassField = 'service_class';
-	protected $stiBaseClass = 'YA\Services\BaseService';
+    use ValidationTrait;
 
-	public $rules = array();
-	public $fillable = array();
+    protected $table = 'services';
+    protected $stiClassField = 'service_class';
+    protected $stiBaseClass = 'YA\Services\BaseService';
 
-	public function credentials() {
-		return $this->hasOne('YA\Authentication\AuthDetails');
-	}
+    protected $touches = ['client'];
+
+    public static function boot() {
+
+        parent::boot();
+        static::observe(new YAServiceObserver());
+
+    }
+
+    public function getDates()
+    {
+        return array('created_at', 'updated_at', 'expires', 'launch_date');
+    }
+
+    public function client() {
+        return $this->hasOne('YA\Client', 'id', 'client_id');
+    }
+
+    public function activity() {
+        return $this->hasMany('YA\ActivityLog', 'service_id');
+    }
 
 }

@@ -1,0 +1,29 @@
+{
+    "name": "adamwathan/eloquent-oauth",
+    "description": "Stupid simple OAuth authentication with Laravel and Eloquent",
+    "authors": [
+        {
+            "name": "Adam Wathan",
+            "email": "adam.wathan@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.*",
+        "illuminate/database": "4.*",
+        "guzzle/guzzle": "~3.7"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.8.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "AdamWathan\\EloquentOAuth\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
